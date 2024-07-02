@@ -1,0 +1,15 @@
+﻿\newcommand{\paxdefPattern}[3]{
+	\hyphenation{#3}
+	\defineCommandByName{#1}{\emph{#2}}
+	\defineCommandByName{#1NoEmph}{#2}
+}
+
+\paxdefPattern{AddToPC}{AddToPC}{Add-To-PC}
+\paxdefPattern{AddWithMapping}{AddWithMapping}{Add-With-Map-ping}
+\paxdefPattern{RemFromPC}{RemFromPC}{Rem-From-PC}
+\paxdefPattern{RemWithMapping}{RemWithMapping}{Rem-With-Map-ping}
+\paxdefPattern{Specialization}{Specialization}{Spe-cial-iza-tion} %%% WrapCode
+\paxdefPattern{Generalization}{Generalization}{Gen-er-al-iza-tion} %%% UnwrapCode
+\paxdefPattern{Reconfiguration}{Reconfiguration}{Re-con-fig-u-ra-tion} %%% ChangePC
+\paxdefPattern{Refactoring}{Refactoring}{Refac-to-ring}
+\paxdefPattern{Unchanged}{Untouched}{Un-touched}

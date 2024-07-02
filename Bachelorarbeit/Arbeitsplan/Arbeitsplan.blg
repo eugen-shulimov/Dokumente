@@ -1,0 +1,82 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Arbeitsplan.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: Arbeitsplan-blx.bib
+Database file #2: ../BibTags/MYabrv.bib
+Database file #3: ../BibTags/literature.bib
+I was expecting a `,' or a `}'---line 393 of file ../BibTags/literature.bib
+ :  
+ :  typo3Tags = {VariantSyncPub}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring SHA:SPLC12's extra "location" field
+--line 25373 of file ../BibTags/literature.bib
+Database file #4: myrefs.bib
+Warning--I didn't find a database entry for "BTS+:ESECFSE22e"
+Warning--I didn't find a database entry for "CBTS+:ESECFSE22"
+Biblatex version: 3.20
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 22 entries,
+            6402 wiz_defined-function locations,
+            2521 strings with 44666 characters,
+and the built_in function-call counts, 270907 in all, are:
+= -- 23491
+> -- 3310
+< -- 1266
++ -- 8956
+- -- 1145
+* -- 19103
+:= -- 32786
+add.period$ -- 0
+call.type$ -- 22
+change.case$ -- 716
+chr.to.int$ -- 200
+cite$ -- 42
+duplicate$ -- 29590
+empty$ -- 22012
+format.name$ -- 2059
+if$ -- 53038
+int.to.chr$ -- 0
+int.to.str$ -- 86
+missing$ -- 0
+newline$ -- 1197
+num.names$ -- 1490
+pop$ -- 8712
+preamble$ -- 1
+purify$ -- 944
+quote$ -- 0
+skip$ -- 5175
+stack$ -- 0
+substring$ -- 43546
+swap$ -- 5007
+text.length$ -- 781
+text.prefix$ -- 36
+top$ -- 1
+type$ -- 731
+warning$ -- 0
+while$ -- 4288
+width$ -- 0
+write$ -- 1176
+(There was 1 error message)

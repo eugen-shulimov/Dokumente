@@ -1,0 +1,1231 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{ynt/global//global/global/global}
+  \entry{KATS:TOSEM12}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=KC}{%
+         family={K\"{a}stner},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Apel},
+         familyi={A\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th\"{u}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Saake},
+         familyi={S\bibinitperiod},
+         given={Gunter},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCASTTSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{K\"+12}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.1145/2211616.2211617
+    \endverb
+    \field{issn}{1049-331X}
+    \field{number}{3}
+    \field{pages}{14:1\bibrangedash 14:39}
+    \field{title}{{Type Checking Annotation-Based Product Lines}}
+    \field{volume}{21}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{Trans.\ on Software Engineering and Methodology
+  (TOSEM)}
+    \field{month}{07}
+    \field{year}{2012}
+  \endentry
+
+  \entry{SHA:SPLC12}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=SC}{%
+         family={Seidl},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Heidenreich},
+         familyi={H\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=AU}{%
+         family={A{\ss}mann},
+         familyi={A\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{feature modeling, software product lines, model transformation,
+  co-evolution, evolution, feature mapping}
+    \strng{namehash}{SCHFAU1}
+    \strng{fullhash}{SCHFAU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{SHA12}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Systems and Software Product Line Conf.\
+  (SPLC)}
+    \verb{doi}
+    \verb 10.1145/2362536.2362550
+    \endverb
+    \field{pages}{76\bibrangedash 85}
+    \field{title}{{Co-Evolution of Models and Feature Mapping in Software
+  Product Lines}}
+    \list{location}{1}{%
+      {Salvador, Brazil}%
+    }
+    \field{year}{2012}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{ABKS13}{book}{}{}
+    \name{author}{4}{}{%
+      {{hash=AS}{%
+         family={Apel},
+         familyi={A\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Batory},
+         familyi={B\bibinitperiod},
+         given={Don},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={K\"astner},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Saake},
+         familyi={S\bibinitperiod},
+         given={Gunter},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{AS+1}
+    \strng{fullhash}{ASBDKCSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ape+13}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.1007/978-3-642-37521-7
+    \endverb
+    \field{isbn}{978-3-642-37520-0}
+    \field{title}{{Feature-Oriented Software Product Lines}}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2013}
+  \endentry
+
+  \entry{PCA+:VAMOS13}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=PL}{%
+         family={Passos},
+         familyi={P\bibinitperiod},
+         given={Leonardo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Czarnecki},
+         familyi={C\bibinitperiod},
+         given={Krzysztof},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Apel},
+         familyi={A\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={W\k{a}sowski},
+         familyi={W\bibinitperiod},
+         given={Andrzej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={K\"{a}stner},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Jianmei},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{software evolution, analysis, traceability, recommendation,
+  feature-oriented development}
+    \strng{namehash}{PL+1}
+    \strng{fullhash}{PLCKASWAKCGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Pas+13}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Workshop on Variability Modelling of
+  Software-Intensive Systems (VaMoS)}
+    \verb{doi}
+    \verb 10.1145/2430502.2430526
+    \endverb
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{{Feature-Oriented Software Evolution}}
+    \list{location}{1}{%
+      {Pisa, Italy}%
+    }
+    \field{year}{2013}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{10.1145/2660190.2662113}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=ZB}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Becker},
+         familyi={B\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \keyw{variability code analysis, reverse engineering variability, product
+  line evolution, conditional compilation}
+    \strng{namehash}{ZBBM1}
+    \strng{fullhash}{ZBBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ZB14}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{abstract}{%
+    As a product line evolves over time, variability realizations become overly
+  complex and difficult to understand. This causes practical challenges in
+  product line maintenance. To solve this issue, the VITAL tool is developed to
+  automatically extract a variability reflexion model from variability code and
+  conduct further analyses. In this paper, variability code analysis process
+  using the VITAL tool is introduced, and each step of the analysis is
+  demonstrated with an example product line.%
+    }
+    \field{booktitle}{Proceedings of the 6th International Workshop on
+  Feature-Oriented Software Development}
+    \verb{doi}
+    \verb 10.1145/2660190.2662113
+    \endverb
+    \field{isbn}{9781450329804}
+    \field{pages}{17–22}
+    \field{series}{FOSD '14}
+    \field{title}{Variability code analysis using the VITAL tool}
+    \verb{url}
+    \verb https://doi.org/10.1145/2660190.2662113
+    \endverb
+    \list{location}{1}{%
+      {V\"{a}ster\r{a}s, Sweden}%
+    }
+    \field{year}{2014}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{NBA+:JSS15}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=NL}{%
+         family={Neves},
+         familyi={N\bibinitperiod},
+         given={La{\'{\i}}s},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Borba},
+         familyi={B\bibinitperiod},
+         given={Paulo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=AV}{%
+         family={Alves},
+         familyi={A\bibinitperiod},
+         given={Vander},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Turnes},
+         familyi={T\bibinitperiod},
+         given={Lucin{\'{e}}ia},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Teixeira},
+         familyi={T\bibinitperiod},
+         given={Leopoldo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sena},
+         familyi={S\bibinitperiod},
+         given={Dem{\'{o}}stenes},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KU}{%
+         family={Kulesza},
+         familyi={K\bibinitperiod},
+         given={Uir{\'{a}}},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Science Inc.}%
+    }
+    \strng{namehash}{NL+1}
+    \strng{fullhash}{NLBPAVTLTLSDKU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nev+15}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.1016/j.jss.2015.04.024
+    \endverb
+    \field{pages}{42\bibrangedash 58}
+    \field{title}{{Safe Evolution Templates for Software Product Lines}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0164121215000801
+    \endverb
+    \field{volume}{106}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{J.\ Systems and Software (JSS)}
+    \field{year}{2015}
+  \endentry
+
+  \entry{ABT+:VaMoS16}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=AHM}{%
+         family={Al-Hajjaji},
+         familyi={A\bibinithyphendelim H\bibinitperiod},
+         given={Mustafa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Benduhn},
+         familyi={B\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th{\"u}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Leich},
+         familyi={L\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Saake},
+         familyi={S\bibinitperiod},
+         given={Gunter},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{AHM+1}
+    \strng{fullhash}{AHMBFTTLTSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{AH+16}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Workshop on Variability Modelling of
+  Software-Intensive Systems (VaMoS)}
+    \verb{doi}
+    \verb 10.1145/2866614.2866626
+    \endverb
+    \field{isbn}{978-1-4503-4019-9}
+    \field{pages}{81\bibrangedash 88}
+    \field{title}{{Mutation Operators for Preprocessor-Based Variability}}
+    \list{location}{1}{%
+      {Salvador, Brazil}%
+    }
+    \field{month}{01}
+    \field{year}{2016}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{PTD+:EMSE16}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=PL}{%
+         family={Passos},
+         familyi={P\bibinitperiod},
+         given={Leonardo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Teixeira},
+         familyi={T\bibinitperiod},
+         given={Leopoldo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={Dintzner},
+         familyi={D\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Apel},
+         familyi={A\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={W{\k{a}}sowski},
+         familyi={W\bibinitperiod},
+         given={Andrzej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Czarnecki},
+         familyi={C\bibinitperiod},
+         given={Krzysztof},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Borba},
+         familyi={B\bibinitperiod},
+         given={Paulo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Jianmei},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{PL+1}
+    \strng{fullhash}{PLTLDNASWACKBPGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Pas+16}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.1007/s10664-015-9364-x
+    \endverb
+    \field{number}{4}
+    \field{title}{{Coevolution of Variability Models and Related Software
+  Artifacts}}
+    \field{volume}{21}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{Empirical Software Engineering (EMSE)}
+    \field{year}{2016}
+  \endentry
+
+  \entry{KKK+:SPLC18}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=KE}{%
+         family={Kuiter},
+         familyi={K\bibinitperiod},
+         given={Elias},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kr\"{u}ger},
+         familyi={K\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Krieter},
+         familyi={K\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Leich},
+         familyi={L\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Saake},
+         familyi={S\bibinitperiod},
+         given={Gunter},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{case study, extraction, software product line, feature modeling}
+    \strng{namehash}{KE+1}
+    \strng{fullhash}{KEKJKSLTSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kui+18}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Systems and Software Product Line Conf.\
+  (SPLC)}
+    \verb{doi}
+    \verb 10.1145/3233027.3233050
+    \endverb
+    \field{isbn}{9781450364645}
+    \field{pages}{179\bibrangedash 189}
+    \field{title}{{Getting Rid of Clone-and-Own: Moving to a Software Product
+  Line for Temperature Monitoring}}
+    \list{location}{1}{%
+      {Gothenburg, Sweden}%
+    }
+    \field{month}{09}
+    \field{year}{2018}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{ZSL+:ICSE18}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=ZS}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Shurui},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={St{\u{a}}nciulescu},
+         familyi={S\bibinitperiod},
+         given={{\c{S}}tefan},
+         giveni={{\c{S}}\bibinitperiod},
+      }}%
+      {{hash=LO}{%
+         family={Le{\ss}enich},
+         familyi={L\bibinitperiod},
+         given={Olaf},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=XY}{%
+         family={Xiong},
+         familyi={X\bibinitperiod},
+         given={Yingfei},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={W{\k{a}}sowski},
+         familyi={W\bibinitperiod},
+         given={Andrzej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={K{\"a}stner},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{ZS+1}
+    \strng{fullhash}{ZSSSLOXYWAKC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Zho+18}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Conf.\ on Software Engineering (ICSE)}
+    \verb{doi}
+    \verb 10.1145/3180155.3180205
+    \endverb
+    \field{pages}{105\bibrangedash 116}
+    \field{title}{{Identifying Features in Forks}}
+    \verb{url}
+    \verb https://dl.acm.org/citation.cfm?id=3180205
+    \endverb
+    \list{location}{1}{%
+      {Gothenburg, Sweden}%
+    }
+    \field{month}{05}
+    \field{year}{2018}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{SBT:JSS19}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=SG}{%
+         family={Sampaio},
+         familyi={S\bibinitperiod},
+         given={Gabriela},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Borba},
+         familyi={B\bibinitperiod},
+         given={Paulo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Teixeira},
+         familyi={T\bibinitperiod},
+         given={Leopoldo},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SGBPTL1}
+    \strng{fullhash}{SGBPTL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{SBT19}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.1016/j.jss.2019.04.051
+    \endverb
+    \field{issn}{0164-1212}
+    \field{pages}{17\bibrangedash 42}
+    \field{title}{{Partially Safe Evolution of Software Product Lines}}
+    \field{volume}{155}
+    \field{journaltitle}{J.\ Systems and Software (JSS)}
+    \field{year}{2019}
+  \endentry
+
+  \entry{KB:VaMoS20}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=KJ}{%
+         family={Kr\"{u}ger},
+         familyi={K\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Berger},
+         familyi={B\bibinitperiod},
+         given={Thorsten},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{clone & own, software product lines, empirical study, re-engineering}
+    \strng{namehash}{KJBT1}
+    \strng{fullhash}{KJBT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{KB20}
+    \field{extraalpha}{1}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Working Conf.\ on Variability Modelling of
+  Software-Intensive Systems (VaMoS)}
+    \verb{doi}
+    \verb 10.1145/3377024.3377044
+    \endverb
+    \field{isbn}{9781450375016}
+    \field{title}{{Activities and Costs of Re-Engineering Cloned Variants Into
+  an Integrated Platform}}
+    \list{location}{1}{%
+      {Magdeburg, Germany}%
+    }
+    \field{year}{2020}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{KB:ESECFSE20}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=KJ}{%
+         family={Kr{\"u}ger},
+         familyi={K\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Berger},
+         familyi={B\bibinitperiod},
+         given={Thorsten},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{KJBT2}
+    \strng{fullhash}{KJBT2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{KB20}
+    \field{extraalpha}{2}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Europ.\ Software Engineering Conf./Foundations of
+  Software Engineering (ESEC/FSE)}
+    \verb{doi}
+    \verb 10.1145/3368089.3409684
+    \endverb
+    \field{isbn}{9781450370431}
+    \field{pages}{432\bibrangedash 444}
+    \field{title}{{An Empirical Analysis of the Costs of Clone- and
+  Platform-Oriented Software Reuse}}
+    \list{location}{1}{%
+      {Virtual Event, USA}%
+    }
+    \field{year}{2020}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{SSK+:VaMoS20}{inproceedings}{}{}
+    \name{author}{7}{}{%
+      {{hash=SJ}{%
+         family={Sprey},
+         familyi={S\bibinitperiod},
+         given={Joshua},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Sundermann},
+         familyi={S\bibinitperiod},
+         given={Chico},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Krieter},
+         familyi={K\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nieke},
+         familyi={N\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mauro},
+         familyi={M\bibinitperiod},
+         given={Jacopo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th\"{u}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Schaefer},
+         familyi={S\bibinitperiod},
+         given={Ina},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{variability analysis, SAT analysis, SAT, preprocessor analysis,
+  configuration analysis, attribute optimization, SMT, SAT vs SMT, SMT
+  analysis, feature attributes, feature models, feature model analysis}
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJSCKSNMMJTTSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Spr+20}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Working Conf.\ on Variability Modelling of
+  Software-Intensive Systems (VaMoS)}
+    \verb{doi}
+    \verb 10.1145/3377024.3377036
+    \endverb
+    \field{isbn}{9781450375016}
+    \field{title}{{SMT-Based Variability Analyses in FeatureIDE}}
+    \list{location}{1}{%
+      {Magdeburg, Germany}%
+    }
+    \field{month}{02}
+    \field{year}{2020}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{KTSB:ICSE21}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=KT}{%
+         family={Kehrer},
+         familyi={K\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th{\"{u}}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Schulthei\ss{}},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BPM}{%
+         family={Bittner},
+         familyi={B\bibinitperiod},
+         given={Paul\bibnamedelima Maximilian},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KT+1}
+    \strng{fullhash}{KTTTSABPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Keh+21}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Conf.\ on Software Engineering (ICSE)}
+    \verb{doi}
+    \verb 10.1109/ICSE-NIER52604.2021.00013
+    \endverb
+    \field{isbn}{978-1-6654-0140-1}
+    \field{pages}{21\bibrangedash 25}
+    \field{title}{{Bridging the Gap Between Clone-and-Own and Software Product
+  Lines}}
+    \list{location}{1}{%
+      {Piscataway, NJ, USA}%
+    }
+    \field{month}{05}
+    \field{year}{2021}
+  \endentry
+
+  \entry{SNB+:VaMoS21}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=SC}{%
+         family={Sundermann},
+         familyi={S\bibinitperiod},
+         given={Chico},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nieke},
+         familyi={N\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BPM}{%
+         family={Bittner},
+         familyi={B\bibinitperiod},
+         given={Paul\bibnamedelima Maximilian},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={He{\ss}},
+         familyi={H\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th\"{u}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Schaefer},
+         familyi={S\bibinitperiod},
+         given={Ina},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{Feature-Model Analysis, Feature Models, \#SAT Applications, \#SAT,
+  Product Lines, Configuration Counting, Model Counting}
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCNMBPMHTTTSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Sun+21}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Working Conf.\ on Variability Modelling of
+  Software-Intensive Systems (VaMoS)}
+    \verb{doi}
+    \verb 10.1145/3442391.3442404
+    \endverb
+    \field{isbn}{9781450388245}
+    \field{title}{{Applications of \#SAT Solvers on Feature Models}}
+    \list{location}{1}{%
+      {Krems, Austria}%
+    }
+    \field{month}{02}
+    \field{year}{2021}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Viegener21}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=VS}{%
+         family={Viegener},
+         familyi={V\bibinitperiod},
+         given={S\"{o}ren},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VS1}
+    \strng{fullhash}{VS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Vie21}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.18725/OPARU-38603
+    \endverb
+    \field{title}{{Empirical Evaluation of Feature Trace Recording on the Edit
+  History of Marlin}}
+    \verb{url}
+    \verb https://oparu.uni-ulm.de/xmlui/bitstream/handle/123456789/38679/BA_Vi
+    \verb egener.pdf
+    \endverb
+    \list{location}{1}{%
+      {Germany}%
+    }
+    \list{institution}{1}{%
+      {University of Ulm}%
+    }
+    \field{type}{Bachelor's Thesis}
+    \field{month}{04}
+    \field{year}{2021}
+  \endentry
+
+  \entry{BTS+:ESECFSE22}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=BPM}{%
+         family={Bittner},
+         familyi={B\bibinitperiod},
+         given={Paul\bibnamedelima Maximilian},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Tinnes},
+         familyi={T\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Schulthei\ss{}},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Viegener},
+         familyi={V\bibinitperiod},
+         given={S{\"{o}}ren},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kehrer},
+         familyi={K\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th{\"{u}}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{software evolution, software variability, feature traceability,
+  software product lines, mining version histories}
+    \strng{namehash}{BPM+1}
+    \strng{fullhash}{BPMTCSAVSKTTT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bit+22}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Europ.\ Software Engineering Conf./Foundations of
+  Software Engineering (ESEC/FSE)}
+    \verb{doi}
+    \verb 10.1145/3540250.3549108
+    \endverb
+    \field{isbn}{9781450394130}
+    \field{pages}{196\bibrangedash 208}
+    \field{title}{{Classifying Edits to Variability in Source Code}}
+    \list{location}{1}{%
+      {Singapore, Singapore}%
+    }
+    \field{month}{11}
+    \field{year}{2022}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{NST+:SoSyM22}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=NM}{%
+         family={Nieke},
+         familyi={N\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sampaio},
+         familyi={S\bibinitperiod},
+         given={Gabriela},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th{\"u}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Seidl},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Teixeira},
+         familyi={T\bibinitperiod},
+         given={Leopoldo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Schaefer},
+         familyi={S\bibinitperiod},
+         given={Ina},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NM+1}
+    \strng{fullhash}{NMSGTTSCTLSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nie+22}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.1007/s10270-021-00906-w
+    \endverb
+    \field{issue}{1}
+    \field{pages}{225\bibrangedash 247}
+    \field{title}{{Guiding the Evolution of Product-Line Configurations}}
+    \field{volume}{21}
+    \field{journaltitle}{Software and Systems Modeling (SoSyM)}
+    \field{month}{02}
+    \field{year}{2022}
+  \endentry
+
+  \entry{BSG+:SPLC23}{inproceedings}{}{}
+    \name{author}{8}{}{%
+      {{hash=BPM}{%
+         family={Bittner},
+         familyi={B\bibinitperiod},
+         given={Paul\bibnamedelima Maximilian},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Schulthei\ss{}},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Greiner},
+         familyi={G\bibinitperiod},
+         given={Sandra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Moosherr},
+         familyi={M\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Krieter},
+         familyi={K\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Tinnes},
+         familyi={T\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kehrer},
+         familyi={K\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th\"{u}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{variation control, software product lines, software variability,
+  projectional editing, software evolution}
+    \strng{namehash}{BPM+1}
+    \strng{fullhash}{BPMSAGSMBKSTCKTTT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bit+23}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Systems and Software Product Line Conf.\
+  (SPLC)}
+    \verb{doi}
+    \verb 10.1145/3579027.3608985
+    \endverb
+    \field{isbn}{9798400700910}
+    \field{pages}{141\bibrangedash 152}
+    \field{title}{{Views on Edits to Variational Software}}
+    \list{location}{1}{%
+      {Tokyo, Japan}%
+    }
+    \field{month}{08}
+    \field{year}{2023}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{BSM+:FSE24}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=BPM}{%
+         family={Bittner},
+         familyi={B\bibinitperiod},
+         given={Paul\bibnamedelima Maximilian},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Schulthei\ss{}},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Moosherr},
+         familyi={M\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kehrer},
+         familyi={K\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Th{\"{u}}m},
+         familyi={T\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{software variability, software evolution, software product lines}
+    \strng{namehash}{BPM+1}
+    \strng{fullhash}{BPMSAMBKTTT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bit+24}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{booktitle}{Proc.\ Int'l Conference on the Foundations of Software
+  Engineering (FSE)}
+    \field{note}{To appear}
+    \field{title}{{Variability-Aware Differencing with DiffDetective}}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{month}{07}
+    \field{year}{2024}
+  \endentry
+\enddatalist
+\endinput

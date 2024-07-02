@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{ }\PYGZsh{}ifdef A
+\PYG{+w}{ }  foo();
+\PYG{g+gd}{\PYGZhy{}\PYGZsh{}else}
+\PYG{g+gd}{\PYGZhy{}  \PYGZsh{}ifdef B}
+\PYG{g+gi}{+  bar();}
+\PYG{g+gi}{+\PYGZsh{}endif}
+\PYG{g+gi}{+\PYGZsh{}if B \PYGZam{}\PYGZam{} !A}
+\PYG{+w}{ }  baz();
+\PYG{g+gd}{\PYGZhy{}  \PYGZsh{}endif}
+\PYG{+w}{ }\PYGZsh{}endif
+\end{Verbatim}

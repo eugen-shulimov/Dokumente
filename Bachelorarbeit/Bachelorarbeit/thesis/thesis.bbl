@@ -1,0 +1,13 @@
+\begin{thebibliography}{OPHS16}
+
+\bibitem[OPHS16]{LatexGuide}
+Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl.
+\newblock {The Not So Short Introduction To \LaTeXe{}}, 2016.
+\newblock {Checked} 2017-12-18.
+
+\bibitem[{The}17]{CTAN}
+{The CTAN Team}.
+\newblock {CTAN Comprehensive \TeX{} Archive Network}, 2017.
+\newblock {Checked} 2017-12-18.
+
+\end{thebibliography}
