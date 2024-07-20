@@ -1,54 +1,8 @@
-\babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {paragraph}{Organization}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Getting Started}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Organisation: Directories}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Main Directory}{2}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Chapters Directory}{3}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Figures Directory}{3}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Pretext Directory}{3}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Appendices Directory}{3}{subsection.1.2.5}%
-\contentsline {chapter}{\numberline {2}Hintergrund}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}C-Präprozessor}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Variabilität Umsetzung mit C-Präprozessor}{6}{section.2.2}%
-\contentsline {chapter}{\numberline {3}The upb\_cs\_thesis Document Class}{7}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Packages and Commands}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Class Packages}{13}{section.4.1}%
-\contentsline {paragraph}{babel: english or ngerman.}{13}{section.4.1}%
-\contentsline {paragraph}{fontenc: T1.}{13}{section.4.1}%
-\contentsline {paragraph}{inputenc: utf8.}{13}{section.4.1}%
-\contentsline {paragraph}{lmodern.}{13}{section.4.1}%
-\contentsline {paragraph}{geometry.}{13}{section.4.1}%
-\contentsline {paragraph}{graphicx.}{13}{section.4.1}%
-\contentsline {paragraph}{hyperref.}{14}{section.4.1}%
-\contentsline {paragraph}{csquotes.}{14}{section.4.1}%
-\contentsline {paragraph}{tikz}{14}{section.4.1}%
-\contentsline {paragraph}{calc.}{14}{section.4.1}%
-\contentsline {paragraph}{titlesec.}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Auxiliary Packages}{14}{section.4.2}%
-\contentsline {paragraph}{amsmath, amssymb, amsfonts.}{14}{section.4.2}%
-\contentsline {paragraph}{amsthm.}{14}{section.4.2}%
-\contentsline {paragraph}{todonotes.}{14}{section.4.2}%
-\contentsline {paragraph}{subfig.}{14}{section*.5}%
-\contentsline {paragraph}{url.}{14}{section*.5}%
-\contentsline {paragraph}{longtable.}{14}{section*.5}%
-\contentsline {paragraph}{booktabs.}{14}{section*.5}%
-\contentsline {paragraph}{acronym.}{14}{section*.5}%
-\contentsline {section}{\numberline {4.3}Custom Commands}{15}{section.4.3}%
-\contentsline {chapter}{\numberline {5}A Short Guide}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Style}{17}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Math Mode}{17}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Footnotes}{18}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Acronyms}{18}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}References}{18}{section.5.2}%
-\contentsline {paragraph}{Bibliographic references.}{19}{definition.5.1}%
-\contentsline {section}{\numberline {5.3}Using Graphics}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Tables}{20}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Bibliographies}{22}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Makefiles}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Makefile Troubleshooting}{25}{section.6.1}%
-\contentsline {paragraph}{Empty bibliography file.}{25}{Item.24}%
-\contentsline {paragraph}{Missing dependencies.}{25}{Item.24}%
-\contentsline {section}{\numberline {6.2}Main Makefile}{26}{section.6.2}%
-\contentsline {section}{\numberline {6.3}figures's Makefile}{26}{section.6.3}%
-\contentsline {chapter}{Bibliography}{28}{section.6.3}%
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Hintergrund}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}C-Präprozessor}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Variabilität Umsetzung mit C-Präprozessor}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Unparse Algorithmus}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Parser von Viegener}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Metrik}{9}{chapter.3}%
+\contentsline {chapter}{Bibliography}{10}{chapter.3}%

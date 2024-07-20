@@ -1,0 +1,184 @@
+\chapter{Unparse Algorithmus}
+\section{Parser von Viegener}
+
+Um zu verstehen was für Informationen verloren werden und der Unparser wiederherstellen muss, betrachten wir den Parser Algorithmus von Viegener. Der Algorithmus überführt einen textbasierten Diff in einen Variation-Diff um. Ein Variation-Diff ist ein gerichteter azyklischer Graph. Dieser Graph stellt dabei zeilenbasiert den textbasierten Diff dar. Die Knoten des Graphen werden durch einen Diff-Typ und einen Code-Typ eingeordnet. Diese Informationen werden der Zeil entnommen, die der Knoten repräsentiert und gelten damit auf für Zeilen eines textbasierten Diffs. Der Diff-Type kann die Werte add, remove oder none einnehmen. Add bedeutet das diese Zeile dem textbasierten Diff hinzugefügt wurde, remove das diese Zeile entfernt wurde und none das die Zeile unverändert geblieben ist. Der Code-Typ kann die Werte if, elif, else, code, oder endif haben. Dabei gibt der Code-Type an, das bei dem Wert if die Zeile eine Anweisung des if-Blocks, dass können die Präprozessor Anweisungen \#if, \#ifdef, oder \#ifndef sein, enthält und der Knoten darstellt. Bei den Wert elif es ist die Anweisung \#elif, bei else die Anweisung \#else. Bei dem Wert code des Code-Typs enthält die Zeile Code und der Knoten stellt dies dar. Der Wert endif gibt and das die Zeile die Anweisung \#endif enthält, in dem Variation-Diff ist dieser Code-Typ nicht enthalten. Die Knoten des Variation-Diffs haben höchstens zwei Elternknoten. Es gibt einen befor Elternknoten, das ist der Elternknoten, welchen der Knoten vor der Änderung hatte. Dieser Elternknoten gibt den umgebenden Präprozessor-Block vor der Änderung an. Es gibt noch einen after Elternknoten das ist der Elternknoten, welchen der Knoten nach der Änderung hat. Dieser Elternknoten gibt den umgebenden Präprozessor-Block nach der Änderung an. Nur Knoten mit Diff-Typ none haben zwei Elternknoten. Die Knoten mit dem Diff-Typ remove haben nur den befor Elternknoten und die Knoten mit dem Diff-Typ add haben nur after Elternknoten. Dabei kann ein befor Elternknoten nicht den Diff-Typ add haben und ein after Elternknoten nicht den Diff-Typ remove. Der Variation-Diff hat noch einen Knoten welcher keine widerspiegelung in dem textbasierten Diff enthält, das ist der Wurzelknoten. Der Wurzelknoten repräsentiert den ganzen textbasierten Diff. Er hat als einziger Knoten in dem Variation-Diff kein Elternknoten. Der Wurzelknoten hat immer den Diff-Typ none und den Code-Typ if, dabei ist das Feature-Mapping wahr.
+
+
+
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\DontPrintSemicolon
+	\KwData{ein textbasierter Diff}
+	\KwResult{ein Variation-Diff}
+	initialisiere ein Stack/Keller $before$ mit dem Wurzelknoten\;
+	initialisiere ein Stack/Keller $after$ mit dem Wurzelknoten\;
+	\;
+	\ForEach{Zeile in dem Patch/Diff}{
+		$\delta$ $\leftarrow$ identifiziere Diff-Typ\;
+		$\gamma$ $\leftarrow$ identifiziere Code-Typ\;
+		$\sigma$ $\leftarrow$ gib relevante Stacks mithilfe von $\delta$ an\;
+		\;
+		\eIf{$\gamma$ = endif}{
+			entpacke $\sigma$ bis ein Knoten mit $\gamma$ = if entpackt wurde\;
+		}{
+			erstelle einen neuen Knoten mit $\delta$, $\gamma$ und Eltern aus $\sigma$\;
+			\If{$\gamma$ $\neq$ code}{
+				füge den neuen Knoten $\sigma$ hinzu\;
+			}
+		}
+	}
+	\caption{Erstellung eines Variation-Diffs aus einem Patch}
+\end{algorithm}
+Der Algorithmus arbeitet wie folgt, ganz am Anfang werden zwei Stacks erstellt und jeweils mit dem Wurzelknoten initialisiert, was in Zeilen 1 und 2 des Algorithmus 1 zu sehen ist. In Zeile 4 ist eine Schleife zu sehen, welche über alle Zeilen des textbasierten Diffs geht. Dabei wird für jede Zeile zuerst der Diff-Typ $\delta$ in Zeile 5 und dann der Code-Typ $\gamma$ in Zeile 6 festgelegt. In Zeile 7 werden die relevanten Stacks $\sigma$ anhand von Diff-Typ $\delta$ bestimmt und zwar wie folgt:
+\[ \sigma =
+\begin{cases}
+	\text{Stack } after      &, \quad \delta = \text{add}\\
+	\text{Stack } befor  &, \quad \delta = \text{remove}\\
+	\text{Stacks } befor \text{ und } after &, \quad \delta = \text{none}
+\end{cases}
+\]
+Danach in Zeile 9 kommen wir zu einer if-Abfrage. Wenn der Code-Typ der bearbeiteten Zeile endif entspricht, dann wird aus den relevanten Stacks in $\sigma$ solange Knoten entnommen bis man ein Knoten mit dem Code-Type $\gamma$ if entnommen hat. In Fall das beide Stacks relevant sind, muss der if Knoten in beiden Stacks gefunden werden. Wenn der Code-Typ nicht endif entspricht kommen wir in dem else-Teil ab Zeile 11 des Algorithmus 1. Dort wird zuerst ein neuer Knoten erstellt, welcher unter anderem auch Diff-Typ $\delta$, Code-Typ $\gamma$ und Elternknoten aus den Stacks von $\sigma$ enthält. Als nächstes wird in Zeile 13 Überprüft ob der erstellter Knoten nicht von Code-Typ code ist, also den Code-Type if, elif, oder else hat. Den Code-Typ endif kann dieser Knoten nicht haben, wegen der if-Abfrage in Zeile 9, welche nicht zulässt das ein Knoten mit diesem Typ zu dieser Stelle gelangen kann. Wenn der Knoten nicht von Code-Typ code ist, dann wird dieser Knoten den relevanten Stacks aus $\sigma$ hinzugefügt, sonst wenn der Knoten den Code-Type code hat wird nichts gemacht.\\
+
+
+Der vorgestellter Algorithmus ist für das Parsen von textbasierten Diffs zu Variation-Diffs ausgelegt aber es ist auch möglich den zum Parsen von C-Präprozessor-Annotierten Code zu Variation-Tree zu verwenden. Um das anstellen zu können müssen wir zwei Sachen anstellen. Zuerst wäre da die Anpassung der Eingabe, da wir C-Präprozessor-Annotierten Code haben aber der Algorithmus einen textbasierten Diff erwartet. Die zweite Sache wäre die Anpassung der Ausgabe, die Ausgabe des Algorithmus ist ein Variation-Diff, wir brauchen aber ein Variation-Tree. Um die Eingabe gerecht für den Algorithmus zu machen, müssen wir unseren C-Präprozessor-Annotierten Code in ein textbasiertes Diff verwandeln. Dazu bilden wir ein Diff mit unseren C-Präprozessor-Annotierten Code als davor und danach Zustand und bekommen ein textbasiertes Diff wo alle Zeilen gleich dem C-Präprozessor-Annotierten Code sind. Dabei hat jede Zeile dieses Diffs den Diff-Typ none. Da jetzt ein Diff gegeben ist, konnen wir auf den Diff den Algorithmus anwenden. Die Ausgabe ist dann ein Variation-Diff und der muss in eine Variation-Tree umgewandelt werden. Um dies anzustellen, bilden wir eine Projektion des Variation-Diffs auf den davor bzw. danach Zustand und bekommen ein Variation-Tree, was auch gewollt ist. Mit den gezeigten zwischen Schritten lässt sich dieser Algorithmus auch für das Parsen von C-Präprozessor-Annotierten Code zu Variation-Trees verwenden.\\
+
+
+Wir wollen die Arbeitsweise des Algorithmus veranschaulichen. Dazu wenden wir den Algorithmus auf den untenstehende künstlich generierte C-Präprozessor-Annotation anwenden. Da hier eine C-Präprozessor-Annotation gegeben ist aber wir ein textbasiertes Diff brauchen, wird wie in dem Abschnitt davor vorgegangen und diese C-Präprozessor-Annotation bildet ein Diff mit sich selbst, somit ist die nötige Eingabe gegeben.
+
+\begin{figure}[h]
+\begin{itemize}
+	\item[1 ] Anweisung1	(a1)
+	\item[2 ] \textbf{\#if} Bedingung1 (b1)
+	\item[3 ] \hspace*{0.5cm} \textbf{\#if} Bedingung2 (b2)
+	\item[4 ] \hspace*{1cm}Anweisung2 (a2)
+	\item[5 ] \hspace*{0.5cm}\textbf{\#else}
+	\item[6 ] \hspace*{1cm}Anweisung3 (a3)
+	\item[7 ] \hspace*{0.5cm}\textbf{\#endif}
+	\item[8 ] \hspace*{0.5cm}Anweisung4 (a4)
+	\item[9 ] \textbf{\#endif}
+\end{itemize}
+\end{figure}
+
+Die Stacks sind erstellt und initialisiert mit dem Wurzelknoten und wir betrachten jetzt die Schleife, die über alle Zeilen des obigen Diffs geht. Wir kommen zur Zeile 1 der C-Präprozessor-Annotation, dort befindet sich eine normale Codezeile, welche nicht zur C-Präprozessor-Annotation gehört. Das ergibt das diese Zeile den Code-Typ code hat und den Diff-Typ none, wie alle anderen Zeilen auch, wegen dem wie dieser Diff gebildet wurde und deshalb lassen wir die Erwähnung des Diff-Typ für jede Zeile sein. Dasselbe gilt auch für die relevanten Stacks in $\sigma$, da alle Zeilen den Diff-Typ none haben, gilt für alle Zeilen auch die gleichen relevanten Stacks und das sind beide. Da diese Zeile nicht Code-Typ endif hat wird ein Knoten mit Code-Type, Diff-Typ, Elternknoten aus den Stacks und dem Inhalt der Zeile und den Variation-Diff hinzugefügt, wie das Aussieht ist in Abbildung 2.1 in dem Kasten nach Z.1 zu sehen.
+
+
+
+
+
+
+\begin{figure}
+\begin{tikzpicture}
+\node (A) at (-0.7,0) {\fbox {
+\begin{tikzpicture}
+	\node[draw,diamond,fill=lightgray,thick] {root}
+	child {node[draw,circle,thick] {a1}};
+\end{tikzpicture}
+}
+};
+\node (B) at (3,0) {\fbox {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1} };
+		\end{tikzpicture}
+	}
+};
+\node (C) at (7,0) {\fbox {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+			child {node[draw,rectangle,thick] {\textbf{if} b2}}};
+		\end{tikzpicture}
+	}
+};
+\node (D) at (11,0) {\fbox {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+				child { node[draw,circle,thick] {a1}}}};
+		\end{tikzpicture}
+	}
+};
+\node (E) at (0,-7) {\fbox {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+				}
+				child { node[draw,rectangle,thick] {\textbf{else}}}
+			};
+		\end{tikzpicture}
+	}
+};
+\node (F) at (5,-7) {\fbox {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+				}
+				child { node[draw,rectangle,thick] {\textbf{else}}
+					child { node[draw,circle,thick] {a3}}
+				}
+			};
+		\end{tikzpicture}
+	}
+};
+\node (G) at (10,-7) {\fbox {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+				}
+				child { node[draw,rectangle,thick] {\textbf{else}}
+					child { node[draw,circle,thick] {a3}}
+				}
+				child { node[draw,circle,thick] {a4}}
+			};
+		\end{tikzpicture}
+	}
+};
+\draw[->,thick] (A) --(B);
+\draw[->,thick] (B) --(C);
+\draw[->,thick] (C) --(D);
+\draw[thick] (D) |- (0,-3.5);
+\draw[->,thick] (0,-3.5) --(E);
+\draw[->,thick] (E) --(F);
+\draw[->,thick] (F) --(G);
+\node (a) at (-0.7,1.7) {Nach Z.1};
+\node (b) at (3,1.7) {Nach Z.2};
+\node (c) at (6.8,2.4) {Nach Z.3};
+\node (d) at (10.8,3.2) {Nach Z.4};
+\node (e) at (0,-10.3) {Nach Z.5};
+\node (f) at (5.2,-10.3) {Nach Z.6};
+\node (g) at (10,-10.3) {Nach Z.8};
+\end{tikzpicture}
+\caption{Beispiel für den Parsen Algorithmus von Viegener}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

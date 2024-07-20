@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  1 JUL 2024 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  11 JUL 2024 16:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1759,9 +1759,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--164
  []
 
 
-Overfull \hbox (37.75978pt too wide) in paragraph at lines 165--166
+Overfull \hbox (0.30318pt too wide) in paragraph at lines 165--166
 \T1/LinuxBiolinumT-TLF/m/n/10.95 Variation-Tree ist ein Baum, welcher die Verzw
-ei-gun-gen/Variationen eines an-notierten Codes darstellt [[][]Bit+22[];
+ei-gun-gen/Variationen eines an-notierten Codes darstellt
  []
 
 
@@ -1864,13 +1864,13 @@ Package logreq Info: Writing requests to 'Arbeitsplan.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42235 strings out of 473938
- 875740 string characters out of 5727392
- 1989893 words of memory out of 5000000
- 64221 multiletter control sequences out of 15000+600000
+ 42232 strings out of 473938
+ 875961 string characters out of 5727392
+ 1988893 words of memory out of 5000000
+ 64218 multiletter control sequences out of 15000+600000
  653992 words of font info for 101 fonts, out of 8000000 for 9000
  1150 hyphenation exceptions out of 8191
- 99i,10n,107p,3162b,1781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,10n,107p,3169b,1781s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\eshul\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ectt
 0800.pk><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/libert
 ine/LinBiolinumT.pfb><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/
@@ -1883,9 +1883,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/eshul/AppData
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/eshul/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/eshul/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on Arbeitsplan.pdf (9 pages, 341865 bytes).
+Output written on Arbeitsplan.pdf (9 pages, 342011 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
+ 327 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

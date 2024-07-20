@@ -1,7 +1,6 @@
 \chapter{Hintergrund}
 \section{C-Präprozessor}
-
-C-Präprozessor ist ein Tool, das den Quellcode vor dem Kompilieren manipuliert~\cite{ABKS13}. Dieses Tool bietet Möglichkeiten zur bedingte Kompilierung, zur  Dateieinbindung und zur Erstellung lexikalische Makros~\cite{ABKS13}. Eine C-Präprozessor-Direktive beginnt mit \# und geht bis zum ersten Whihespace-Zeichen weiter, optional kann nach der Direktive Argument im Rest der Zeile stehen. Der C-Präprozessor hat solche Anweisungen wie, \#include zum Einbinden von Dateien um zum Beispiel Header-Dateien wiederzuverwenden. Wie das Aussehen kann ist in der Abbildung 2.1 Zeile 1 zu sehen(Abb.2.1 Z1). Mit den Anweisungen \#if(Abb.2.1 Z6), \#else(Abb.2.1 Z10), \#elif(Abb.2.1 Z8), \#ifdef(Abb.2.1 Z18), \#ifndef(Abb.2.1 Z2), und \#endif(Abb.2.1 Z4) wird die bedingte Kompilierung erzeugt. Dabei funktionieren \#if, \#else, \#elif, und \#endif vergleichbar mit dem was man aus Programmiersprachen und Pseudocode gewohnt ist. \#ifdef ist ähnlich zu \#if, wird aber nur dann Wahr wenn der drauf folgender Makros definiert ist. \#ifndef ist die Negation von \#ifdef. Die Makros werden durch die Anweisung \#define(Abb.2.1 Z3) erstellt. Der Präprozessor ersetzt dann wehrend seiner Arbeit, dem Makronamen durch seine Definition. Während dieser Arbeit kann ein Makros definiert, umdefiniert und undefiniert werden. Der C-Präprozessor hat noch weitere Anweisungen, auf die wir nicht weiter eingehen. Der C-Präprozessor kann in anderen Programmiersprachen verwendet werden, wenn diese Sprachen syntaktisch ähnlich zu C sind. Beispiel für solchen Sprachen sind C++, Assemblersprachen, Fortran und Java. Der Grund dafür ist, dass der C-Präprozessor ist unabhängig von der zugrundeliegenden Programmiersprache ist. Eine so ähnliche Vorverarbeitungsmöglichkeit ist in vielen anderen Programmiersprachumgebungen.\\
+C-Präprozessor ist ein Tool, das den Quellcode vor dem Kompilieren manipuliert~\cite{ABKS13}. Dieses Tool bietet Möglichkeiten zur bedingte Kompilierung, zur  Dateieinbindung und zur Erstellung lexikalische Makros~\cite{ABKS13}. Eine C-Präprozessor-Direktive beginnt mit \# und geht bis zum ersten Whihtespace-Zeichen weiter, optional kann nach der Direktive Argument im Rest der Zeile stehen. Der C-Präprozessor hat solche Anweisungen wie, \#include zum Einbinden von Dateien, um zum Beispiel Header-Dateien wiederzuverwenden. Wie das Aussehen kann, ist in der Abbildung 2.1 Zeile 1 zu sehen(Abb.2.1 Z1). Mit den Anweisungen \#if (Abb.2.1 Z6), \#else (Abb.2.1 Z10), \#elif (Abb.2.1 Z8), \#ifdef (Abb.2.1 Z18), \#ifndef (Abb.2.1 Z3), und \#endif (Abb.2.1 Z5) wird die bedingte Kompilierung erzeugt. Dabei funktionieren \#if, \#else, \#elif, und \#endif vergleichbar mit dem, was man aus Programmiersprachen und Pseudocode gewohnt ist. \#ifdef ist ähnlich zu \#if, wird aber nur dann wahr, wenn der drauf folgender Makros definiert ist. \#ifndef ist die Negation von \#ifdef. Die Makros werden durch die Anweisung \#define (Abb.2.1 Z4) erstellt. Der Präprozessor ersetzt dann während seiner Arbeit, den Makronamen durch seine Definition. Während dieser Arbeit kann ein Makros definiert, umdefiniert und undefiniert, mit \#undef (Abb.2.1 Z2), werden. Der C-Präprozessor hat noch weitere Anweisungen, auf die wir nicht weiter eingehen. Der C-Präprozessor kann in anderen Programmiersprachen verwendet werden, wenn diese Sprachen syntaktisch ähnlich zu C sind. Beispiel für solchen Sprachen sind C++, Assemblersprachen, Fortran und Java. Der Grund dafür ist, dass der C-Präprozessor ist unabhängig von der zugrundeliegenden Programmiersprache ist. Eine so ähnliche Vorverarbeitungsmöglichkeit ist in vielen anderen Programmiersprachumgebungen.
 
 
 \lstdefinestyle{customc}{
@@ -26,10 +25,10 @@ C-Präprozessor ist ein Tool, das den Quellcode vor dem Kompilieren manipuliert~
 \begin{minipage}{\textwidth}
 \begin{lstlisting}
 #include <stdio.h>
+#undef N
 #ifndef N
 #define N 10
-#endif
-	
+#endif	
 #if N > 10
 #define A "^-^"
 #elif N == 10
@@ -59,14 +58,139 @@ C-Präprozessor ist ein Tool, das den Quellcode vor dem Kompilieren manipuliert~
 
 
 \section{Variabilität Umsetzung mit C-Präprozessor}
-Der C-Präprozessor ist eine Möglichkeit, Variabilität zu erzeugen~\cite{ABKS13}. Um die Variabilität mithilfe des C-Präprozessors zu erzeugen, brauchen wir dessen Möglichkeit zur bedingten Kompilierung~\cite{ABKS13}. Dabei können beliebige Aussageformeln über Features im Quellcode mit den C-Präprozessor-Anweisungen \#if, \#ifdef und, \#ifndef abgebildet werden~\cite{BTS+:ESECFSE22} .\\
+
+Der C-Präprozessor ist eine Möglichkeit, Variabilität zu erzeugen~\cite{ABKS13}. Um die Variabilität mithilfe des C-Präprozessor zu erzeugen, brauchen wir dessen Möglichkeit zur bedingten Kompilierung~\cite{ABKS13}. Dies wird mit den C-Präprozessor-Anweisungen \#if(Abb.2.1 Z6), \#else(Abb.2.1 Z10), \#elif(Abb.2.1 Z8), \#ifdef(Abb.2.1 Z18), \#ifndef(Abb.2.1 Z2), und \#endif(Abb.2.1 Z4) bewerkstelligt. Dabei werden Codefragmente von diesen Anweisungen eingeschlossen. Danach, abhängig davon welche Makros definiert sind, werden bestimmte Codefragmente entweder behalten oder entfernt. Es ist möglich, mit diesen Anweisungen  beliebige Aussageformeln über Features im Quellcode abzubilden~\cite{BTS+:ESECFSE22}. 
+Die Abbildung 2.2 zeigt, ein von uns erstelltes Beispiel, wie ein mit C-Präprozessor-Annotierter Code aussehen kann. Das Beispiel zeigt, dass die Anweisungen von den C-Präprozessor verschachtelt werden können. Dabei ist auch die Abhängigkeit einiger Features von anderen zu erkennen, wie in Zeile 5, wo die Auswahl des Features D nur dann Sinn ergibt, wenn auch die Features A und B ausgewählt sind. Nicht nur die Definition von Features, sondern auch die nicht Definition kann, einen Einfluss auf das Ergebnis haben, wie in der Zeile 16 zu sehen ist. Was dem Beispiel nicht zu entnehmen ist, ist der häufige Fall des lang kommentierten Codeabschnitten.  In dem Beispiel wird, wie bei der Implementierung von funktionsorientierten Softwareproduktlinien, ein Name pro Feature reserviert. Wenn das Feature dann ausgewählt wird, wird dann ein Makro mit Feature-Namen definiert, mit der Anweisung \#define FEATURE\_NAME. Die Abbildungen 2.3 und 2.4 stellen 2 mögliche Ergebnisse der C-Präprozessor Ausführung dar. Dabei wird für die Abbildung 2.3 die Features A und B definiert und für die Abbildung 2.4 nur das Feature C. Dabei ist zu sehen, dass der generierter Code nur in dem Bezeichner j gleich ist und sonst nicht. Das veranschaulicht, wie unterschiedlich das Ergebnis von den C-Präprozessor sein kann.
+\begin{figure}[t]
+\begin{tikzpicture}
+	\node at (0,0) {\begin{minipage}{7cm}\begin{lstlisting}
+#ifdef FEATURE_A && FEATURE_B
+	foo();
+	bar();
+	int i = 18
+#ifdef FEATURE_D
+#define SIZE 200
+	foom();
+#else
+#define SIZE 175
+	i = 17;
+#endif
+	too(i);
+#endif
+#ifdef FEATURE_C 
+	baz();
+#ifndef FEATURE_B
+#define SIZE 100
+#endif
+	bazzz();
+#else
+	boom();
+	broo();
+#endif
+#if SIZE > 180
+	long j;
+#elif SIZE < 111
+	short j;
+#else
+	int j;
+#endif
+	\end{lstlisting}
+	\caption{Beispiel für Umsetzung der Variabilität mit C-Präprozessor}
+\end{minipage}};
+%A=1 B=1 D=0 E=0 C=1 F=0
+	\node at (9,3) {\begin{minipage}{5cm} \begin{lstlisting}
+	foo();
+	bar();
+	int i = 18
+	i = 17
+	too(i);
+	boom;
+	broo();
+	int j;
+	\end{lstlisting}
+	\caption{Ausgabe des C-Präprozessors wenn Feature A=1 B=1 C=0 D=0}
+\end{minipage}};
+%%A=0 B=0 D=0 E=1 C=1 F=1
+	\node at (9,-4) {\begin{minipage}{5cm}
+	\begin{lstlisting}
+	baz();
+	bazzz();
+	short j;		
+	\end{lstlisting}
+	\caption{Ausgabe des C-Präprozessors wenn Feature A=0 B=0 C=1 D=0}
+	\end{minipage}};
+\end{tikzpicture}
+\end{figure}
+
+Die Abbildung 2.5 zeigt Beispiele für vier Patern, welche häufig bei der Umsetzung der Variabilität mit C-Präprozessor verwendet werden. Oben rechts in der Abbildung 2.5 ist alternative Includes zu sehen. Abhängig von der Definition des Features werden unterschiedliche Header-Dateien eingefügt. Das Beispiel zeigt, dass wenn das Feature WINDOWS definiert wird, der Windows-Header eingefügt, sonst der von Unix. Bei alternative Funktionsdefinitionen oben links zu sehen, gibt das Feature an, ob oder wie eine oder mehrere Funktionen definiert sind. In der Abbildung ist zu sehen, dass entweder eine Funktion $foo()$ definiert wird oder alle Stellen, wo diese auftaucht durch 0 ersetzt werden. Das dritte Beispiel zeigt, dass wir die Makros während der C-Präprozessor Ausführung definieren und undefinieren können. Dazu ist es auch Möglich, Makros umzudefinieren. In dem Beispiel ist das Feature FEAT\_WINDOWS automatisch definiert. Wenn aber des Feature FEAT\_SELINUS definiert wird, wird das Feature FEAT\_LINUS efiniert und das Feature FEAT\_WINDOWS undefiniert. Damit wird das automatisch definierte Feature außer Kraft gesetzt. In dem letzten Beispiel rechts unten ist alternative Makrodefinition abgebildet. Abhängig davon, ob das Feature A definiert ist, wird des Makro SIZE mit unterschiedlichen Werten definiert, was ich auf den allokierten Speicher auswirkt.
 
 
+\begin{figure}[H]
+	\hspace{2cm}
+	\begin{minipage}{0.5\textwidth}
+	\begin{lstlisting}
+#ifdef WINDOWS
+#include <windows.h>
+#else
+#include <unix.h>
+#endif
+...
+	\end{lstlisting}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+	\begin{lstlisting}
+#ifdef FOO
+int foo(){...}
+#else
+#define foo(...) 0
+#endif
 
+int i = 429 + foo()
+...
+	\end{lstlisting}	
+	\end{minipage}
+	
+	\hspace{2cm}
+	\begin{minipage}{0.5\textwidth}
+	\begin{lstlisting}
+#ifdef FEAT_SELINUX
+#define FEAT_LINUX 1
+#undef	FEAT_WINDOWS
+#endif
 
+#ifdef FEAT_WINDOWS
+...
+	\end{lstlisting}		
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+	\begin{lstlisting}
+#ifdef 	A
+#define SIZE 128
+#else
+#define SIZE 64
+#endif
 
-
-
+...allocate(SIZE)...
+	\end{lstlisting}	
+	\end{minipage}
+	
+\caption{Beispiele für Variabilität Umsetzung mit C-Präprozessor Patern }
+\end{figure}
+%#ifdef FEATURE_E
+%#include <head1.h>
+%#else
+%#include <head2.h>
+%#endif
+%int* ptr;
+%ptr = (int*)malloc(SIZE * sizeof(int));
+%for(int i = 0; i < SIZE ; i++){
+%	ptr[i] = goooo() + 37*foop();
+%}
+%#ifdef FEATURE_F
+%int foop() {....}
+%#else
+%#define foop(...) 0
+%#endif
 
 
 
