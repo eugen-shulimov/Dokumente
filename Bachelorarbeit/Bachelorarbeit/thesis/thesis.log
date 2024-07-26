@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  19 JUL 2024 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  26 JUL 2024 19:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1199,7 +1199,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count375
 
 (pretext/titlepage.tex
-<figures/uni-logo.pdf, id=33, 555.07375pt x 146.5475pt>
+<figures/uni-logo.pdf, id=65, 555.07375pt x 146.5475pt>
 File: figures/uni-logo.pdf Graphic file (type pdf)
 <use figures/uni-logo.pdf>
 Package pdftex.def Info: figures/uni-logo.pdf  used on input line 9.
@@ -1288,14 +1288,18 @@ although it is yet undefined on input line 1.
 
 [8
 
-] (body.tex (chapters/hintergrund.tex
+] (body.tex (chapters/einleitung.tex
 Kapitel 1.
+) (chapters/hintergrund.tex
 
-LaTeX Warning: Citation `ABKS13' on page 1 undefined on input line 3.
+[1
 
+]
 
-LaTeX Warning: Citation `ABKS13' on page 1 undefined on input line 3.
+[2
 
+]
+Kapitel 2.
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
@@ -1320,19 +1324,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[1
-
-]
-
-LaTeX Warning: Citation `ABKS13' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `ABKS13' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `BTS+:ESECFSE22' on page 2 undefined on input line 62.
-
-
+[3]
 Underfull \hbox (badness 4531) in paragraph at lines 111--111
 \T1/lmr/m/n/10.95 C-Präprozessors wenn Fea-
  []
@@ -1344,7 +1336,7 @@ Underfull \hbox (badness 4531) in paragraph at lines 120--120
 
 
 
-[2]
+[4{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 Overfull \hbox (61.77217pt too wide) in paragraph at lines 129--152
 []  $[]$ $[]$ 
  []
@@ -1359,18 +1351,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[3{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
-c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}])
-(chapters/algorithmus.tex
+[5{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
+c}]) (chapters/algorithmus.tex
 
-[4]
-Kapitel 2.
+[6]
+Kapitel 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[5
+[7
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
@@ -1384,54 +1375,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
 
 
-[6{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
+[8{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
 c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.en
 c}]
-Overfull \hbox (9.73659pt too wide) in paragraph at lines 62--63
-\T1/lmr/m/n/10.95 Annotation, dort be-fin-det sich ei-ne nor-ma-le Co-de-zei-le
-, wel-che nicht zur C-Präprozessor-Annotation
- []
+
+[9]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (chapters/metrik.tex
 
-[7]
+[10]
 
-[8]
-Kapitel 3.
-))
+[11]
 
-[9
-
-] (thesis.bbl
-
-[10
+[12
 
 ]
+Kapitel 4.
+) (chapters/implementierung.tex
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+[13]
 
-) (appendix.tex)
+[14
 
-[11] (thesis.aux)
+]
+Kapitel 5.
+))
+
+[15] (thesis.bbl
+
+[16
+
+]) (appendix.tex)
+
+[17] (thesis.aux)
  ***********
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CF5354F3E43D7117931F8EBCCEA17091;971.
+(rerunfilecheck)             Checksum: 1BA1A42AEB08AD602662F6119C27F001;2241.
  ) 
 Here is how much of TeX's memory you used:
- 32674 strings out of 473938
- 626390 string characters out of 5727392
- 2098893 words of memory out of 5000000
- 54730 multiletter control sequences out of 15000+600000
- 623633 words of font info for 73 fonts, out of 8000000 for 9000
+ 32721 strings out of 473938
+ 627371 string characters out of 5727392
+ 2097893 words of memory out of 5000000
+ 54755 multiletter control sequences out of 15000+600000
+ 626631 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,18n,136p,2551b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,19n,136p,3577b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb
@@ -1441,15 +1434,16 @@ b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
 ><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
 <C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><
-C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:
-/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:
-/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:
-/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:
-/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:
-/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on thesis.pdf (19 pages, 791839 bytes).
+C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:
+/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on thesis.pdf (25 pages, 814857 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

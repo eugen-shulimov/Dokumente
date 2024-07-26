@@ -1,3 +1,15 @@
-\begin{thebibliography}{}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{ABKS13}
+
+\bibitem[ABKS13]{ABKS13}
+Sven Apel, Don Batory, Christian K\"astner, and Gunter Saake.
+\newblock {\em {Feature-Oriented Software Product Lines}}.
+\newblock Berlin, Heidelberg, 2013.
+
+\bibitem[BTS{\etalchar{+}}22]{BTS+:ESECFSE22}
+Paul~Maximilian Bittner, Christof Tinnes, Alexander Schulthei\ss{}, S{\"{o}}ren
+  Viegener, Timo Kehrer, and Thomas Th{\"{u}}m.
+\newblock {Classifying Edits to Variability in Source Code}.
+\newblock pages 196--208, New York, NY, USA, November 2022.
 
 \end{thebibliography}
