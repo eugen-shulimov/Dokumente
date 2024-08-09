@@ -4,3 +4,210 @@
 %Aussageformeln vergleichen bei semantischer gleichheit von Code und Diffs
 %Am Anfang allgemein zum vergleichen erzählen mit Tabelle für beide Datenschtrukturen und Varianten. Danach Zwei unter Kapietel für jede DatenStruktur wo man genauer auf symantische Gleichheit eingeht, andere kann man erwähnen aber sie sind bei beiden sehr ähnlich
 %oder nach dem anfang unterkapietel für jede Art des Vergleichs machen , wie Groß muss so ein Unterkapietel sein? Bei semantischer gleichheit vileicht Unterunterkapiel für datenstrukturen
+
+
+Nachdem wir eine algorithmische Lösung für das Problem ausgearbeitet haben, müssen wir entscheiden ob unsere Lösung korrekt ist. Um die Kriterien an denn die Korrektheit festgelegt wird, wird es in folgenden gehen. Wir stellen Ihnen unsere Metrik für die Korrektheit des Unparsens. Wir haben uns für drei mögliche Korrektheitsstufen entschieden, an denen wir die Korrektheit entscheiden. Diese Stufen sind syntaktische Gleichheit, syntaktische Gleichheit ohne Whitespace und semantische Gleichheit. In der Tabelle 4.1 ist eine Zusammenfassung aufgeführt, wie die 
+
+
+
+\begin{table}
+
+\begin{center}
+	\begin{tabular}{ c||c|c|c| } 
+		& \parbox[][2.5cm][]{4cm}{Variation-Tree\\ \hspace*{1cm} $\downarrow$ \\ C-Präprozessor-Annotierter Code} & \parbox[][][]{4cm}{Variation-Diff\\ \hspace*{1cm} $\downarrow$ \\ textbasierter Diff} \\ 
+		\hline
+		Syntaktische Gleichheit & \parbox[][3cm][]{5cm}{$C$ = C-Präprozessor-Annotierter Code\\
+		$C_p$ = parse($C$)\\
+		$C_{pu}$ = unparse($C_p$)\\
+		stringEquals($C,C_{pu}$)==True} & \parbox[][3cm][]{5cm}{$D$ = Textbasierter Diff\\
+		$D_p$ = parse($D$)\\
+		$D_{pu}$ = unparse($D_p$)\\
+		stringEquals($D,D_{pu}$)==True} \\ 
+		\hline
+		\parbox[][1cm][]{4cm}{Syntaktische Gleichheit ohne Whitespace} & \parbox[][4cm][]{5.3cm}{$C$ = C-Präprozessor-Annotierter Code\\
+			$C_p$ = parse($C$)\\
+			$C_{pu}$ = unparse($C_p$)\\
+			$C_w$ = deleteWhitespace($C$)
+			$C_puw{}$ = deleteWhitespace($C_{pu}$)
+			stringEquals($C_w,C_{puw}$)==True} & \parbox[][4cm][]{5.3cm}{$D$ = Textbasierter Diff\\
+			$D_p$ = parse($D$)\\
+			$D_{pu}$ = unparse($D_p$)\\
+			$D_w$ = deleteWhitespace($D$)
+			$D_puw{}$ = deleteWhitespace($D_{pu}$)
+			stringEquals($D_w,D_{puw}$)==True} \\ 
+		\hline
+		Semantische Gleichheit &  \parbox[][3cm][]{4cm}{Out of Scope\\
+		unentscheidbar für C\\
+		exponentielles Wachstum für CPP}  &  \parbox[][6cm][]{5cm}{$D$ = Textbasierter Diff\\
+		SynGl = Syntaktische Gleichheit\\
+		SynGlOW = Syntaktische Gleichheit ohne Whitespace\\
+		$D_p$ = parse($D$)\\
+		$D_{pu}$ = unparse($D_p$)\\
+		Für $\forall t \in \{\textcolor{green}{a},\textcolor{orange}{b}\}$\\
+		$p_1$ = textProject($D,t$)\\
+		$p_2$ = textProject($D_{pu},t$)\\
+		SynGl($p_1,p_2$) == True $\lor$ SynGlOW($p_1,p_2$) == True
+		} \\
+		\hline
+	\end{tabular}
+\end{center}
+\caption{Metrik für die Korrektheit}
+\end{table}
+
+
+In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktische Korrektheit bedeutet das der zu vergleichender Text in jedem Zeichen identisch ist. Der Vergleich auf syntaktische Korrektheit sieht für mit C-Präprozessor-Annotierter Code und textbasierte Diffs gleich aus. Hierfür muss der ausgangs C-Präprozessor-Annotierter Code bzw. der textbasierter Diff  mit dem Ergebnis nach dem Parse und Unparse Schritt in jedem Zeichen übereinstimmen.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+	\node[align=left,rectangle split,draw,rectangle split parts=2] (A) at (0,0) {\parbox{2cm}{\begin{singlespace}
+				\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
+	\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
+	\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
+\end{singlespace}}};
+		\node[rectangle split,draw,rectangle split parts=2] (B) at (0,-5) {S1 ='\#ifdef A$\backslash$n foo() $\backslash$n\#endif' \nodepart{two}S3 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo() $\backslash$n\#endif'};
+	\draw[-{>[scale=2.5,
+		length=6,
+		width=3]},line width=0.7pt] (A) -- (B)  node[midway,sloped,above] {$toString$} ;
+	
+	
+		\node[align=left,rectangle split,draw,rectangle split parts=2] (C) at (9,0) {\parbox{2cm}{\begin{singlespace}
+				\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
+		\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
+				\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
+	\end{singlespace}}};
+	\node[rectangle split,draw,rectangle split parts=2] (D) at (9,-5) {S2 ='\#ifdef A$\backslash$n foo() $\backslash$n\#endif'\nodepart{two}S4 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo() $\backslash$n\#endif'};
+	\draw[-{>[scale=2.5,
+		length=6,
+		width=3]},line width=0.7pt] (C) -- (D)  node[midway,sloped,above] {$toString$} ;
+	
+	\node[rectangle split,draw,rectangle split parts=2] (E) at (4.5,-8){equals(S1,S2) == True \nodepart{two} equals(S3,S4) == True};
+	\draw[-{>[scale=2.5,
+		length=6,
+		width=3]},line width=0.7pt] (B) -- (E);
+	\draw[-{>[scale=2.5,
+		length=6,
+		width=3]},line width=0.7pt] (D) -- (E);
+	
+	\draw[-{>[scale=2.5,
+		length=6,
+		width=3]},line width=0.7pt] (A) -- (C)  node[midway,sloped,above] {$Parse$ und $Unparse$ Schritt} ;
+	
+\end{tikzpicture}
+\caption{Beispiel für Syntaktische Gleichheit }
+\end{figure}
+
+
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[align=left,rectangle split,draw,rectangle split parts=2] (A) at (0,0) {\parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
+			\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \\ \#endif
+		\end{singlespace}}};
+		\node[rectangle split,draw,rectangle split parts=2] (B) at (0,-6) {S1 ='\#ifdefAfoo()\#endif'\nodepart{two}S3 ='\#ifdefA+boo()-foo()\#endif'};
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (A) -- (B)  node[midway,sloped,above] {$toStringOW$} ;
+		
+		
+		\node[align=left,rectangle split,draw,rectangle split parts=2] (C) at (9,0) {\parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} foo() \\ \\ \#endif
+			\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
+		\end{singlespace}}};
+		\node[rectangle split,draw,rectangle split parts=2] (D) at (9,-6) {S2 ='\#ifdefAfoo()\#endif'\nodepart{two}S4 ='\#ifdefA+boo()-foo()\#endif'};
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (C) -- (D)  node[midway,sloped,above] {$toStringOW$} ;
+		
+		\node[rectangle split,draw,rectangle split parts=2] (E) at (4.5,-8.5){equals(S1,S2) == True \nodepart{two} equals(S3,S4) == True};
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (B) -- (E);
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (D) -- (E);
+		
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (A) -- (C)  node[midway,sloped,above] {$Parse$ und $Unparse$ Schritt} ;
+		
+	\end{tikzpicture}
+	\caption{Beispiel für Syntaktische Gleichheit ohne Whitespace }
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+		\node[draw,align=left] (U) at (-1,-11) {\parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
+		\end{singlespace}}};
+		\node[draw,align=left] (V) at (9,-11) {\parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} -foo() \\ \hspace*{2mm} +boo() \\ \#endif
+		\end{singlespace}}};
+		\node[draw,align=left] (Z) at (4,-8.5) {\parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
+		\end{singlespace}}};
+		\node[draw,align=left] (X) at (4,-13.5) {\parbox{2cm}{\begin{singlespace}
+					\#ifdef A \\ \hspace*{2mm} boo() \\ \#endif
+		\end{singlespace}}};
+	
+		\node[draw,align=center] (A) at (4,-6) {Syntaktische Gleichheit == True\\ $\lor$ \\ Syntaktische Gleichheit ohne Whitespace == True};
+	
+		\node[draw,align=center] (B) at (4,-16) {Syntaktische Gleichheit == True\\ $\lor$ \\ Syntaktische Gleichheit ohne Whitespace == True};
+	
+	
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (U) -- (Z) node[midway,sloped,above] {$projectBefore$};
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (U) -- (X) node[midway,sloped,above] {$projectAafter$};
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (V) -- (Z) node[midway,sloped,above] {$projectBefore$};
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (V) -- (X) node[midway,sloped,above] {$projectAfter$};
+			
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (Z) -- (A) ;
+			
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (X) -- (B) ;
+			
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (U) -- (V) node[midway,sloped,above] {$Parse$ und $Unparse$ Schritt};
+			
+	\end{tikzpicture}
+	\caption{Beispiel für Semantische Gleichheit }
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

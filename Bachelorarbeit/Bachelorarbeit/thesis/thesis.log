@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  26 JUL 2024 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  9 AUG 2024 22:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -876,19 +876,29 @@ Package: suffix 2006/07/15 1.5a Variant command support
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 \AC@clearlist=\toks49
-) (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen302
+\pgfarrowlength=\dimen303
+\pgfarrowwidth=\dimen304
+\pgfarrowlinewidth=\dimen305
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count352
 \lst@gtempboxa=\box71
 \lst@token=\toks50
 \lst@length=\count353
-\lst@currlwidth=\dimen302
+\lst@currlwidth=\dimen306
 \lst@column=\count354
 \lst@pos=\count355
-\lst@lostspace=\dimen303
-\lst@width=\dimen304
+\lst@lostspace=\dimen307
+\lst@width=\dimen308
 \lst@newlines=\count356
 \lst@lineno=\count357
-\lst@maxwidth=\dimen305
+\lst@maxwidth=\dimen309
+
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
 )
@@ -915,15 +925,15 @@ Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
 \TP@textbox=\box75
 \TP@holdbox=\box76
-\TPHorizModule=\dimen306
-\TPVertModule=\dimen307
-\TP@margin=\dimen308
-\TP@absmargin=\dimen309
+\TPHorizModule=\dimen310
+\TPVertModule=\dimen311
+\TP@margin=\dimen312
+\TP@absmargin=\dimen313
 
 Grid set 16 x 16 = 37.34424pt x 52.81541pt
-\TPboxrulesize=\dimen310
-\TP@ox=\dimen311
-\TP@oy=\dimen312
+\TPboxrulesize=\dimen314
+\TP@ox=\dimen315
+\TP@oy=\dimen316
 \TP@tbargs=\toks53
 TextBlockOrigin set to 0pt x 0pt
 )
@@ -950,12 +960,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip81
 \algomargin=\skip82
 \skipalgocfslide=\skip83
-\algowidth=\dimen313
-\inoutsize=\dimen314
-\inoutindent=\dimen315
-\interspacetitleruled=\dimen316
-\interspacealgoruled=\dimen317
-\interspacetitleboxruled=\dimen318
+\algowidth=\dimen317
+\inoutsize=\dimen318
+\inoutindent=\dimen319
+\interspacetitleruled=\dimen320
+\interspacealgoruled=\dimen321
+\interspacetitleboxruled=\dimen322
 \algocf@ruledwidth=\skip84
 \algocf@inoutbox=\box77
 \algocf@inputbox=\box78
@@ -1061,14 +1071,14 @@ z/libraries\tikzlibrarydecorations.pathmorphing.code.tex
 z/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 decorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen319
-\pgfdecoratedremainingdistance=\dimen320
-\pgfdecoratedinputsegmentcompleteddistance=\dimen321
-\pgfdecoratedinputsegmentremainingdistance=\dimen322
-\pgf@decorate@distancetomove=\dimen323
+\pgfdecoratedcompleteddistance=\dimen323
+\pgfdecoratedremainingdistance=\dimen324
+\pgfdecoratedinputsegmentcompleteddistance=\dimen325
+\pgfdecoratedinputsegmentremainingdistance=\dimen326
+\pgf@decorate@distancetomove=\dimen327
 \pgf@decorate@repeatstate=\count366
-\pgfdecorationsegmentamplitude=\dimen324
-\pgfdecorationsegmentlength=\dimen325
+\pgfdecorationsegmentamplitude=\dimen328
+\pgfdecorationsegmentlength=\dimen329
 )
 \tikz@lib@dec@box=\box105
 )
@@ -1081,8 +1091,90 @@ ions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarydecorations.shapes.code.tex
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
-ions\pgflibrarydecorations.shapes.code.tex)))) (commands.tex
-\c@definition=\count367
+ions\pgflibrarydecorations.shapes.code.tex)))
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalone.s
+ty
+Package: standalone 2022/10/10 v1.3b Package to include TeX sub-files with prea
+mbles
+ (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/currfile\currfile.sty
+Package: currfile 2024/03/14 v1.0 Provides the file path elements of the curren
+t input file
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook.sty
+Package: filehook 2022/10/25 v0.8b Hooks for input files
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook-2020.
+sty
+Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
+))
+\c@currfiledepth=\count367
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/gincltex\gincltex.sty
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/svn-prov\svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box106
+)
+\tc@llx=\dimen330
+\tc@lly=\dimen331
+\tc@urx=\dimen332
+\tc@ury=\dimen333
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen334
+\adjbox@Height=\dimen335
+\adjbox@Depth=\dimen336
+\adjbox@Totalheight=\dimen337
+\adjbox@pwidth=\dimen338
+\adjbox@pheight=\dimen339
+\adjbox@pdepth=\dimen340
+\adjbox@ptotalheight=\dimen341
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box107
+\sift@deathcycles=\count368
+\@vwid@loff=\dimen342
+\@vwid@roff=\dimen343
+))
+\gincltex@box=\box108
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/filemod\filemod-expmin.
+sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+)) (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip94
+\bibsep=\skip95
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count369
+)) (commands.tex
+\c@definition=\count370
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1097,8 +1189,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count368
-\l__pdf_internal_box=\box106
+\l__color_backend_stack_int=\count371
+\l__pdf_internal_box=\box109
 ) (thesis.aux)
 \openout1 = `thesis.aux'.
 
@@ -1159,23 +1251,31 @@ LaTeX Font Info:    ... okay on input line 29.
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count369
-\scratchdimen=\dimen326
-\scratchbox=\box107
-\nofMPsegments=\count370
-\nofMParguments=\count371
+\scratchcounter=\count372
+\scratchdimen=\dimen344
+\scratchbox=\box110
+\nofMPsegments=\count373
+\nofMParguments=\count374
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count372
-\MPscratchDim=\dimen327
-\MPnumerator=\count373
-\makeMPintoPDFobject=\count374
+\MPscratchCnt=\count375
+\MPscratchDim=\dimen345
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks55
 )
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
@@ -1196,10 +1296,10 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count375
+\c@lstlisting=\count378
 
 (pretext/titlepage.tex
-<figures/uni-logo.pdf, id=65, 555.07375pt x 146.5475pt>
+<figures/uni-logo.pdf, id=69, 555.07375pt x 146.5475pt>
 File: figures/uni-logo.pdf Graphic file (type pdf)
 <use figures/uni-logo.pdf>
 Package pdftex.def Info: figures/uni-logo.pdf  used on input line 9.
@@ -1300,49 +1400,54 @@ Kapitel 1.
 
 ]
 Kapitel 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-6.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+3.
 
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 27.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 34.
 
-Overfull \hbox (87.7916pt too wide) in paragraph at lines 24--56
+Overfull \hbox (87.7916pt too wide) in paragraph at lines 31--63
 []|  $[]$ 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1292) has occurred while \output is active []
 
 
 
 [3]
-Underfull \hbox (badness 4531) in paragraph at lines 111--111
+Underfull \hbox (badness 4531) in paragraph at lines 118--118
 \T1/lmr/m/n/10.95 C-Präprozessors wenn Fea-
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 120--120
+Underfull \hbox (badness 4531) in paragraph at lines 127--127
 \T1/lmr/m/n/10.95 C-Präprozessors wenn Fea-
  []
 
 
 
-[4{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-Overfull \hbox (61.77217pt too wide) in paragraph at lines 129--152
+[4]
+Overfull \hbox (61.77217pt too wide) in paragraph at lines 136--159
 []  $[]$ $[]$ 
  []
 
 
-Overfull \hbox (61.77217pt too wide) in paragraph at lines 153--176
+Overfull \hbox (61.77217pt too wide) in paragraph at lines 160--183
 []  $[]$ $[]$ 
  []
 
@@ -1352,7 +1457,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [5{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
-c}]) (chapters/algorithmus.tex
+c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}])
+(chapters/algorithmus.tex
 
 [6]
 Kapitel 3.
@@ -1380,70 +1486,339 @@ c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.en
 c}]
 
 [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (chapters/metrik.tex
 
 [10]
 
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+
 [11]
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+[]$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
+ []
 
-[12
 
-]
-Kapitel 4.
-) (chapters/implementierung.tex
+LaTeX Warning: Unexpected alignment  on input line 198.
+
+
+LaTeX Warning: Unexpected alignment  on input line 201.
+
+
+LaTeX Warning: Unexpected alignment  on input line 203.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+[]$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
+.95 C$\T1/lmr/m/n/10.95 )
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 208.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+\OML/lmm/m/it/10.95 D[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
+.95 D$\T1/lmr/m/n/10.95 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+\OML/lmm/m/it/10.95 D[]uw[]$ \T1/lmr/m/n/10.95 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+\T1/lmr/m/n/10.95 deleteWhitespace($\OML/lmm/m/it/10.95 D[]$\T1/lmr/m/n/10.95 )
+
+ []
+
+
+Overfull \hbox (2.43004pt too wide) in paragraph at lines 213--213
+\T1/lmr/m/n/10.95 stringEquals($\OML/lmm/m/it/10.95 D[]; D[]$\T1/lmr/m/n/10.95 
+)==True 
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 213.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/lmr/m/n/10.95 exponentielles Wachs-
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 217.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+\T1/lmr/m/n/10.95 SynGlOW = Syn-tak-ti-sche
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 226--226
+\T1/lmr/m/n/10.95 SynGl($\OML/lmm/m/it/10.95 p[]; p[]$\T1/lmr/m/n/10.95 ) == Tr
+ue $\OMS/lmsy/m/n/10.95 _$
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 226.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[12]) (chapters/metrik.tex
 
 [13]
 
 [14
 
 ]
+Kapitel 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+\T1/lmr/m/n/10.95 C-Präprozessor-
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 17.
+
+
+LaTeX Warning: Unexpected alignment  on input line 17.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 22.
+
+
+LaTeX Warning: Unexpected alignment  on input line 25.
+
+
+LaTeX Warning: Unexpected alignment  on input line 27.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
+.95 C$\T1/lmr/m/n/10.95 )
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 32.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\OML/lmm/m/it/10.95 D[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
+.95 D$\T1/lmr/m/n/10.95 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\OML/lmm/m/it/10.95 D[]uw[]$ \T1/lmr/m/n/10.95 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\T1/lmr/m/n/10.95 deleteWhitespace($\OML/lmm/m/it/10.95 D[]$\T1/lmr/m/n/10.95 )
+
+ []
+
+
+Overfull \hbox (2.43004pt too wide) in paragraph at lines 37--37
+\T1/lmr/m/n/10.95 stringEquals($\OML/lmm/m/it/10.95 D[]; D[]$\T1/lmr/m/n/10.95 
+)==True 
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/lmr/m/n/10.95 exponentielles Wachs-
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 41.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 SynGlOW = Syn-tak-ti-sche
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 SynGl($\OML/lmm/m/it/10.95 p[]; p[]$\T1/lmr/m/n/10.95 ) == Tr
+ue $\OMS/lmsy/m/n/10.95 _$
+ []
+
+
+LaTeX Warning: Unexpected alignment  on input line 50.
+
+
+Overfull \hbox (19.9248pt too wide) in paragraph at lines 96--97
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+
+ []
+
+) (chapters/implementierung.tex
+
+[15]
+
+[16]
+
+[17]
+
+[18]
 Kapitel 5.
 ))
 
-[15] (thesis.bbl
+[19
 
-[16
+] (thesis.bbl
 
-]) (appendix.tex)
+[20
 
-[17] (thesis.aux)
+]
+Underfull \hbox (badness 1092) in paragraph at lines 32--37
+\T1/lmr/m/n/10.95 si-fy-ing Edits to Va-ria-bi-li-ty in Sour-ce Co-de,'' in \T1
+/lmr/m/it/10.95 Proc. Eu-rop. Soft-wa-re En-gi-nee-ring
+ []
+
+) (appendix.tex)
+
+[21] (thesis.aux)
  ***********
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1BA1A42AEB08AD602662F6119C27F001;2241.
+(rerunfilecheck)             Checksum: B5BFA4F1D31838E1F9EA4A6BE8B8443A;2403.
  ) 
 Here is how much of TeX's memory you used:
- 32721 strings out of 473938
- 627371 string characters out of 5727392
- 2097893 words of memory out of 5000000
- 54755 multiletter control sequences out of 15000+600000
- 626631 words of font info for 74 fonts, out of 8000000 for 9000
+ 34942 strings out of 473938
+ 671696 string characters out of 5727392
+ 2098893 words of memory out of 5000000
+ 56896 multiletter control sequences out of 15000+600000
+ 629475 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,19n,136p,3577b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,19n,136p,3577b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb
 ><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pf
-b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
-b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pf
-b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
-><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-<C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><
-C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:
-/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on thesis.pdf (25 pages, 814857 bytes).
+b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsco10.
+pfb><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.
+pfb><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.
+pfb><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.p
+fb><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
+b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
+><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
+<C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
+:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/
+Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/
+Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/
+Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/
+Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/
+Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on thesis.pdf (29 pages, 902659 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 498 PDF objects out of 1000 (max. 8388607)
+ 184 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
