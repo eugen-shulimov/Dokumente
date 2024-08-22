@@ -6,11 +6,11 @@
 %oder nach dem anfang unterkapietel für jede Art des Vergleichs machen , wie Groß muss so ein Unterkapietel sein? Bei semantischer gleichheit vileicht Unterunterkapiel für datenstrukturen
 
 
-Nachdem wir eine algorithmische Lösung für das Problem ausgearbeitet haben, müssen wir entscheiden ob unsere Lösung korrekt ist. Um die Kriterien an denn die Korrektheit festgelegt wird, wird es in folgenden gehen. Wir stellen Ihnen unsere Metrik für die Korrektheit des Unparsens. Wir haben uns für drei mögliche Korrektheitsstufen entschieden, an denen wir die Korrektheit entscheiden. Diese Stufen sind syntaktische Gleichheit, syntaktische Gleichheit ohne Whitespace und semantische Gleichheit. In der Tabelle 4.1 ist eine Zusammenfassung aufgeführt, wie die 
+Nachdem wir eine algorithmische Lösung für das Problem ausgearbeitet haben, müssen wir entscheiden ob unsere Lösung korrekt ist. Um die Kriterien an denn die Korrektheit festgelegt wird, wird es in folgenden gehen. Wir stellen Ihnen unsere Metrik für die Korrektheit des Unparsens. Wir haben uns für drei mögliche Arten der Korrektheit entschieden, an denen wir die Korrektheit entscheiden. Diese Arten sind syntaktische Gleichheit, syntaktische Gleichheit ohne Whitespace und semantische Gleichheit. Wenn die ausgangs Eingabe und das Ergebnis der ausgangs Eingabe nach Parsen und Unparsen eine dieser Gleichheiten erfühlen gilt das Unparsen als Korrekt.  In der Tabelle 4.1 ist kurz Zusammengefasst wie jeweils die Art der Korrektheit bezogen auf C-Präprozessor-Annotierter Code oder textbasierte Diffs zu verstehen ist.
 
 
 
-\begin{table}
+\begin{table}[H]
 
 \begin{center}
 	\begin{tabular}{ c||c|c|c| } 
@@ -55,9 +55,9 @@ Nachdem wir eine algorithmische Lösung für das Problem ausgearbeitet haben, m�
 \end{table}
 
 
-In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktische Korrektheit bedeutet das der zu vergleichender Text in jedem Zeichen identisch ist. Der Vergleich auf syntaktische Korrektheit sieht für mit C-Präprozessor-Annotierter Code und textbasierte Diffs gleich aus. Hierfür muss der ausgangs C-Präprozessor-Annotierter Code bzw. der textbasierter Diff  mit dem Ergebnis nach dem Parse und Unparse Schritt in jedem Zeichen übereinstimmen.
+In diesem Abschnitt sprechen wir über die syntaktische Korrektheit, die zweite Zeile aus der Tabelle 4.1. Syntaktische Korrektheit bedeutet das der zu vergleichende Text in jedem Zeichen identisch ist. Der Vergleich auf syntaktische Korrektheit sieht für mit C-Präprozessor-Annotierter Code und textbasierte Diffs gleich aus, was in der Abbildung 4.1 zu sehen ist. Hierfür muss der ausgangs C-Präprozessor-Annotierter Code bzw. der textbasierter Diff  mit dem Ergebnis nach dem Parse und Unparse Schritt in jedem Zeichen übereinstimmen. Wie in der Abbildung 4.1 wird ein C-Präprozessor-Annotierter Code bzw. der textbasierter Diff genommen, eine dann darauf Parser und Unparser angewendet. Das Ergebnis und der C-Präprozessor-Annotierter Code bzw. der textbasierter Diff wird dann jeweils in ein String umgewandelt und diese dann auf Gleichheit geprüft. So wird die syntaktische Gleichheit von den C-Präprozessor-Annotierten Code bzw. den textbasierten Diff und den Ergebnis von Parser und Unparser darauf überprüft.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
 	\node[align=left,rectangle split,draw,rectangle split parts=2] (A) at (0,0) {\parbox{2cm}{\begin{singlespace}
@@ -65,7 +65,7 @@ In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktisch
 	\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
 	\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
 \end{singlespace}}};
-		\node[rectangle split,draw,rectangle split parts=2] (B) at (0,-5) {S1 ='\#ifdef A$\backslash$n foo() $\backslash$n\#endif' \nodepart{two}S3 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo() $\backslash$n\#endif'};
+		\node[rectangle split,draw,rectangle split parts=2] (B) at (0,-5) {S1 ='\#ifdef A$\backslash$n foo()$\backslash$n\#endif' \nodepart{two}S3 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo()$\backslash$n\#endif'};
 	\draw[-{>[scale=2.5,
 		length=6,
 		width=3]},line width=0.7pt] (A) -- (B)  node[midway,sloped,above] {$toString$} ;
@@ -76,7 +76,7 @@ In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktisch
 		\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
 				\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
 	\end{singlespace}}};
-	\node[rectangle split,draw,rectangle split parts=2] (D) at (9,-5) {S2 ='\#ifdef A$\backslash$n foo() $\backslash$n\#endif'\nodepart{two}S4 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo() $\backslash$n\#endif'};
+	\node[rectangle split,draw,rectangle split parts=2] (D) at (9,-5) {S2 ='\#ifdef A$\backslash$n foo()$\backslash$n\#endif'\nodepart{two}S4 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo()$\backslash$n\#endif'};
 	\draw[-{>[scale=2.5,
 		length=6,
 		width=3]},line width=0.7pt] (C) -- (D)  node[midway,sloped,above] {$toString$} ;
@@ -97,9 +97,9 @@ In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktisch
 \caption{Beispiel für Syntaktische Gleichheit }
 \end{figure}
 
+Der syntaktischen Korrektheit ohne Whitespace aus der dritten Zeile der Tabelle 4.1 widmen wir und in diesem Abschnitt. Analog zu syntaktischer Gleichheit ist syntaktische Gleichheit ohne Whitespace für den C-Präprozessor-Annotierten Code und textbasierte Diffs gleich zu verstehen, wie in Abbildung 4.2 zu sehen ist. Bei dieser Art von Korrektheit muss auch wie in vorherigen Fall der ausgangs C-Präprozessor-Annotierter Code bzw. der textbasierter Diff  mit dem Ergebnis nach dem Parse und Unparse Schritt in jedem Zeichen übereinstimmen, aber nur nachdem alle Zeichen, die zu Gruppe der Whitespace-Teichen gehören, entfernt wurden. Die Abbildung 4.2 veranschaulicht das gut. Dort sind der ausgangs C-Präprozessor-Annotierter Code bzw. der textbasierter Diff gegeben. Links von den ist das Ergebnis von Parse und Unparse Schritt. Danach werden die alle in Strings umgewandelt. Als nächstes werden alle Whitespace-Zeichen aus den Strings entfernt und anschließend die auf Äquivalenz geprüft. So wird der C-Präprozessor-Annotierter Code bzw. der textbasierter Diff und den Ergebnis von Parse und Unparse Schritt auf syntaktische Gleichheit ohne Whitespace überprüft.
 
-
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
 		\node[align=left,rectangle split,draw,rectangle split parts=2] (A) at (0,0) {\parbox{2cm}{\begin{singlespace}
@@ -107,10 +107,16 @@ In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktisch
 			\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
 					\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \\ \#endif
 		\end{singlespace}}};
-		\node[rectangle split,draw,rectangle split parts=2] (B) at (0,-6) {S1 ='\#ifdefAfoo()\#endif'\nodepart{two}S3 ='\#ifdefA+boo()-foo()\#endif'};
+		\node[rectangle split,draw,rectangle split parts=2] (B) at (0,-5.5) {S1 ='\#ifdef A$\backslash$n foo()$\backslash$n\#endif' \nodepart{two}S3 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo()$\backslash$n$\backslash$n\#endif'};
 		\draw[-{>[scale=2.5,
 			length=6,
-			width=3]},line width=0.7pt] (A) -- (B)  node[midway,sloped,above] {$toStringOW$} ;
+			width=3]},line width=0.7pt] (A) -- (B)  node[midway,sloped,above] {$toString$} ;
+			
+		\node[rectangle split,draw,rectangle split parts=2] (F) at (0,-8) {S1 ='\#ifdefAfoo()\#endif'\nodepart{two}S3 ='\#ifdefA+boo()-foo()\#endif'};	
+			
+			
+			
+			
 		
 		
 		\node[align=left,rectangle split,draw,rectangle split parts=2] (C) at (9,0) {\parbox{2cm}{\begin{singlespace}
@@ -118,18 +124,31 @@ In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktisch
 			\end{singlespace}} \nodepart{two} \parbox{2cm}{\begin{singlespace}
 					\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
 		\end{singlespace}}};
-		\node[rectangle split,draw,rectangle split parts=2] (D) at (9,-6) {S2 ='\#ifdefAfoo()\#endif'\nodepart{two}S4 ='\#ifdefA+boo()-foo()\#endif'};
+		\node[rectangle split,draw,rectangle split parts=2] (D) at (9,-5.5) {S2 ='\#ifdef A$\backslash$n foo()$\backslash$n$\backslash$n\#endif'\nodepart{two}S4 ='\#ifdef A$\backslash$n +boo()$\backslash$n -foo()$\backslash$n\#endif'};
 		\draw[-{>[scale=2.5,
 			length=6,
-			width=3]},line width=0.7pt] (C) -- (D)  node[midway,sloped,above] {$toStringOW$} ;
+			width=3]},line width=0.7pt] (C) -- (D)  node[midway,sloped,above] {$toString$} ;
+			
+		\node[rectangle split,draw,rectangle split parts=2] (G) at (9,-8) {S2 ='\#ifdefAfoo()\#endif'\nodepart{two}S4 ='\#ifdefA+boo()-foo()\#endif'};
+			
+			
 		
-		\node[rectangle split,draw,rectangle split parts=2] (E) at (4.5,-8.5){equals(S1,S2) == True \nodepart{two} equals(S3,S4) == True};
+		
+		\node[rectangle split,draw,rectangle split parts=2] (E) at (4.5,-10){equals(S1,S2) == True \nodepart{two} equals(S3,S4) == True};
 		\draw[-{>[scale=2.5,
 			length=6,
-			width=3]},line width=0.7pt] (B) -- (E);
+			width=3]},line width=0.7pt] (B) -- (F);
 		\draw[-{>[scale=2.5,
 			length=6,
-			width=3]},line width=0.7pt] (D) -- (E);
+			width=3]},line width=0.7pt] (D) -- (G);
+			
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (G) -- (E);
+			
+		\draw[-{>[scale=2.5,
+			length=6,
+			width=3]},line width=0.7pt] (F) -- (E);
 		
 		\draw[-{>[scale=2.5,
 			length=6,
@@ -139,8 +158,14 @@ In diesem Abschnitt sprechen wir über die syntaktische Korrektheit. Syntaktisch
 	\caption{Beispiel für Syntaktische Gleichheit ohne Whitespace }
 \end{figure}
 
+Die semantische Gleichheit von mit C-Präprozessor-Annotierten Code werden wir nicht betrachten, da dafür wir entscheiden müssen ab zwei Programmen äquivalent sind. Das geht über den Rand unserer Möglichkeiten, da diese Fragestellung unentscheidbar ist und als das Äquivalenzproblem bekannt~\cite{Fischer1972}. Mit den C-Präprozessor-Annotationen geht es auch über den Rand unserer Möglichkeiten, da C-Präprozessor-Annotationen hier für Erzeugung der Variabilität verwendet werden. Dabei hat so eine Softwareproduktlinie n Features und im Worst-Case muss $2^n$ Varianten der Software betrachtet werden\cite{ABKS13} , welches eine exponentielle Laufzeit bedeutet und über den Rand unserer Möglichkeiten geht.\\
 
-\begin{figure}
+
+
+
+Um die semantische Gleichheit für textbasierte Diffs geht es in diesem Abschnitt. Wie die semantische Gleichheit für textbasierte Diffs zu verstehen ist, ist nicht eindeutig festgelegt. Unsere Interpretation der semantischen Gleichheit für textbasierte Diffs ist an der Gleichheit für Variation-Diffs~\cite{BSG+:SPLC23} orientiert. Wir verstehen die semantische Gleichheit wie folgt, zwei textbasierte Diffs sind semantisch Gleich wenn ihre Projektionen auf den Zustand davor bzw. danach syntaktisch Gleich oder syntaktisch Gleich ohne Whitespace sind. In der Abbildung 4.3 ist dies dargestellt. Dabei ist die Projektion für textbasierte Diffs wie folgt zu verstehen: Ein textbasierter Diff hat Zeilen von drei Typen unverändert gebliebene Zeilen, gelöschte Zeilen und eingefügte Zeilen. Bei der Projektion werden einige dieser Typen der Zeilen entfernt einige beibehalten und so entsteht eine Projektion von textbasierten Diff auf ein mit C-Präprozessor-Annotierten Code. Dabei wird für die Projektion auf den Zustand davor, die unveränderten und gelöschten Zeilen beibehalten und die eingefügten entfernt und für die Projektion auf den Zustand danach, die unveränderten und eingefügten Zeilen beibehalten und die gelöschten Zeilen entfernt. Dies verläuft analog zu der Projektion von Variation-Diff zu Variation-Tree.
+
+\begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
 		\node[draw,align=left] (U) at (-1,-11) {\parbox{2cm}{\begin{singlespace}

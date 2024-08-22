@@ -157,7 +157,7 @@ Am Anfang des Algorithmus werden die Stacks erstellt und mit dem Wurzelknoten  i
 \end{figure}
 
  
-Um weitere Informationen zu finden, die wehrend des Parse Vorgangs verloren gehen, müssen wir die Definition von Variation-Tree und Variation-Diff aus dem Schreiben Classifying Edits to Variability in Source Code~\citet{BTS+:ESECFSE22}
+Um weitere Informationen zu finden, die wehrend des Parse Vorgangs verloren gehen, müssen wir die Definition von Variation-Tree und Variation-Diff aus dem Schreiben Classifying Edits to Variability in Source Code~\cite{BTS+:ESECFSE22}
  betrachten. Variation-Tree wird wie folgt definiert:
  \begin{definition}
  	Ein \textsc{Variation-Tree}  $(V,E,r,\tau,l)$ ist ein Baum mit Knoten $V$ , Kanten $E \subseteq V \times V$ und Wurzelknoten $r \in V$. Jede Kante $(x,y) \in E$ verbindet einen Kinderknoten $x$ mit seinem Elternknoten $y$, bezeichnet mit $p(x) = y$. Der Knotentyp $\tau(v) \in $ \{\textsc{artifact,mapping,else}\} identifiziert einen Knoten $v \in V$ entweder als Vertreten einer Implementierungsartefakts, einer Merkmalszuordnung oder eines else-Zweig. Der Label $l(v)$ ist eine aussagenlogische Formel wenn $\tau(v) =$ \textsc{mapping}, ein Verweis auf ein Implementierungsartefakt, wenn $\tau(v) = $ \textsc{artifact}, oder leer wenn $\tau(v) =$ \textsc{else} ist. Der Wurzelknoten $r$ hat den Typ $\tau(r) =$ \textsc{mapping} und das Label $l(r) = $ \textsc{true}. Ein Knote $e$ von Typ $\tau(e) =$ \textsc{else} kann nur unterhalb eines Nichtwurzelknotens $v$ mit dem Typ $\tau(v) =$ \textsc{mapping} platziert, dabei hat ein Knoten $w$ von Typ $\tau(w) =$ \textsc{mapping} höchstens einen Knoten $u$ von dem Typ $\tau(u) =$ \textsc{else}.
@@ -185,48 +185,9 @@ Aus der gegebenen Information, lässt sich herausfinden, welche Informationen w�
 
 \subsection{Laufzeitanalyse für Unparsen von Variation-Diffs}
 
-\section{Metrik}
 
 
-\begin{center}
-	\begin{tabular}{ c||c|c|c| } 
-		& Variation-Tree & Variation-Diff \\ 
-		\hline
-		Syntaktische Gleichheit & \parbox[][3cm][]{5cm}{$C$ = C-Präprozessor-Annotierter Code\\
-			$C_p$ = parse($C$)\\
-			$C_{pu}$ = unparse($C_p$)\\
-			stringEquals($C,C_{pu}$)==True} & \parbox[][3cm][]{5cm}{$D$ = Textbasierter Diff\\
-			$D_p$ = parse($D$)\\
-			$D_{pu}$ = unparse($D_p$)\\
-			stringEquals($D,D_{pu}$)==True} \\ 
-		\hline
-		\parbox[][1cm][]{4cm}{Syntaktische Gleichheit ohne Whitespace} & \parbox[][4cm][]{5.3cm}{$C$ = C-Präprozessor-Annotierter Code\\
-			$C_p$ = parse($C$)\\
-			$C_{pu}$ = unparse($C_p$)\\
-			$C_w$ = deleteWhitespace($C$)
-			$C_puw{}$ = deleteWhitespace($C_{pu}$)
-			stringEquals($C_w,C_{puw}$)==True} & \parbox[][4cm][]{5.3cm}{$D$ = Textbasierter Diff\\
-			$D_p$ = parse($D$)\\
-			$D_{pu}$ = unparse($D_p$)\\
-			$D_w$ = deleteWhitespace($D$)
-			$D_puw{}$ = deleteWhitespace($D_{pu}$)
-			stringEquals($D_w,D_{puw}$)==True} \\ 
-		\hline
-		Semantische Gleichheit &  \parbox[][3cm][]{4cm}{Out of Scope\\
-			unentscheidbar für C\\
-			exponentielles Wachstum für CPP}  &  \parbox[][6cm][]{5cm}{$D$ = Textbasierter Diff\\
-			SynGl = Syntaktische Gleichheit\\
-			SynGlOW = Syntaktische Gleichheit ohne Whitespace\\
-			$D_p$ = parse($D$)\\
-			$D_{pu}$ = unparse($D_p$)\\
-			Für $\forall t \in \{\textcolor{green}{a},\textcolor{orange}{b}\}$\\
-			$p_1$ = textProject($D,t$)\\
-			$p_2$ = textProject($D_{pu},t$)\\
-			SynGl($p_1,p_2$) == True $\lor$ SynGlOW($p_1,p_2$) == True
-		} \\
-		\hline
-	\end{tabular}
-\end{center}
+
 
 
 

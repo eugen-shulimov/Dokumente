@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}ifdef A}
+\PYG{+w}{  }\PYG{n}{foo}\PYG{p}{();}
+\PYG{+w}{  }\PYG{n}{bar}\PYG{p}{();}
+\PYG{c+cp}{\PYGZsh{}endif}
+\PYG{c+cp}{\PYGZsh{}if B \PYGZam{}\PYGZam{} !A}
+\PYG{+w}{  }\PYG{n}{baz}\PYG{p}{();}
+\PYG{c+cp}{\PYGZsh{}endif}
+\end{Verbatim}

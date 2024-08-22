@@ -1,16 +1,12 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-The style file: IEEEtranN.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: abbrvnat.bst
 Reallocating 'name_of_file' (item size: 1) to 67 items.
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Reallocating 'name_of_file' (item size: 1) to 71 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'name_of_file' (item size: 1) to 71 items.
 Database file #1: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/BibTags/MYabrv.bib
 Database file #2: literature.bib
 Database file #3: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/BibTags/literature.bib
@@ -19,54 +15,47 @@ I was expecting a `,' or a `}'---line 393 of file C:/Users/eshul/Desktop/Dokumen
  :  typo3Tags = {VariantSyncPub}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
--- IEEEtranN.bst version 1.13 (2008/09/30) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-** Natbib version - not for normal IEEE work.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-
-Done.
-You've used 3 entries,
-            4783 wiz_defined-function locations,
-            2098 strings with 37862 characters,
-and the built_in function-call counts, 2499 in all, are:
-= -- 197
-> -- 89
-< -- 10
-+ -- 42
-- -- 22
-* -- 153
-:= -- 410
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 5
-chr.to.int$ -- 27
-cite$ -- 3
-duplicate$ -- 158
-empty$ -- 192
-format.name$ -- 27
-if$ -- 532
+Database file #4: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/Arbeitsplan/myrefs.bib
+Warning--can't use both author and editor fields in Fischer1972
+You've used 22 entries,
+            2773 wiz_defined-function locations,
+            1895 strings with 39271 characters,
+and the built_in function-call counts, 14118 in all, are:
+= -- 1337
+> -- 971
+< -- 16
++ -- 325
+- -- 303
+* -- 1220
+:= -- 2173
+add.period$ -- 120
+call.type$ -- 22
+change.case$ -- 166
+chr.to.int$ -- 22
+cite$ -- 45
+duplicate$ -- 589
+empty$ -- 949
+format.name$ -- 331
+if$ -- 3016
 int.to.chr$ -- 1
-int.to.str$ -- 4
-missing$ -- 30
-newline$ -- 35
-num.names$ -- 9
-pop$ -- 81
+int.to.str$ -- 1
+missing$ -- 23
+newline$ -- 158
+num.names$ -- 88
+pop$ -- 320
 preamble$ -- 1
-purify$ -- 3
-quote$ -- 2
-skip$ -- 166
+purify$ -- 145
+quote$ -- 0
+skip$ -- 463
 stack$ -- 0
-substring$ -- 64
-swap$ -- 111
-text.length$ -- 1
+substring$ -- 435
+swap$ -- 129
+text.length$ -- 11
 text.prefix$ -- 0
-top$ -- 6
-type$ -- 40
-warning$ -- 0
-while$ -- 10
+top$ -- 0
+type$ -- 232
+warning$ -- 1
+while$ -- 105
 width$ -- 0
-write$ -- 58
+write$ -- 400
 (There was 1 error message)

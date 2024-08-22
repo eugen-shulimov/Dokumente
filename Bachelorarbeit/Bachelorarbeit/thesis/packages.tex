@@ -22,6 +22,119 @@
 \usepackage{setspace}
 
 
-\usepackage{standalone}
+%\usepackage{standalone}
 \usepackage[numbers]{natbib}
-\bibliographystyle{IEEEtranN}
+\bibliographystyle{abbrvnat}
+
+
+
+
+
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float} %%% for figure floating argument [H]
+\usepackage{tikz}
+\usepackage{capt-of}
+\usepackage{setspace}
+
+
+
+%%% Use a box vertically centered.
+%%% Optional Argument: Scaling factor of the box, default is one
+%%% Second Argument: box name
+\newcommand{\useboxVerticallyCentered}[2][1]{\raisebox{-.45\baselineskip}{\scalebox{#1}{\usebox{#2}}}}
+
+%%% Includes graphics from a file (path to that file is the first argument) within a sentence, scaled to the text size.
+\newcommand{\includegraphicsVCentered}[2]{\ensuremath{\vcenter{\hbox{\includegraphics[#1]{#2}}}}}
+\newcommand{\includegraphicsInText}[1]{\includegraphicsVCentered{height=\baselineskip}{#1}}
+
+%%% Same as includegraphicsInText but for arbitrary text
+\newcommand{\useboxInText}[2][\baselineskip]{\ensuremath{\vcenter{\hbox{\resizebox{!}{#1}{\usebox{#2}}}}}}
+
+%%% Takes the name of a macro (first argument) and defines it with the given body (second argument).
+\newcommand{\defineCommandByName}[2]{\expandafter\newcommand\csname #1\endcsname{#2}}
+%%% Same as \defineCommandByName but inlines the body. (Under the hood "edef" instead of "newcommand" is used.)
+\newcommand{\defineCommandByNameInlined}[2]{\expandafter\edef\csname #1\endcsname{#2}}
+%%% Same as \defineCommandByName but uses renewcommand instead of newcommand.
+\newcommand{\redefineCommandByName}[2]{\expandafter\renewcommand\csname #1\endcsname{#2}}
+
+%%% Same as \defineCommandByName but only defines the command it is not already defined.
+\newcommand{\defineCommandByNameIfUndefined}[2]{\ifcsname #1\endcsname\else\defineCommandByName{#1}{#2}\fi}
+
+%%% Takes the name of a macro and runs the macro with that name without arguments.
+%%% Make sure that the macro with the given name does not take any arguments.
+%%% For example \runCommandByName{dots} will evaluate to \dots.
+\newcommand{\runCommandByName}[1]{\csname #1\endcsname}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{fit}
+\usetikzlibrary{shapes,decorations.text,shadows,fadings,positioning,overlay-beamer-styles}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes} % for strike out
+\usetikzlibrary{tikzmark}
+\usepackage{tikzscale} % for \includegraphics with tikz files
+\usepackage{newunicodechar}
+\newunicodechar{∧}{\ensuremath{\wedge}}
+\newunicodechar{∨}{\ensuremath{\vee}}
+\newunicodechar{¬}{\ensuremath{\neg}}
+\tikzstyle{codesnippetnode} = [text width=1.5cm]
+%\newcommand{\codeSnippetFromFile}[3][]{}
+\usepackage{minted}
+\newcommand{\codeSnippetFromFile}[3][]{\inputminted[%
+	style=colorful,
+	% autogobble,
+	% stripnl,
+	gobble=0,
+	tabsize=4,
+	numbersep=1ex,
+	rulecolor=gray,
+	%            linenos,
+	fontsize=\large\selectfont,
+	numberblanklines=false, 
+	% framesep=1ex,
+	%            frame=lines,
+	baselinestretch=1.1,
+	#1]{#2}{#3}}
+\newcommand{\latexphddir}{LaTeXPhD}
+\input{LaTeXPhD/VariationDiffs.tex}
+\input{LaTeXPhD/vedits/tikz/fse22visualabstract/defines.tex}
+\input{LaTeXPhD/vedits/tikz/fse22visualabstract/boxes.tex}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{intersections}
+
+\usepackage{hyperref}
+
+\usepackage{xcolor}
+\definecolor{uulmBlue}{RGB}{125,154,170}
+\definecolor{csRed}{HTML}{A32638}
+
+
+%\usepackage[all]{hypcap}
+\newcommand*\numcircledtikz[1]{\tikz[baseline=(char.base)]{
+		\node[circle,draw,double,inner sep=1.2pt] (char) {#1};}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

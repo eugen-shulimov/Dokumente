@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  9 AUG 2024 22:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  22 AUG 2024 11:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1095,103 +1095,295 @@ ions\pgflibrarydecorations.shapes.code.tex)))
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalone.s
-ty
-Package: standalone 2022/10/10 v1.3b Package to include TeX sub-files with prea
-mbles
- (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
-Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
-)
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/currfile\currfile.sty
-Package: currfile 2024/03/14 v1.0 Provides the file path elements of the curren
-t input file
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook.sty
-Package: filehook 2022/10/25 v0.8b Hooks for input files
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook-2020.
-sty
-Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
-))
-\c@currfiledepth=\count367
-)
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/gincltex\gincltex.sty
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/svn-prov\svn-prov.sty
-Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
-)
-Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
-Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
--ends (calc, etex, pgfmath)
-)
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
-Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
-ty
-Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box106
-)
-\tc@llx=\dimen330
-\tc@lly=\dimen331
-\tc@urx=\dimen332
-\tc@ury=\dimen333
-Package trimclip Info: Using driver 'tc-pdftex.def'.
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
-File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen334
-\adjbox@Height=\dimen335
-\adjbox@Depth=\dimen336
-\adjbox@Totalheight=\dimen337
-\adjbox@pwidth=\dimen338
-\adjbox@pheight=\dimen339
-\adjbox@pdepth=\dimen340
-\adjbox@ptotalheight=\dimen341
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box107
-\sift@deathcycles=\count368
-\@vwid@loff=\dimen342
-\@vwid@roff=\dimen343
-))
-\gincltex@box=\box108
-)
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/filemod\filemod-expmin.
-sty
-Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
- (expandable; minimal)
-)) (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip94
 \bibsep=\skip95
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count369
-)) (commands.tex
-\c@definition=\count370
+\c@NAT@ctr=\count367
 )
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... found 'babel' package.
-Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/capt-of\capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.text.code.tex
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
+ions\pgflibrarydecorations.text.code.tex
+\pgf@lib@dec@text@box=\box106
+)
+\tikz@lib@dec@te@box=\box107
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/aobs-tikz\tikzlibraryov
+erlay-beamer-styles.code.tex)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/tikzmark\tikzlibrarytik
+zmark.code.tex
+File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking po
+sitions in a document
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-05-08 L3 programming layer (loader) 
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count368
+\l__pdf_internal_box=\box108
+))
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+Package: l3keys2e 2024-05-08 LaTeX2e option processing using LaTeX3 keys
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2024-05-08 L3 Experimental document command parser
+)
+\l__sn_x_dim=\dimen330
+\l__sn_y_dim=\dimen331
+\l__sn_xa_dim=\dimen332
+\l__sn_ya_dim=\dimen333
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/tikzscale\tikzscale.sty
+Package: tikzscale 2013/05/22 v0.2.6 tikzscale LaTeX package
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+\tikzscale@measuredSize=\box109
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/newunicodechar\newunico
+dechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+)
+
+Package newunicodechar Warning: Redefining Unicode character on input line 84.
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
+Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+Package: fvextra 2024/05/16 v1.7.0 fvextra - extensions and patches for fancyvr
+b
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count369
+\FV@InFile=\read4
+\FV@TabBox=\box110
+\c@FancyVerbLine=\count370
+\FV@StepNumber=\count371
+\FV@OutFile=\write4
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+))
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+\linenopenalty=\count372
+\output=\toks54
+\linenoprevgraf=\count373
+\linenumbersep=\dimen334
+\linenumberwidth=\dimen335
+\c@linenumber=\count374
+\c@pagewiselinenumber=\count375
+\c@LN@truepage=\count376
+\c@internallinenumber=\count377
+\c@internallinenumbers=\count378
+\quotelinenumbersep=\dimen336
+\bframerule=\dimen337
+\bframesep=\dimen338
+\bframebox=\box111
+\linenoamsmath@ams@eqpen=\count379
+
+
+LaTeX Warning: Command \@parboxrestore  has changed.
+               Check if current package is valid.
+
+LaTeX Info: Redefining \\ on input line 3180.
+)
+
+Package fvextra Warning: csquotes should be loaded after fvextra, to avoid a wa
+rning from the lineno package on input line 36.
+
+\c@FancyVerbWriteLine=\count380
+\c@FancyVerbBufferIndex=\count381
+\c@FancyVerbBufferLength=\count382
+\c@FancyVerbBufferLine=\count383
+\c@FV@oldbufferlength=\count384
+\c@FV@TrueTabGroupLevel=\count385
+\c@FV@TrueTabCounter=\count386
+\FV@TabBox@Group=\box112
+\FV@TmpLength=\skip96
+\c@FV@HighlightLinesStart=\count387
+\c@FV@HighlightLinesStop=\count388
+\FV@LoopCount=\count389
+\FV@NCharsBox=\box113
+\FV@BreakIndent=\dimen339
+\FV@BreakIndentNChars=\count390
+\FV@BreakSymbolSepLeft=\dimen340
+\FV@BreakSymbolSepLeftNChars=\count391
+\FV@BreakSymbolSepRight=\dimen341
+\FV@BreakSymbolSepRightNChars=\count392
+\FV@BreakSymbolIndentLeft=\dimen342
+\FV@BreakSymbolIndentLeftNChars=\count393
+\FV@BreakSymbolIndentRight=\dimen343
+\FV@BreakSymbolIndentRightNChars=\count394
+\c@FancyVerbLineBreakLast=\count395
+\FV@LineBox=\box114
+\FV@LineIndentBox=\box115
+\c@FV@BreakBufferDepth=\count396
+\FV@LineWidth=\dimen344
+) (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.s
+ty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
+ty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)) (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip97
+\fb@frw=\dimen345
+\fb@frh=\dimen346
+\FrameRule=\dimen347
+\FrameSep=\dimen348
+)
+\minted@appexistsfile=\read5
+\minted@bgbox=\box116
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count397
+\c@minted@pygmentizecounter=\count398
+\@float@every@listing=\toks55
+\c@listing=\count399
+)
+runsystem(if not exist _minted-thesis mkdir _minted-thesis)...executed.
+
+
+(LaTeXPhD/VariationDiffs.tex (LaTeXPhD/vedits/editclasses.tex)
+(LaTeXPhD/vedits/tikz/colors.tex) (LaTeXPhD/vedits/tikz/vedits-colors.tex)
+(LaTeXPhD/vedits/tikz/vedits.tex))
+(LaTeXPhD/vedits/tikz/fse22visualabstract/defines.tex
+(LaTeXPhD/vedits/tikz/fse22visualabstract/reset.tex))
+(LaTeXPhD/vedits/tikz/fse22visualabstract/boxes.tex
+\boxRunningExampleBefore=\box117
+
+(LaTeXPhD/vedits/tikz/fse22visualabstract/res/s0.diff.tikz
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
 .
 
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count371
-\l__pdf_internal_box=\box109
-) (thesis.aux)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+3.
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+\boxRunningExampleAfter=\box118
+
+(LaTeXPhD/vedits/tikz/fse22visualabstract/res/s1.diff.tikz
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+3.
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+3.
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+23.
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+23.
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+
+
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\boxRunningExampleDiff=\box119
+
+(LaTeXPhD/vedits/tikz/fse22visualabstract/res/t.diff.tikz)
+\boxNodeFoo=\box120
+\boxNodeBar=\box121
+\boxNodeBaz=\box122
+)
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryintersections.code.tex
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryintersections.code.tex
+(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfpu.code.tex)
+\pgf@intersect@solutions=\count400
+))) (commands.tex
+\c@definition=\count401
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
+\tikzscale@accuracy=\skip98
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > th
+esis.aex <nul: /p x=^%~$PATH:i>> thesis.aex)...executed.
+
+runsystem(del thesis.aex)...executed.
+
+ (thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -1251,31 +1443,23 @@ LaTeX Font Info:    ... okay on input line 29.
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count372
-\scratchdimen=\dimen344
-\scratchbox=\box110
-\nofMPsegments=\count373
-\nofMParguments=\count374
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count375
-\MPscratchDim=\dimen345
-\MPnumerator=\count376
-\makeMPintoPDFobject=\count377
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count402
+\scratchdimen=\dimen349
+\scratchbox=\box123
+\nofMPsegments=\count403
+\nofMParguments=\count404
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count405
+\MPscratchDim=\dimen350
+\MPnumerator=\count406
+\makeMPintoPDFobject=\count407
+\everyMPtoPDFconversion=\toks57
 )
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
@@ -1283,8 +1467,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 29.
  (thesis.out) (thesis.out)
-\@outlinefile=\write4
-\openout4 = `thesis.out'.
+\@outlinefile=\write6
+\openout6 = `thesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -1296,10 +1480,10 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count378
+\c@lstlisting=\count408
 
 (pretext/titlepage.tex
-<figures/uni-logo.pdf, id=69, 555.07375pt x 146.5475pt>
+<figures/uni-logo.pdf, id=101, 555.07375pt x 146.5475pt>
 File: figures/uni-logo.pdf Graphic file (type pdf)
 <use figures/uni-logo.pdf>
 Package pdftex.def Info: figures/uni-logo.pdf  used on input line 9.
@@ -1310,48 +1494,11 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-5.
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-5.
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-25.
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-25.
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 25.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
-
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 [1
 
@@ -1377,8 +1524,8 @@ although it is yet undefined on input line 1.
 [5]
 
 [6] (thesis.toc)
-\tf@toc=\write5
-\openout5 = `thesis.toc'.
+\tf@toc=\write7
+\openout7 = `thesis.toc'.
 
 
 
@@ -1390,15 +1537,176 @@ although it is yet undefined on input line 1.
 
 ] (body.tex (chapters/einleitung.tex
 Kapitel 1.
-) (chapters/hintergrund.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
 
 [1
 
-]
+] (LaTeXPhD/vedits/tikz/fse22visualabstract/vabstract.tex
+(_minted-thesis/colorful.pygstyle)
+(_minted-thesis/B4B43A6EE740F8C53F543222FBF21813E510295AAD373158241049A23600609
+5.pygtex)
+(_minted-thesis/FB2942816E3A07D01501AA6541D9571E741619E0792692C82D5C954B879F2D1
+D.pygtex)
+(_minted-thesis/58ECEFADE53688AEE82A477B93B345D18E0CA7F5A53525D677AD5B2092C9EFD
+8.pygtex))
 
-[2
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-]
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[2{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
+c}]
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+
+[3{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
+c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
+
+ []
+
+! Argument of \language@active@arg" has an extra }.
+<inserted text> 
+                \par 
+l.100 	}
+        
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \language@active@arg" was complete.
+<to be read again> 
+                   \par 
+l.100 	}
+        
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \language@active@arg" has an extra }.
+<inserted text> 
+                \par 
+l.100 	}
+        
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \language@active@arg" was complete.
+<to be read again> 
+                   \par 
+l.100 	}
+        
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+
+ []
+
+! Argument of \language@active@arg" has an extra }.
+<inserted text> 
+                \par 
+l.100 	}
+        
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \language@active@arg" was complete.
+<to be read again> 
+                   \par 
+l.100 	}
+        
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \language@active@arg" has an extra }.
+<inserted text> 
+                \par 
+l.100 	}
+        
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \language@active@arg" was complete.
+<to be read again> 
+                   \par 
+l.100 	}
+        
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+) (chapters/hintergrund.tex
+
+[4]
 Kapitel 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -1410,12 +1718,6 @@ File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 (C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-3.
-
-(C:\Users\eshul\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 34.
@@ -1429,7 +1731,9 @@ Underfull \vbox (badness 1292) has occurred while \output is active []
 
 
 
-[3]
+[5
+
+]
 Underfull \hbox (badness 4531) in paragraph at lines 118--118
 \T1/lmr/m/n/10.95 C-Präprozessors wenn Fea-
  []
@@ -1441,7 +1745,7 @@ Underfull \hbox (badness 4531) in paragraph at lines 127--127
 
 
 
-[4]
+[6]
 Overfull \hbox (61.77217pt too wide) in paragraph at lines 136--159
 []  $[]$ $[]$ 
  []
@@ -1456,18 +1760,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[5{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
-c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}])
-(chapters/algorithmus.tex
+[7]) (chapters/algorithmus.tex
 
-[6]
+[8]
 Kapitel 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[7
+[9
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
@@ -1481,178 +1783,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
 
 
-[8{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
-c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.en
-c}]
-
-[9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[10]
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
+[10{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
+nc}]
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
- []
-
-
-LaTeX Warning: Unexpected alignment  on input line 198.
-
-
-LaTeX Warning: Unexpected alignment  on input line 201.
-
-
-LaTeX Warning: Unexpected alignment  on input line 203.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--208
-[]$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--208
-\OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
-.95 C$\T1/lmr/m/n/10.95 )
- []
-
-
-LaTeX Warning: Unexpected alignment  on input line 208.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
-\OML/lmm/m/it/10.95 D[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
-.95 D$\T1/lmr/m/n/10.95 )
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
-\OML/lmm/m/it/10.95 D[]uw[]$ \T1/lmr/m/n/10.95 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
-\T1/lmr/m/n/10.95 deleteWhitespace($\OML/lmm/m/it/10.95 D[]$\T1/lmr/m/n/10.95 )
-
- []
-
-
-Overfull \hbox (2.43004pt too wide) in paragraph at lines 213--213
-\T1/lmr/m/n/10.95 stringEquals($\OML/lmm/m/it/10.95 D[]; D[]$\T1/lmr/m/n/10.95 
-)==True 
- []
-
-
-LaTeX Warning: Unexpected alignment  on input line 213.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--217
-\T1/lmr/m/n/10.95 exponentielles Wachs-
- []
-
-
-LaTeX Warning: Unexpected alignment  on input line 217.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
-\T1/lmr/m/n/10.95 SynGlOW = Syn-tak-ti-sche
- []
-
-
-Underfull \hbox (badness 5847) in paragraph at lines 226--226
-\T1/lmr/m/n/10.95 SynGl($\OML/lmm/m/it/10.95 p[]; p[]$\T1/lmr/m/n/10.95 ) == Tr
-ue $\OMS/lmsy/m/n/10.95 _$
- []
-
-
-LaTeX Warning: Unexpected alignment  on input line 226.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[12]) (chapters/metrik.tex
+[12]
 
-[13]
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
 
-[14
 
-]
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+
+[13]) (chapters/metrik.tex
+
+[14]
 Kapitel 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
@@ -1742,62 +1958,85 @@ ue $\OMS/lmsy/m/n/10.95 _$
 LaTeX Warning: Unexpected alignment  on input line 50.
 
 
-Overfull \hbox (19.9248pt too wide) in paragraph at lines 96--97
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[15
+
+]
+Overfull \hbox (16.27481pt too wide) in paragraph at lines 96--97
  [][] 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 109--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 
  []
 
-) (chapters/implementierung.tex
 
-[15]
+Overfull \hbox (22.05394pt too wide) in paragraph at lines 157--158
+ [][] 
+ []
 
-[16]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [17]
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
-[18]
-Kapitel 5.
-))
+ []
 
-[19
 
-] (thesis.bbl
+
+[18]) (chapters/implementierung.tex
+
+[19]
 
 [20
 
 ]
-Underfull \hbox (badness 1092) in paragraph at lines 32--37
-\T1/lmr/m/n/10.95 si-fy-ing Edits to Va-ria-bi-li-ty in Sour-ce Co-de,'' in \T1
-/lmr/m/it/10.95 Proc. Eu-rop. Soft-wa-re En-gi-nee-ring
- []
+Kapitel 5.
+))
 
-) (appendix.tex)
+[21] (thesis.bbl
 
-[21] (thesis.aux)
+[22
+
+]
+
+[23]
+
+[24]) (appendix.tex)
+
+[25] (thesis.aux)
  ***********
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B5BFA4F1D31838E1F9EA4A6BE8B8443A;2403.
+(rerunfilecheck)             Checksum: CD9B8B5B54DB40373EAEFAFDD3D4BA4E;3074.
  ) 
 Here is how much of TeX's memory you used:
- 34942 strings out of 473938
- 671696 string characters out of 5727392
- 2098893 words of memory out of 5000000
- 56896 multiletter control sequences out of 15000+600000
- 629475 words of font info for 75 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 100i,19n,136p,3577b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 38818 strings out of 473938
+ 776779 string characters out of 5727392
+ 2113893 words of memory out of 5000000
+ 60611 multiletter control sequences out of 15000+600000
+ 639275 words of font info for 87 fonts, out of 8000000 for 9000
+ 1150 hyphenation exceptions out of 8191
+ 99i,19n,136p,3577b,1806s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb
@@ -1814,11 +2053,14 @@ b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
 Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/
 Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/
 Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/
-Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/
-Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on thesis.pdf (29 pages, 902659 bytes).
+Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/U
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Us
+ers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on thesis.pdf (33 pages, 1020137 bytes).
 PDF statistics:
- 498 PDF objects out of 1000 (max. 8388607)
- 184 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 211 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
