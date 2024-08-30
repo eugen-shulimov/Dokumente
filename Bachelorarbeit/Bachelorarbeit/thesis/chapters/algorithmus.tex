@@ -180,6 +180,56 @@ Aus der gegebenen Information, lässt sich herausfinden, welche Informationen w�
 %Im Baum stellen Knoten Blöcke dar, Tiefensuche geht alle blöcke eiser zweigt zuerst durch dann zum nächsten so entsteht wieder der Text
 
 
+
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\DontPrintSemicolon
+	\KwData{ein Vatiation-Tree}
+	\KwResult{ein mit C-Präprozessor-Annotierten Code}
+	initialisiere einen leeren Stack/Keller $stack$\;
+	initialisiere einen String $ergebniss$
+	$root$ $\leftarrow$ Variation-Tree gibt Wurzelknoten aus\;
+	$kinder$ $\leftarrow$ $root$ gibt seine Kinderknoten aus\;
+	\For{i = n $\to$ 1 }{
+		lege den Knoten aus $kinder$[i] auf den Stack $stack$\;
+	}
+	\While{$stack$ nicht leer ist}{
+		$knoten$ $\leftarrow$ nehme das oreste Element aus dem Stack $stack$\;
+		füge die gespeicherte Zeile aus $noten$ den $ergebniss$ hinzu\;
+		\If{wenn knoten nicht von Typ Artefact ist und sein letztes Kindknoten nicht von Typ else oder elif ist}{
+			erstelle einen Dummyknoten welcher die endif-Anweisung beinhaltet\;
+			füge diesen Knoten den Stack hinzu\;
+		}
+		$kinder$ $\leftarrow$ $knoten$ gibt seine Kinderknoten aus\;
+		\For{i = n $\to$ 1 }{
+			lege den Knoten aus $kinder$[i] auf den Stack $stack$\;
+		}
+	}
+	\caption{Ein Variation-Tree zum mit C-Präprozessor-Annotierten Code unparsen}
+\end{algorithm}
+
+\begin{tikzpicture}
+	\node[draw,rectangle split,rectangle split parts=2] (A) at (0,0) {
+			\begin{tikzpicture}
+				\node[draw,diamond,fill=lightgray,thick] {root}
+				child {node[draw,circle,thick] {a1}}
+				child {node[draw,rectangle,thick] {\textbf{if} b1}
+					child {node[draw,rectangle,thick] {\textbf{if} b2}
+						child { node[draw,circle,thick] {a2}}
+					}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
+					child { node[draw,circle,thick] {a4}}
+				};
+				\draw [>=stealth,red,<-,line width=1mm] (1,0) -- (2,0);
+			\end{tikzpicture}
+	\nodepart{two} \begin{tikzpicture}
+		\node[align=left] {Ausgabe \\ Hallo};
+		\end{tikzpicture}};
+\end{tikzpicture}
+
+
 \section{Laufzeitanalyse}
 \subsection{Laufzeitanalyse für Unparsen von Variation-Trees}
 

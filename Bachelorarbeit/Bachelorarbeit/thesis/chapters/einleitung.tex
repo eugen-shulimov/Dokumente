@@ -23,7 +23,7 @@ Das Parsen führt die Eingabe von der konkreten Syntax in die abstrakte Syntax u
 
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\vaShow
 	\caption{Überblick über Variabilität bezogene Konvertierungen}
@@ -46,49 +46,50 @@ Der Beitrag setzt sich aus Konzept, Implementierung und Auswertung zusammen. Bei
 
 
 \begin{figure}[h]
-	\resizebox{0.6\textwidth}{!}{
+	\centering
+%	\resizebox{0.6\textwidth}{!}{
 		\begin{tikzpicture}
-			\draw (-1,0) node {Syntaktische Gleichheit};
-			\node[align=left] (A) at (-3.3,-1.5) {\parbox{2cm}{\begin{singlespace}
+			\draw (0,0) node {Syntaktische Gleichheit};
+			\node[align=left] (A) at (-3,-1.5) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
 			\end{singlespace}}};
-			\node (B) at (-3.3,-4.5) {S1 ="\#ifdef A\textbackslash n foo()\textbackslash n\#endif"};
+			\node (B) at (-3,-4.5) {S1 ='\#ifdef A$\backslash$n foo()$\backslash$n\#endif'};
 			\draw[->] (A) -- (B)  node[midway,sloped,above] {$toString$} ;
-			\node[align=left] (C) at (1.5,-1.5) {\parbox{2cm}{\begin{singlespace}
+			\node[align=left] (C) at (3,-1.5) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
 			\end{singlespace}}};
-			\node (D) at (1.5,-4.5) {S2 ="\#ifdef A\textbackslash n foo()\textbackslash n\#endif"};
+			\node (D) at (3,-4.5) {S2 ='\#ifdef A\textbackslash n foo()\textbackslash n\#endif'};
 			\draw[->] (C) -- (D)  node[midway,sloped,above] {$toString$} ;
-			\node (E) at (-0.9,-5.5){S1==S2 => True};
+			\node (E) at (0,-5.5){S1==S2 => True};
 			\draw[->] (B) -- (E);
 			\draw[->] (D) -- (E);
 			
-			\draw[align=center] (8,0) node {Syntaktische Gleichheit\\ ohne Whitespace};
-			\node[align=left] (F) at (6,-1.5) {\parbox{2cm}{\begin{singlespace}
+			\draw[align=center] (0,-7) node {Syntaktische Gleichheit\\ ohne Whitespace};
+			\node[align=left] (F) at (-3,-8.5) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\ \\ \hspace*{2mm} foo() \\ \#endif
 			\end{singlespace}}};
-			\node (G) at (6,-5) {S1 ="\#ifdefAfoo()\#endif"};
+			\node (G) at (-3,-12) {S1 ='\#ifdefAfoo()\#endif'};
 			\draw[->] (F) -- (G)  node[midway,sloped,above] {$toStringOW$} ;
-			\node[align=left] (H) at (10,-1.5) {\parbox{2cm}{\begin{singlespace}
+			\node[align=left] (H) at (3,-8.5) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\  \hspace*{2mm} foo() \\ \#endif
 			\end{singlespace}}};
-			\node (I) at (10,-5) {S2 ="\#ifdefAfoo()\#endif"};
+			\node (I) at (3,-12) {S2 ='\#ifdefAfoo()\#endif'};
 			\draw[->] (H) -- (I)  node[midway,sloped,above] {$toStringOW$} ;
-			\node (J) at (8,-6){S1==S2 => True};
+			\node (J) at (0,-13){S1==S2 => True};
 			\draw[->] (G) -- (J);
 			\draw[->] (I) -- (J);
 			
-			\draw (4,-7) node {Semantische Gleichheit};
-			\node[align=left] (U) at (-1,-11) {\parbox{2cm}{\begin{singlespace}
+			\draw (0,-14.5) node {Semantische Gleichheit};
+			\node[align=left] (U) at (-5,-18) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
 			\end{singlespace}}};
-			\node[align=left] (V) at (9,-11) {\parbox{2cm}{\begin{singlespace}
+			\node[align=left] (V) at (5,-18) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\ \hspace*{2mm} -foo() \\ \hspace*{2mm} +boo() \\ \#endif
 			\end{singlespace}}};
-			\node[align=left] (Z) at (4,-9) {\parbox{2cm}{\begin{singlespace}
+			\node[align=left] (Z) at (0,-16) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
 			\end{singlespace}}};
-			\node[align=left] (X) at (4,-13) {\parbox{2cm}{\begin{singlespace}
+			\node[align=left] (X) at (0,-20) {\parbox{2cm}{\begin{singlespace}
 						\#ifdef A \\ \hspace*{2mm} boo() \\ \#endif
 			\end{singlespace}}};
 			\draw[->] (U) -- (Z) node[midway,sloped,above] {$projectBefore$};
@@ -97,7 +98,7 @@ Der Beitrag setzt sich aus Konzept, Implementierung und Auswertung zusammen. Bei
 			\draw[->] (V) -- (X) node[midway,sloped,above] {$projectAfter$};
 			
 		\end{tikzpicture}
-	}
+%	}
 	\caption{Beispiel für Metrik}
 	\label{fig:2}
 \end{figure}

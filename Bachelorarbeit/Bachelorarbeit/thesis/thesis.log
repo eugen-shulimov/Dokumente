@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  22 AUG 2024 11:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  30 AUG 2024 20:20
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1574,21 +1574,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 D.pygtex)
 (_minted-thesis/58ECEFADE53688AEE82A477B93B345D18E0CA7F5A53525D677AD5B2092C9EFD
 8.pygtex))
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [2{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
 c}]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
@@ -1600,8 +1596,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
 
 
-[3{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
-c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
@@ -1611,102 +1606,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.100 	}
-        
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
 
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.100 	}
-        
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.100 	}
-        
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.100 	}
-        
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 
  []
 
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.100 	}
-        
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
 
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.100 	}
-        
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \language@active@arg" has an extra }.
-<inserted text> 
-                \par 
-l.100 	}
-        
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \language@active@arg" was complete.
-<to be read again> 
-                   \par 
-l.100 	}
-        
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (chapters/hintergrund.tex
 
-[4]
+[4{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
+c}{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+
+[5]
+
+[6
+
+]
 Kapitel 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -1731,9 +1648,7 @@ Underfull \vbox (badness 1292) has occurred while \output is active []
 
 
 
-[5
-
-]
+[7]
 Underfull \hbox (badness 4531) in paragraph at lines 118--118
 \T1/lmr/m/n/10.95 C-Präprozessors wenn Fea-
  []
@@ -1745,7 +1660,7 @@ Underfull \hbox (badness 4531) in paragraph at lines 127--127
 
 
 
-[6]
+[8]
 Overfull \hbox (61.77217pt too wide) in paragraph at lines 136--159
 []  $[]$ $[]$ 
  []
@@ -1760,16 +1675,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[7]) (chapters/algorithmus.tex
+[9]) (chapters/algorithmus.tex
 
-[8]
+[10]
 Kapitel 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[9
+[11
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
@@ -1783,245 +1698,254 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
 
 
-[10{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
+[12{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
 nc}]
 
-[11]
+[13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[12]
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-
-[13]) (chapters/metrik.tex
-
 [14]
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 163.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 167.
+
+
+
+[15]
+
+[16]) (chapters/metrik.tex
+
+[17]
+
+[18
+
+]
 Kapitel 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
 \T1/lmr/m/n/10.95 C-Präprozessor-
  []
 
 
-LaTeX Warning: Unexpected alignment  on input line 17.
+LaTeX Warning: Unexpected alignment  on input line 18.
 
 
-LaTeX Warning: Unexpected alignment  on input line 17.
+LaTeX Warning: Unexpected alignment  on input line 18.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
  []
 
 
-LaTeX Warning: Unexpected alignment  on input line 22.
+LaTeX Warning: Unexpected alignment  on input line 23.
 
 
-LaTeX Warning: Unexpected alignment  on input line 25.
+LaTeX Warning: Unexpected alignment  on input line 26.
 
 
-LaTeX Warning: Unexpected alignment  on input line 27.
+LaTeX Warning: Unexpected alignment  on input line 28.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
 []$\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 = C-Präprozessor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
 \OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
 .95 C$\T1/lmr/m/n/10.95 )
  []
 
 
-LaTeX Warning: Unexpected alignment  on input line 32.
+LaTeX Warning: Unexpected alignment  on input line 33.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 \OML/lmm/m/it/10.95 D[]$ \T1/lmr/m/n/10.95 = deleteWhitespace($\OML/lmm/m/it/10
 .95 D$\T1/lmr/m/n/10.95 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 \OML/lmm/m/it/10.95 D[]uw[]$ \T1/lmr/m/n/10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 \T1/lmr/m/n/10.95 deleteWhitespace($\OML/lmm/m/it/10.95 D[]$\T1/lmr/m/n/10.95 )
 
  []
 
 
-Overfull \hbox (2.43004pt too wide) in paragraph at lines 37--37
+Overfull \hbox (2.43004pt too wide) in paragraph at lines 38--38
 \T1/lmr/m/n/10.95 stringEquals($\OML/lmm/m/it/10.95 D[]; D[]$\T1/lmr/m/n/10.95 
 )==True 
  []
 
 
-LaTeX Warning: Unexpected alignment  on input line 37.
+LaTeX Warning: Unexpected alignment  on input line 38.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 \T1/lmr/m/n/10.95 exponentielles Wachs-
  []
 
 
-LaTeX Warning: Unexpected alignment  on input line 41.
+LaTeX Warning: Unexpected alignment  on input line 42.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \T1/lmr/m/n/10.95 SynGlOW = Syn-tak-ti-sche
  []
 
 
-Underfull \hbox (badness 5847) in paragraph at lines 50--50
+Underfull \hbox (badness 5847) in paragraph at lines 51--51
 \T1/lmr/m/n/10.95 SynGl($\OML/lmm/m/it/10.95 p[]; p[]$\T1/lmr/m/n/10.95 ) == Tr
 ue $\OMS/lmsy/m/n/10.95 _$
  []
 
 
-LaTeX Warning: Unexpected alignment  on input line 50.
+LaTeX Warning: Unexpected alignment  on input line 51.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-[15
-
-]
-Overfull \hbox (16.27481pt too wide) in paragraph at lines 96--97
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-
- []
-
-
-Overfull \hbox (22.05394pt too wide) in paragraph at lines 157--158
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-
-
-[18]) (chapters/implementierung.tex
 
 [19]
+Overfull \hbox (16.27481pt too wide) in paragraph at lines 97--98
+ [][] 
+ []
 
-[20
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+
+ []
+
+
+Overfull \hbox (22.05394pt too wide) in paragraph at lines 158--159
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+
+[22]) (chapters/implementierung.tex
+
+[23]
+
+[24
 
 ]
 Kapitel 5.
 ))
 
-[21] (thesis.bbl
+[25] (thesis.bbl
 
-[22
+[26
 
 ]
 
-[23]
+[27]
 
-[24]) (appendix.tex)
+[28]) (appendix.tex)
 
-[25] (thesis.aux)
+[29] (thesis.aux)
  ***********
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
@@ -2030,10 +1954,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: CD9B8B5B54DB40373EAEFAFDD3D4BA4E;3074.
  ) 
 Here is how much of TeX's memory you used:
- 38818 strings out of 473938
- 776779 string characters out of 5727392
+ 38903 strings out of 473938
+ 778404 string characters out of 5727392
  2113893 words of memory out of 5000000
- 60611 multiletter control sequences out of 15000+600000
+ 60672 multiletter control sequences out of 15000+600000
  639275 words of font info for 87 fonts, out of 8000000 for 9000
  1150 hyphenation exceptions out of 8191
  99i,19n,136p,3577b,1806s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2058,9 +1982,9 @@ sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/U
 sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/U
 sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Us
 ers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on thesis.pdf (33 pages, 1020137 bytes).
+Output written on thesis.pdf (37 pages, 1029704 bytes).
 PDF statistics:
- 670 PDF objects out of 1000 (max. 8388607)
- 211 named destinations out of 1000 (max. 500000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 235 named destinations out of 1000 (max. 500000)
  258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
