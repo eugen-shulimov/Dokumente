@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  30 AUG 2024 20:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  31 AUG 2024 21:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1782,14 +1782,23 @@ LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
 
 
 [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[16]) (chapters/metrik.tex
 
-[17]
 
-[18
+[16]
+Overfull \hbox (2.61778pt too wide) in paragraph at lines 322--323
+[][] 
+ []
 
-]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[17]) (chapters/metrik.tex
+
+[18]
 Kapitel 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -1888,7 +1897,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[19]
+[19
+
+]
 Overfull \hbox (16.27481pt too wide) in paragraph at lines 97--98
  [][] 
  []
@@ -1954,13 +1965,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: CD9B8B5B54DB40373EAEFAFDD3D4BA4E;3074.
  ) 
 Here is how much of TeX's memory you used:
- 38903 strings out of 473938
- 778404 string characters out of 5727392
+ 39215 strings out of 473938
+ 785827 string characters out of 5727392
  2113893 words of memory out of 5000000
- 60672 multiletter control sequences out of 15000+600000
+ 60984 multiletter control sequences out of 15000+600000
  639275 words of font info for 87 fonts, out of 8000000 for 9000
  1150 hyphenation exceptions out of 8191
- 99i,19n,136p,3577b,1806s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,21n,136p,3577b,1969s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb
@@ -1982,7 +1993,7 @@ sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/U
 sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/U
 sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Us
 ers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on thesis.pdf (37 pages, 1029704 bytes).
+Output written on thesis.pdf (37 pages, 1032407 bytes).
 PDF statistics:
  716 PDF objects out of 1000 (max. 8388607)
  235 named destinations out of 1000 (max. 500000)

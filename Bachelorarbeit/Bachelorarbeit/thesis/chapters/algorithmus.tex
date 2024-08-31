@@ -100,38 +100,38 @@ Am Anfang des Algorithmus werden die Stacks erstellt und mit dem Wurzelknoten  i
 			child {node[draw,circle,thick] {a1}}
 			child {node[draw,rectangle,thick] {\textbf{if} b1}
 				child {node[draw,rectangle,thick] {\textbf{if} b2}
-					child { node[draw,circle,thick] {a2}}
+					child { node[draw,circle,thick] {a2} }
+					child { node[draw,rectangle,thick] {\textbf{else}}}
 				}
-				child { node[draw,rectangle,thick] {\textbf{else}}}
 			};
 		\end{tikzpicture}
 	}
 };
-\node (F) at (5,-7) {\fbox {
+\node (F) at (5,-7.3) {\fbox {
 		\begin{tikzpicture}
 			\node[draw,diamond,fill=lightgray,thick] {root}
 			child {node[draw,circle,thick] {a1}}
 			child {node[draw,rectangle,thick] {\textbf{if} b1}
 				child {node[draw,rectangle,thick] {\textbf{if} b2}
 					child { node[draw,circle,thick] {a2}}
-				}
-				child { node[draw,rectangle,thick] {\textbf{else}}
-					child { node[draw,circle,thick] {a3}}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
 				}
 			};
 		\end{tikzpicture}
 	}
 };
-\node (G) at (10,-7) {\fbox {
+\node (G) at (10,-7.3) {\fbox {
 		\begin{tikzpicture}
 			\node[draw,diamond,fill=lightgray,thick] {root}
 			child {node[draw,circle,thick] {a1}}
 			child {node[draw,rectangle,thick] {\textbf{if} b1}
 				child {node[draw,rectangle,thick] {\textbf{if} b2}
 					child { node[draw,circle,thick] {a2}}
-				}
-				child { node[draw,rectangle,thick] {\textbf{else}}
-					child { node[draw,circle,thick] {a3}}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
 				}
 				child { node[draw,circle,thick] {a4}}
 			};
@@ -141,8 +141,8 @@ Am Anfang des Algorithmus werden die Stacks erstellt und mit dem Wurzelknoten  i
 \draw[->,thick] (A) --(B);
 \draw[->,thick] (B) --(C);
 \draw[->,thick] (C) --(D);
-\draw[thick] (D) |- (0,-3.5);
-\draw[->,thick] (0,-3.5) --(E);
+\draw[thick] (D) |- (0,-3.4);
+\draw[->,thick] (0,-3.4) --(E);
 \draw[->,thick] (E) --(F);
 \draw[->,thick] (F) --(G);
 \node (a) at (-0.7,1.7) {Nach Z.1};
@@ -150,8 +150,8 @@ Am Anfang des Algorithmus werden die Stacks erstellt und mit dem Wurzelknoten  i
 \node (c) at (6.8,2.4) {Nach Z.3};
 \node (d) at (10.8,3.2) {Nach Z.4};
 \node (e) at (0,-10.3) {Nach Z.5};
-\node (f) at (5.2,-10.3) {Nach Z.6};
-\node (g) at (10,-10.3) {Nach Z.8};
+\node (f) at (5.2,-11.3) {Nach Z.6};
+\node (g) at (10,-11.3) {Nach Z.8};
 \end{tikzpicture}
 \caption{Beispiel für den Parsen Algorithmus von Viegener}
 \end{figure}
@@ -209,24 +209,116 @@ Aus der gegebenen Information, lässt sich herausfinden, welche Informationen w�
 \end{algorithm}
 
 \begin{tikzpicture}
-	\node[draw,rectangle split,rectangle split parts=2] (A) at (0,0) {
+	\node[draw,rectangle split,rectangle split parts=2,align=left] (A) at (0,0) {
 			\begin{tikzpicture}
 				\node[draw,diamond,fill=lightgray,thick] {root}
 				child {node[draw,circle,thick] {a1}}
 				child {node[draw,rectangle,thick] {\textbf{if} b1}
 					child {node[draw,rectangle,thick] {\textbf{if} b2}
 						child { node[draw,circle,thick] {a2}}
-					}
-					child { node[draw,rectangle,thick] {\textbf{else}}
-						child { node[draw,circle,thick] {a3}}
+						child { node[draw,rectangle,thick] {\textbf{else}}
+							child { node[draw,circle,thick] {a3}}
+						}
 					}
 					child { node[draw,circle,thick] {a4}}
 				};
-				\draw [>=stealth,red,<-,line width=1mm] (1,0) -- (2,0);
+				\draw [>=stealth,red,<-,line width=1mm] (0.9,-0.2) -- (1.5,-0.5);
+				\node[rectangle split, rectangle split parts=3,draw, anchor=center] at (2.5,0) {\nodepart{two} a1 \nodepart{three} \textbf{if} b1};
 			\end{tikzpicture}
-	\nodepart{two} \begin{tikzpicture}
-		\node[align=left] {Ausgabe \\ Hallo};
-		\end{tikzpicture}};
+	\nodepart{two} {\textbf{Ausgabe :}}};
+	
+	\node[draw,rectangle split,rectangle split parts=2,align=left] (B) at (5.5,0) {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
+				}
+				child { node[draw,circle,thick] {a4}}
+			};
+			\draw [>=stealth,red,<-,line width=1mm] (-0.9,-0.9) -- (-1,-0.3);
+			\node[rectangle split, rectangle split parts=2,draw, anchor=center] at (2.5,0) {\nodepart{two}\textbf{if} b1};
+		\end{tikzpicture}
+		\nodepart{two} \textbf{Ausgabe :}\\ Anweisung (a1)};
+
+	\node[draw,rectangle split,rectangle split parts=2,align=left] (C) at (11,0) {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
+				}
+				child { node[draw,circle,thick] {a4}}
+			};
+			\draw [>=stealth,red,<-,line width=1mm] (1,-0.9) -- (1.5,0);
+			\node[rectangle split, rectangle split parts=4,draw, anchor=center] at (2.5,0) {\nodepart{two}\textbf{if} b2 \nodepart{three} \textbf{else} \nodepart{four}a4};
+		\end{tikzpicture}
+		\nodepart{two} \textbf{Ausgabe :}\\ Anweisung (a1) \\ \textbf{\#if} Bedingung1 (b1)};
+
+
+	\node[draw,rectangle split,rectangle split parts=2,align=left] (D) at (0,-10) {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
+				}
+				child { node[draw,circle,thick] {a4}}
+			};
+			\draw [>=stealth,red,->,line width=1mm] (-0.5,-2) -- (-0.7,-2.5);
+			\node[rectangle split, rectangle split parts=4,draw, anchor=center] at (2.5,0) {\nodepart{two} a2 \nodepart{three} \textbf{else} \nodepart{four}a4};
+		\end{tikzpicture}
+		\nodepart{two} \textbf{Ausgabe :}\\ Anweisung (a1) \\ \textbf{\#if} Bedingung1 (b1) \\ \hspace*{5mm}\textbf{\#if} Bedingung2 (b2)};
+		
+		
+	\node[draw,rectangle split,rectangle split parts=2,align=left] (E) at (5.5,-10) {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
+				}
+				child { node[draw,circle,thick] {a4}}
+			};
+			\draw [>=stealth,red,->,line width=1mm] (-0.3,-3.4) -- (-0.5,-4);
+			\node[rectangle split, rectangle split parts=4,draw, anchor=center] at (2.5,0) {\nodepart{two} a2 \nodepart{three} \textbf{else} \nodepart{four}a4};
+		\end{tikzpicture}
+		\nodepart{two} \textbf{Ausgabe :}\\ Anweisung (a1) \\ \textbf{\#if} Bedingung1 (b1) \\ \hspace*{5mm}\textbf{\#if} Bedingung2 (b2) \\ \hspace*{5mm}Anweisung2 (a2)};	
+			
+			
+	\node[draw,rectangle split,rectangle split parts=2,align=left] (F) at (11,-10) {
+		\begin{tikzpicture}
+			\node[draw,diamond,fill=lightgray,thick] {root}
+			child {node[draw,circle,thick] {a1}}
+			child {node[draw,rectangle,thick] {\textbf{if} b1}
+				child {node[draw,rectangle,thick] {\textbf{if} b2}
+					child { node[draw,circle,thick] {a2}}
+					child { node[draw,rectangle,thick] {\textbf{else}}
+						child { node[draw,circle,thick] {a3}}
+					}
+				}
+				child { node[draw,circle,thick] {a4}}
+			};
+			\draw [>=stealth,red,->,line width=1mm] (-0.3,-3.4) -- (-0.5,-4);
+			\node[rectangle split, rectangle split parts=4,draw, anchor=center] at (2.5,0) {\nodepart{two} a2 \nodepart{three} \textbf{else} \nodepart{four}a4};
+		\end{tikzpicture}
+		\nodepart{two} \textbf{Ausgabe :}\\ Anweisung (a1) \\ \textbf{\#if} Bedingung1 (b1) \\ \hspace*{5mm}\textbf{\#if} Bedingung2 (b2) \\ \hspace*{5mm}Anweisung2 (a2)};	
 \end{tikzpicture}
 
 
