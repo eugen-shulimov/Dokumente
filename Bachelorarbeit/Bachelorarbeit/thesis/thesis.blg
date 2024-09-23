@@ -17,45 +17,45 @@ I was expecting a `,' or a `}'---line 393 of file C:/Users/eshul/Desktop/Dokumen
 I'm skipping whatever remains of this entry
 Database file #4: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/Arbeitsplan/myrefs.bib
 Warning--can't use both author and editor fields in Fischer1972
-You've used 22 entries,
+You've used 23 entries,
             2773 wiz_defined-function locations,
-            1895 strings with 39271 characters,
-and the built_in function-call counts, 14118 in all, are:
-= -- 1337
-> -- 971
-< -- 16
-+ -- 325
-- -- 303
-* -- 1220
-:= -- 2173
-add.period$ -- 120
-call.type$ -- 22
-change.case$ -- 166
-chr.to.int$ -- 22
-cite$ -- 45
-duplicate$ -- 589
-empty$ -- 949
-format.name$ -- 331
-if$ -- 3016
+            1901 strings with 39468 characters,
+and the built_in function-call counts, 14413 in all, are:
+= -- 1368
+> -- 981
+< -- 17
++ -- 329
+- -- 306
+* -- 1239
+:= -- 2227
+add.period$ -- 124
+call.type$ -- 23
+change.case$ -- 171
+chr.to.int$ -- 23
+cite$ -- 47
+duplicate$ -- 604
+empty$ -- 971
+format.name$ -- 335
+if$ -- 3074
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 23
-newline$ -- 158
-num.names$ -- 88
-pop$ -- 320
+newline$ -- 164
+num.names$ -- 92
+pop$ -- 325
 preamble$ -- 1
-purify$ -- 145
+purify$ -- 148
 quote$ -- 0
-skip$ -- 463
+skip$ -- 473
 stack$ -- 0
-substring$ -- 435
-swap$ -- 129
+substring$ -- 437
+swap$ -- 130
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 232
+type$ -- 243
 warning$ -- 1
-while$ -- 105
+while$ -- 108
 width$ -- 0
-write$ -- 400
+write$ -- 416
 (There was 1 error message)

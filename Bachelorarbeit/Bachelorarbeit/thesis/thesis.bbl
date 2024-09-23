@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -105,6 +105,13 @@ E.~Kuiter, J.~Kr\"{u}ger, S.~Krieter, T.~Leich, and G.~Saake.
   (SPLC)}, pages 179--189, New York, NY, USA, Sept. 2018. ACM.
 \newblock ISBN 9781450364645.
 \newblock \doi{10.1145/3233027.3233050}.
+
+\bibitem[Moosherr(2023)]{Moosherr23}
+B.~Moosherr.
+\newblock {Constructing Variation Diffs Using Tree Diffing Algorithms}.
+\newblock Bachelor's thesis, University of Ulm, Germany, Apr. 2023.
+\newblock URL
+  \url{https://oparu.uni-ulm.de/xmlui/bitstream/handle/123456789/50184/BA_Moosherr.pdf}.
 
 \bibitem[Neves et~al.(2015)Neves, Borba, Alves, Turnes, Teixeira, Sena, and
   Kulesza]{NBA+:JSS15}

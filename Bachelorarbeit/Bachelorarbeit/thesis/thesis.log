@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  31 AUG 2024 21:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.6)  23 SEP 2024 20:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1483,7 +1483,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count408
 
 (pretext/titlepage.tex
-<figures/uni-logo.pdf, id=101, 555.07375pt x 146.5475pt>
+<figures/uni-logo.pdf, id=117, 555.07375pt x 146.5475pt>
 File: figures/uni-logo.pdf Graphic file (type pdf)
 <use figures/uni-logo.pdf>
 Package pdftex.def Info: figures/uni-logo.pdf  used on input line 9.
@@ -1680,104 +1680,186 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [10]
 Kapitel 3.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 11.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 15.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 15.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 19.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 19.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 19.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 19.
 
 
 
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 23.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 23.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 28.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 28.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 28.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 28.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 28.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 28.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 34.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 34.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 34.
+
+
+Overfull \hbox (8.55511pt too wide) in paragraph at lines 34--35
+\T1/lmr/m/it/10.95 ten V , Kan-ten $\OML/lmm/m/it/10.95 E \OMS/lmsy/m/n/10.95 ^
+^R \OML/lmm/m/it/10.95 V \OMS/lmsy/m/n/10.95 ^^B \OML/lmm/m/it/10.95 V$\T1/lmr/
+m/it/10.95 , Wur-zel-kno-ten r $\OMS/lmsy/m/n/10.95 2$ \T1/lmr/m/it/10.95 V, Kn
+o-ten-ty-pen $\OML/lmm/m/it/10.95 ^^\$ \T1/lmr/m/it/10.95 : V $\OMS/lmsy/m/n/10
+.95 !$ \T1/lmr/m/it/10.95 {\T1/lmr/m/scsl/10.95 ar-ti-fact,mapping,else\T1/lmr/
+m/it/10.95 },
+ []
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 41.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 41.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 41.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 41.
+
+
+
+[12]
+Overfull \hbox (0.88239pt too wide) in paragraph at lines 73--74
+\T1/lmr/m/n/10.95 Jetzt be-schäf-ti-gen wir uns da-mit wie Variation-Trees bzw 
+Variation-Diffs aus mit C-Präprozessor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-
-
-[12{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
-nc}]
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+
+
+[14{C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
+nc}]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[14]
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 163.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
-
-
-LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 167.
 
 
 
@@ -1787,8 +1869,110 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [16]
-Overfull \hbox (2.61778pt too wide) in paragraph at lines 322--323
-[][] 
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+
+ []
+
+
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[20]
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 396.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 400.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 400.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 400.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 400.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 400.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 400.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
+(Font)              using `T1/lmr/m/scsl' instead on input line 400.
+
+
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
  []
 
 
@@ -1796,9 +1980,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[17]) (chapters/metrik.tex
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[18]
+
+
+[23]) (chapters/metrik.tex
+
+[24]
 Kapitel 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -1897,7 +2086,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[19
+[25
 
 ]
 Overfull \hbox (16.27481pt too wide) in paragraph at lines 97--98
@@ -1909,7 +2098,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[20]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 110--110
 
  []
@@ -1929,47 +2118,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[21]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 
 
-[22]) (chapters/implementierung.tex
+[28]) (chapters/implementierung.tex
 
-[23]
+[29]
 
-[24
+[30
 
 ]
 Kapitel 5.
 ))
 
-[25] (thesis.bbl
+[31] (thesis.bbl
 
-[26
+[32
 
 ]
 
-[27]
+[33]
 
-[28]) (appendix.tex)
+[34]) (appendix.tex)
 
-[29] (thesis.aux)
+[35] (thesis.aux)
  ***********
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CD9B8B5B54DB40373EAEFAFDD3D4BA4E;3074.
+(rerunfilecheck)             Checksum: 2343D06DEEFB80FF26819AFEDB883D78;3882.
  ) 
 Here is how much of TeX's memory you used:
- 39215 strings out of 473938
- 785827 string characters out of 5727392
+ 39755 strings out of 473938
+ 797942 string characters out of 5727392
  2113893 words of memory out of 5000000
- 60984 multiletter control sequences out of 15000+600000
- 639275 words of font info for 87 fonts, out of 8000000 for 9000
+ 61480 multiletter control sequences out of 15000+600000
+ 644865 words of font info for 89 fonts, out of 8000000 for 9000
  1150 hyphenation exceptions out of 8191
  99i,21n,136p,3577b,1969s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
@@ -1989,13 +2178,16 @@ Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/
 Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/
 Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/
 Users/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/U
-sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Us
-ers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on thesis.pdf (37 pages, 1032407 bytes).
+sers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Us
+ers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Us
+ers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Us
+ers/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Use
+rs/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/User
+s/eshul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb>
+Output written on thesis.pdf (43 pages, 1085570 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 235 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 820 PDF objects out of 1000 (max. 8388607)
+ 279 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 
