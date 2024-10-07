@@ -5,14 +5,12 @@
 \contentsline {section}{\numberline {2.2}Variabilität Umsetzung mit C-Präprozessor}{8}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Unparse Algorithmus}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Variation-Tree und Variation-Diff}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Parser}{13}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Verlorengehende Informationen}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Modifizierte Variation-Tree und Variation-Diff}{17}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Verlorengehende Informationen}{17}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Unser Algorithmus}{22}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Laufzeitanalyse}{24}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Laufzeitanalyse für Unparsen von Variation-Trees}{24}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Laufzeitanalyse für Unparsen von Variation-Diffs}{24}{subsection.3.7.2}%
+\contentsline {section}{\numberline {3.2}Parser}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Verlorengehende Informationen und deren Wiederherstellung}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Unparsing}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Laufzeitanalyse}{24}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Laufzeitanalyse für Unparsen von Variation-Trees}{24}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Laufzeitanalyse für Unparsen von Variation-Diffs}{24}{subsection.3.5.2}%
 \contentsline {chapter}{\numberline {4}Metrik}{25}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Implementierung}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Code}{31}{section.5.1}%
