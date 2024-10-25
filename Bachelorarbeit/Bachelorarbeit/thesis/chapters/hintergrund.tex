@@ -64,10 +64,9 @@ C-Präprozessor ist ein Tool, das den Quellcode vor dem Kompilieren manipuliert~
 \end{figure}
 
 
-\section{Variabilität Umsetzung mit C-Präprozessor}
+\section{Realisierung von Variabilität mit dem C-Präprozessor}
 
-Der C-Präprozessor ist eine Möglichkeit, Variabilität zu erzeugen~\cite{ABKS13}. Um die Variabilität mithilfe des C-Präprozessor zu erzeugen, brauchen wir dessen Möglichkeit zur bedingten Kompilierung~\cite{ABKS13}. Dies wird mit den C-Präprozessor-Anweisungen \#if(Abb.2.1 Z6), \#else(Abb.2.1 Z10), \#elif(Abb.2.1 Z8), \#ifdef(Abb.2.1 Z18), \#ifndef(Abb.2.1 Z2), und \#endif(Abb.2.1 Z4) bewerkstelligt. Dabei werden Codefragmente von diesen Anweisungen eingeschlossen. Danach, abhängig davon welche Makros definiert sind, werden bestimmte Codefragmente entweder behalten oder entfernt. Es ist möglich, mit diesen Anweisungen  beliebige Aussageformeln über Features im Quellcode abzubilden~\cite{BTS+:ESECFSE22}. 
-Die Abbildung 2.2 zeigt, ein von uns erstelltes Beispiel, wie ein mit C-Präprozessor-Annotierter Code aussehen kann. Das Beispiel zeigt, dass die Anweisungen von den C-Präprozessor verschachtelt werden können. Dabei ist auch die Abhängigkeit einiger Features von anderen zu erkennen, wie in Zeile 5, wo die Auswahl des Features D nur dann Sinn ergibt, wenn auch die Features A und B ausgewählt sind. Nicht nur die Definition von Features, sondern auch die nicht Definition kann, einen Einfluss auf das Ergebnis haben, wie in der Zeile 16 zu sehen ist. Was dem Beispiel nicht zu entnehmen ist, ist der häufige Fall des lang kommentierten Codeabschnitten.  In dem Beispiel wird, wie bei der Implementierung von funktionsorientierten Softwareproduktlinien, ein Name pro Feature reserviert. Wenn das Feature dann ausgewählt wird, wird dann ein Makro mit Feature-Namen definiert, mit der Anweisung \#define FEATURE\_NAME. Die Abbildungen 2.3 und 2.4 stellen 2 mögliche Ergebnisse der C-Präprozessor Ausführung dar. Dabei wird für die Abbildung 2.3 die Features A und B definiert und für die Abbildung 2.4 nur das Feature C. Dabei ist zu sehen, dass der generierter Code nur in dem Bezeichner j gleich ist und sonst nicht. Das veranschaulicht, wie unterschiedlich das Ergebnis von den C-Präprozessor sein kann.
+Der C-Präprozessor ist eine Möglichkeit, Variabilität zu erzeugen~\cite{ABKS13}. Um Variabilität mithilfe des C-Präprozessor zu erzeugen, brauchen wir dessen Möglichkeit zur bedingten Kompilierung~\cite{ABKS13}. Dies wird mit den C-Präprozessor-Anweisungen \#if (Abb.2.1 Z6), \#else (Abb.2.1 Z10), \#elif (Abb.2.1 Z8), \#ifdef (Abb.2.1 Z18), \#ifndef (Abb.2.1 Z2), und \#endif (Abb.2.1 Z4) bewerkstelligt. Dabei werden Codefragmente von diesen Anweisungen eingeschlossen. Danach, abhängig davon welche Makros definiert sind und auch wie sie definiert sind, werden bestimmte Codefragmente entweder behalten oder entfernt. Die Abbildung 2.2 zeigt, ein von uns erstelltes Beispiel, wie ein mit C-Präprozessor-Annotierter Code aussehen kann. Das Beispiel zeigt, dass die Anweisungen von den C-Präprozessor verschachtelt werden können. Bei der Realisierung von Variabilität wird oft mit Features gearbeitet. Ein Feature ist dabei ein Merkmal oder ein für den Endbenutzer sichtbares Verhalten eines Softwaresystems. Ob eine C-Code Zeile im endgültigen Programm auftaucht oder nicht wird durch die dazugehörige Bedingung bestimmt. Diese Bedingungen werden durch C-Präprozessor-Annotation dargestellt. Es ist möglich, mit den C-Präprozessor Anweisungen  eine große Menge an Bedingungen abzubilden~\cite{BTS+:ESECFSE22}. Zur leichterer Pflege werden diese Bedingungen oft in eine Folge von mehreren Feature-Annotationen aufgeteilt. Beispiel dafür ist Zeile 7 zu sehen, wo seine Feature-Annotationen FEATURE\_A \&\& FEATURE\_B und FEATURE\_D sind, aber seine Bedingung FEATURE\_A \&\& FEATURE\_B \&\& FEATURE\_D. In diesem Code-Beispiel ist auch die Abhängigkeit einiger Features von anderen zu erkennen, wie in Zeile 5, wo die Auswahl des Features D nur dann möglich ist, wenn auch die Features A und B ausgewählt sind. Die Zeile 17 in Abbildung 2.2 hat als Feature-Annotationen FEATURE\_C und !FEATURE\_B die Bedingung dabei aber ist FEATURE\_C \&\& !FEATURE\_B. Nicht nur die Definition von Features, sondern auch die Nicht-Definition kann, einen Einfluss auf das Ergebnis haben, wie in der Zeile 16 zu sehen ist. In dem Beispiel wird, wie bei der Implementierung von Softwareproduktlinien, ein Name pro Feature reserviert. Wenn das Feature dann ausgewählt wird, wird dann ein Makro mit Feature-Namen definiert, mit der Anweisung \#define FEATURE\_NAME. Die Abbildungen 2.3 und 2.4 stellen 2 mögliche Ergebnisse der C-Präprozessor-Ausführung dar. Diese Ergebnisse werden als Varianten bezeichnet. Dabei werden für die Abbildung 2.3 die Features A und B definiert und für die Abbildung 2.4 nur das Feature C. Eine Konfiguration ist eine Auswahl der Features welche ausgewählt und nicht ausgewählt werden. Es ist zu sehen, dass der generierter Code nur in dem Bezeichner j gleich ist und sonst nicht. Das veranschaulicht, wie unterschiedlich das Programm sein kann.
 \begin{figure}[t]
 \begin{tikzpicture}
 	\node at (0,0) {\begin{minipage}{7cm}\begin{lstlisting}
@@ -87,6 +86,7 @@ Die Abbildung 2.2 zeigt, ein von uns erstelltes Beispiel, wie ein mit C-Präproz
 #ifdef FEATURE_C 
 	baz();
 #ifndef FEATURE_B
+	sho();
 #define SIZE 100
 #endif
 	bazzz();
@@ -111,20 +111,21 @@ Die Abbildung 2.2 zeigt, ein von uns erstelltes Beispiel, wie ein mit C-Präproz
 	int i = 18
 	i = 17
 	too(i);
-	boom;
+	boom();
 	broo();
 	int j;
 	\end{lstlisting}
-	\caption{Ausgabe des C-Präprozessors wenn Feature A=1 B=1 C=0 D=0}
+	\caption{Ausgabe des C-Präprozessors wenn Feature A=1, B=1, C=0, D=0}
 \end{minipage}};
 %%A=0 B=0 D=0 E=1 C=1 F=1
 	\node at (9,-4) {\begin{minipage}{5cm}
 	\begin{lstlisting}
 	baz();
+	sho();
 	bazzz();
 	short j;		
 	\end{lstlisting}
-	\caption{Ausgabe des C-Präprozessors wenn Feature A=0 B=0 C=1 D=0}
+	\caption{Ausgabe des C-Präprozessors wenn Feature A=0, B=0, C=1, D=0}
 	\end{minipage}};
 \end{tikzpicture}
 \end{figure}
