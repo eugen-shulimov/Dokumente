@@ -2,31 +2,27 @@
 %\input{C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/Arbeitsplan/Arbeitsplan.tex}
 
 
-Bei der Entwicklung von konfigurierbaren Softwaresystemen, wie zum Beispiel Clone-and-Own, oder Softwareproduktlinien, gibt es im Laufe des Lebenszyklus immer mehr Features. Es ist von Vorteil, eine Möglichkeit zu haben, die Features im Code zu unterscheiden und automatisch zu finden. Einige Möglichkeiten dazu wären Präprozessor-Annotationen, oder Build-Systeme~\cite{ABKS13}. Wie bei der Clone-and-Own-Entwicklung, wo für jede Variante der Software eine neue Kopie der gesamten Software angelegt wird und parallel entwickelt wird~\cite{BTS+:ESECFSE22}. Dort müssen Features gefunden werden, um diese zu aktualisieren~\cite{BTS+:ESECFSE22,KTSB:ICSE21,KB:VaMoS20,KB:ESECFSE20,KKK+:SPLC18,ZSL+:ICSE18}.\\
+Bei der Entwicklung von konfigurierbaren Softwaresystemen, wie zum Beispiel Clone-and-Own, oder Softwareproduktlinien, gibt es im Laufe des Lebenszyklus immer mehr Features. Es ist von Vorteil, eine Möglichkeit zu haben, die Features im Code zu unterscheiden und automatisch zu finden. Einer dieser Vorteile ist, dass einer Produktlinie die Varianten automatisch ableiten kann. Einige Möglichkeiten dazu sind Präprozessor-Annotationen, oder Build-Systeme~\cite{ABKS13}. Bei der Clone-and-Own-Entwicklung wird für jede Variante der Software eine neue Kopie der gesamten Software angelegt und parallel entwickelt~\cite{BTS+:ESECFSE22}. Dort müssen Features gefunden werden, um diese zu aktualisieren~\cite{BTS+:ESECFSE22,KTSB:ICSE21,KB:VaMoS20,KB:ESECFSE20,KKK+:SPLC18,ZSL+:ICSE18}.\\
 
 
+Der C-Präprozessor ist eine Möglichkeit, Variabilität zu erzeugen~\cite{ABKS13}. Der C-Präprozessor ist ein Tool, das den Quellcode vor dem Kompilieren manipuliert~\cite{ABKS13}. Dieses Tool bietet Möglichkeiten zur Dateieinbindung, zu lexikalischen Makros, und zur bedingten Kompilierung~\cite{ABKS13}. Wie ein mit dem  C-Präprozessor annotierter Code aussehen kann, ist in der Abbildung~\ref{fig:1} Stelle \numcircledtikz{v} zu sehen (Abb.~\ref{fig:1} St.\numcircledtikz{v}). Um die Variabilität mithilfe des C-Präprozessors zu erzeugen, brauchen wir dessen Möglichkeit zur bedingten Kompilierung~\cite{ABKS13}. Dabei können beliebige Formeln in Aussagenlogik über Features im Quellcode mit den C-Präprozessor-Anweisungen \#if, \#ifdef und, \#ifndef abgebildet werden~\cite{BTS+:ESECFSE22} (Abb.~\ref{fig:1} St.\numcircledtikz{v}). Die Anweisung \#if ist wie die if-Anweisung aus gewohnten Programmiersprachen, \#ifdef und \#ifndef sind ähnlich zu \#if aber reagieren auf Definition oder nicht Definition eines oder mehreren Makros. Als Eingabe erhält der C-Präprozessor einen mit C-Präprozessor-Annotationen annotierten Code. Dieser Eingabe wird gemäß der C-Präprozessor-Annotationen bearbeitet und als Ausgabe erhält man einen Code, welche für die Kompilierung bereit ist.  \\
 
 Die Entwickler sind bei der Entwicklung von konfigurierbarer Software daran interessiert, zu verstehen, wie sich ihre Änderungen auf die Variabilität auswirken und wie die Variabilität von konfigurierbarer Software aussieht~\cite{BTS+:ESECFSE22}. Sonst wenn man das Verständnis über die Auswirkungen der Änderung nicht hat, kann das zu Fehlern und Problemen bei der Entwicklung führen~\cite{BTS+:ESECFSE22,NBA+:JSS15, NST+:SoSyM22,SBT:JSS19, SNB+:VaMoS21,KATS:TOSEM12}. Dies stellt einen Aspekt einer größeren Aufgabe dar, der Aufrechterhaltung und Weiterentwicklung von Informationen über Variabilität bei Quellcodeänderungen~\cite{BTS+:ESECFSE22}. Für die Entwickler stellt diese Aufgabe eine große Herausforderung dar~\cite{BTS+:ESECFSE22,PCA+:VAMOS13, PTD+:EMSE16, SHA:SPLC12}.\\
 
-
-Der C-Präprozessor ist eine Möglichkeit, Variabilität zu erzeugen~\cite{ABKS13}. Der C-Präprozessor ist ein Tool, das den Quellcode vor dem Kompilieren manipuliert~\cite{ABKS13}. Dieses Tool bietet Möglichkeiten zur Dateieinbindung, zu lexikalische Makros, und zur bedingte Kompilierung~\cite{ABKS13}. Wie ein mit dem  C-Präprozessor annotierter Code aussehen kann, ist in der Abbildung~\ref{fig:1} Stelle \numcircledtikz{v} zu sehen (Abb.~\ref{fig:1} St.\numcircledtikz{v}). Um die Variabilität mithilfe des C-Präprozessors zu erzeugen, brauchen wir dessen Möglichkeit zur bedingten Kompilierung~\cite{ABKS13}. Dabei können beliebige Aussageformeln über Features im Quellcode mit den C-Präprozessor-Anweisungen \#if, \#ifdef und, \#ifndef abgebildet werden~\cite{BTS+:ESECFSE22} (Abb.~\ref{fig:1} St.\numcircledtikz{v}).\\
-
-
-
-Zur Unterstützung der Variabilitätsanalyse kann man Tools verwenden~\cite{SSK+:VaMoS20,10.1145/2660190.2662113}, wie zum Beispiel DiffDetective. DiffDetective ist eine Java-Bibliothek~\cite{BSM+:FSE24}. Der Zweck von DiffDetective ist es, Änderungen im Quellcode und Änderungen der Variabilität darstellbar und den Zusammenhang zwischen ihnen analysierbar zu machen. DiffDetective stellt einen variabilitätsbezogenen Differencer~\cite{BSM+:FSE24,BTS+:ESECFSE22} zur Verfügung, der sich nur auf Aspekte im Code/Text bezieht, welche die Variabilität berücksichtigen. Diese Bibliothek ermöglicht auch die Analyse der Versionshistorie von Softwareproduktlinien~\cite{BTS+:ESECFSE22} und bietet daher einen flexiblen Rahmen für großangelegte empirische Analysen von Git-Versionsverläufen statisch konfigurierbarer Software~\cite{BSM+:FSE24,BSG+:SPLC23}.\\
+Zur Unterstützung der Variabilitätsanalyse kann man Tools verwenden~\cite{SSK+:VaMoS20,10.1145/2660190.2662113}, wie zum Beispiel DiffDetective~\cite{BSM+:FSE24}. Der Zweck von DiffDetective ist es, Änderungen im Quellcode und Änderungen der Variabilität darstellbar und den Zusammenhang zwischen ihnen analysierbar zu machen. DiffDetective stellt einen variabilitätsbezogenen Differencer~\cite{BSM+:FSE24,BTS+:ESECFSE22} zur Verfügung, der sich nur auf Aspekte im Code/Text bezieht, welche die Variabilität berücksichtigen. Diese Bibliothek ermöglicht auch die Analyse der Versionshistorie von Softwareproduktlinien~\cite{BTS+:ESECFSE22} und bietet daher einen flexiblen Rahmen für großangelegte empirische Analysen von Git-Versionsverläufen statisch konfigurierbarer Software~\cite{BSM+:FSE24,BSG+:SPLC23}.\\
 
 Zentral für DiffDetective sind zwei formal verifizierte Datenstrukturen für Variabilität und Änderungen an dieser~\cite{BTS+:ESECFSE22}. Das sind Variation-Trees (Abb.~\ref{fig:1} St.\numcircledtikz{x}) für variabilitätbezogenen Code (Abb.1 St.\numcircledtikz{v}) und Variation-Diffs (Abb.~\ref{fig:1} St.\numcircledtikz{y}) für variabilitätsbezogene Diffs (Abb.~\ref{fig:1} St.\numcircledtikz{w}). Diese Datenstrukturen sind generisch. Das bedeutet, dass die Datenstrukturen möglichst von der Umsetzung der Variabilität im Code abstrahieren. Also kann eine Umsetzungsmöglichkeit leicht durch eine andere ersetzt werden, zum Beispiel können C-Präprozessor-Annotationen  durch Java-Präprozessor-Annotationen ohne oder geringer Änderungen an den Datenstrukturen selbst, ersetzt werden. Ein Variation-Tree ist ein Baum, welcher die Verzweigungen/Variationen eines annotierten Codes darstellt ~\cite{BSM+:FSE24,BTS+:ESECFSE22,BSG+:SPLC23}. Ein Variation-Diff ist ein Graph, welcher die Unterschiede zwischen zwei Variation-Trees zeigt~\cite{BSM+:FSE24,BTS+:ESECFSE22,BSG+:SPLC23}. In beiden Fällen werden die Bedingungsknoten, welche Informationen zu Variabilität erhalten, und die Code-Knoten unterschieden. Beim Variation-Diff sind zudem die eingefügten Knoten, die gelöschten Knoten und, die unveränderten Knoten zu unterscheiden.\\
 
 
 
-Das Parsen führt die Eingabe von der konkreten Syntax in die abstrakte Syntax um. In unserem Fall parst DiffDetective  C-Präprozessor-Annotationen, dieses kann aber auch auf andere Präprozessor-Annotationen erweitert werden. Beim Parsen wird nur der C-Präprozessor-Annotierter Code in seine abstrakte Syntax überführt, der C- bzw. C++-Code wird als Text behandelt und wird nicht geparst. Das Parsen in DiffDetective funktioniert für Variation-Trees und für Variation-Diffs über einen einzigen gemeinsamen Algorithmus. Der Algorithmus arbeitet wie folgt: Er geht über alle Zeilen des Codes/Textes und schaut sich für jede Zeile an, wie diese Zeile manipuliert wurde, ob die Zeile unverändert geblieben ist, gelöscht wurde, oder neu ist~\cite{Viegener21}. Dazu wird festgelegt von welchem Typ die Zeile ist, also ob diese Zeile C/C++ Code enthält oder eine C-Präprozessor-Kontrollstruktur. Als Nächstes wird geprüft, ob die Zeile eine \#endif-Annotation enthält. Wenn ja, dann weist das darauf hin, dass ein Bedingungsblock zu Ende ist. Wenn die Zeile kein \#endif enthält, dann wird ein neuer Knoten mit Informationen über Elternknoten, den Typ der Zeile und, wie die Zeile manipuliert wurde, erstellt. Wenn dieser Knoten kein Code-Knoten ist, wird er gemerkt und für die Angabe der Elternknoten verwendet. Der Algorithmus ist an sich für das Parsen von textbasierten Diffs in Variation-Diffs ausgelegt (Abb.~\ref{fig:1} St.\numcircledtikz{5}). An den Stellen \numcircledtikz{1} und \numcircledtikz{9} wird anders vorgegangen, da wir als Eingabe ein C-Präprozessor Code (Abb.~\ref{fig:1} St.\numcircledtikz{v}) haben und als Ausgabe ein Variation-Tree (Abb.~\ref{fig:1} St.\numcircledtikz{x}). Der gegebene Algorithmus ist für das direkte Parsen von C-Präprozessor Code nicht ausgelegt. Deshalb wurde dort Umwege verwendet, um diesen Algorithmus anwendbar zu machen und die benötigte Ausgabe zu erzielen. Ein Text kann in ein nicht verändertes, textbasiertes Diff umgewandelt werden, durch die Bildung eines Diffs mit sich selbst. Dadurch ist es möglich aus C-Präprozessor Code (Abb.~\ref{fig:1} St.\numcircledtikz{v}) ein textbasierten Diff (Abb.~\ref{fig:1} St.\numcircledtikz{w}) zu erzeugen, also wurden die Stelle \numcircledtikz{11} oder \numcircledtikz{12} verwendet. Da jetzt ein textbasiertes Diff vorhanden ist, kann der Algorithmus darauf angewandt werden (Abb.~\ref{fig:1} St.\numcircledtikz{5}). Um aus dem erhaltenen Variation-Diff (Abb.~\ref{fig:1} St.\numcircledtikz{y}) ein Variation-Tree zu bekommen, muss man die Stelle \numcircledtikz{4} oder \numcircledtikz{8} aus der Abbildung~\ref{fig:1} anwenden. So sieht man das die Stelle \numcircledtikz{1} durch die Stellen \numcircledtikz{11},\numcircledtikz{5},\numcircledtikz{4} [ \numcircledtikz{1} $\rightarrow$ \numcircledtikz{11},\numcircledtikz{5},\numcircledtikz{4} ] und die Stelle \numcircledtikz{9} durch die Stellen \numcircledtikz{12},\numcircledtikz{5},\numcircledtikz{8} [ \numcircledtikz{9} $\rightarrow$ \numcircledtikz{12},\numcircledtikz{5},\numcircledtikz{8} ] ersetzt werden kann.
+Das Parsen führt die Eingabe von der konkreten Syntax in die abstrakte Syntax um. In unserem Fall parst DiffDetective  C-Präprozessor-Annotationen, dieses kann aber auch auf andere Präprozessor-Annotationen erweitert werden. Beim Parsen wird nur der C-Präprozessor-annotierte Code in seine abstrakte Syntax überführt. Der C- bzw. C++-Code wird als Text behandelt und wird nicht geparst. Das Parsen in DiffDetective funktioniert für Variation-Trees und für Variation-Diffs über einen einzigen gemeinsamen Algorithmus. Der Algorithmus ist an sich für das Parsen von textbasierten Diffs in Variation-Diffs ausgelegt (Abb.~\ref{fig:1} St.\numcircledtikz{5}). An den Stellen \numcircledtikz{1} und \numcircledtikz{9} wird anders vorgegangen, da wir als Eingabe C-Präprozessor-Code (Abb.~\ref{fig:1} St.\numcircledtikz{v}) haben und als Ausgabe einen Variation-Tree (Abb.~\ref{fig:1} St.\numcircledtikz{x}). Der gegebene Algorithmus ist für das direkte Parsen von C-Präprozessor-Code nicht ausgelegt. Deshalb wurden dort Umwege verwendet, um diesen Algorithmus anwendbar zu machen und die benötigte Ausgabe zu erzielen.  Ein Text kann in ein textbasiertes Diff umgewandelt werden, in dem jede Zeile als unverändert angesehen wird, durch die Bildung eines Diffs mit sich selbst. Dadurch ist es möglich aus C-Präprozessor-Code (Abb.~\ref{fig:1} St.\numcircledtikz{v}) ein textbasiertes Diff (Abb.~\ref{fig:1} St.\numcircledtikz{w}) zu erzeugen, also wurden die Stelle \numcircledtikz{11} oder \numcircledtikz{12} verwendet. Da jetzt ein textbasiertes Diff vorhanden ist, kann der Algorithmus darauf angewandt werden (Abb.~\ref{fig:1} St.\numcircledtikz{5}). Um aus dem erhaltenen Variation-Diff (Abb.~\ref{fig:1} St.\numcircledtikz{y}) ein Variation-Tree zu bekommen, muss man die Stelle \numcircledtikz{4} oder \numcircledtikz{8} aus der Abbildung~\ref{fig:1} anwenden. So sieht man, dass die Stelle \numcircledtikz{1} durch die Stellen \numcircledtikz{11},\numcircledtikz{5},\numcircledtikz{4} und die Stelle \numcircledtikz{9} durch die Stellen \numcircledtikz{12},\numcircledtikz{5},\numcircledtikz{8} ersetzt werden kann.
 
 
 
 \begin{figure}[H]
 	\centering
 	\vaShow
-	\caption{Überblick über Variabilität bezogene Konvertierungen}
+	\caption{Überblick über Variabilitäts-Aware Differencing~\cite{BSM+:FSE24Companion}}
 	\label{fig:1}
 \end{figure}
 
@@ -38,7 +34,6 @@ Eine Einsatzmöglichkeit des Unparsers wäre, das Unparsen von Variation-Trees, 
 
 Für das Unparsen stellt das Fehlen einiger Informationen, die im annotierten Code vorhanden sein müssen, aber in Variation-Trees bzw. Variation-Diffs nicht vorhanden sind, das größte Problem dar. Diese Informationen sind entweder durch das Parsen verloren gegangen oder waren von Anfang an nicht vorhanden, wenn Variation-Trees bzw. Variation-Diffs ohne Parsen gebildet wurden. Diese Informationen sind die exakte Formel, die ein Mapping-Knoten $\tau(v) = \texttt{mapping}$ besitzt~\cite{BTS+:ESECFSE22}, die Position von \#endif und deren Einrückung. Aus diesem Grund müssen wir entweder Annahmen treffen, oder DiffDetective so erweitern, dass er diese Information explizit speichert. Eine Annahme könnte sein, dass das \#endif genauso eingerückt ist, wie die Bedingung, zu der es gehört.\\
 
-Eine Möglichkeit könnte sein, das Unparsen von Variation-Trees direkt umzusetzen. Dazu muss ein entsprechender Algorithmus entwickelt werden. Für das Unparsen von Variation-Diffs ziehen wir in Betracht indirekt vorzugehen, ähnlich wie bei dem Parsen von C-Präprozessor-Annotierten Code zu Variation-Trees.\\
 
 
 Der Beitrag setzt sich aus Konzept, Implementierung und Auswertung zusammen. Beim Konzept wird ein Vorgehen zum Unparsen von Variation-Trees und Variation-Diffs in das ursprüngliche Textformat ausgearbeitet. In der Implementierung wird dieses Vorgehen in das DiffDetective-Tool eingebaut. In der Bachelorarbeit wird eine Metrik spezifiziert, anhand derer die Korrektheit bewertet wird. Zurzeit wird in Betracht gezogen, die Korrektheit, der Implementierung anhand folgender Kriterien festzustellen: syntaktische Gleichheit, syntaktische Gleichheit ohne Whitespace und semantische Gleichheit. Ein ähnliches Kriterium für die Gleichheit bezogen aber auf Variation-Trees bzw. Variation-Diffs ist im Konferenzbeitrag von %\citeauthor{BSG+:SPLC23}
@@ -101,5 +96,65 @@ Der Beitrag setzt sich aus Konzept, Implementierung und Auswertung zusammen. Bei
 %	}
 	\caption{Beispiel für Metrik}
 	\label{fig:2}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	%	\resizebox{0.6\textwidth}{!}{
+	
+		\begin{tikzpicture}
+			\draw (0,0) node {Syntaktische Gleichheit};
+			\node[align=left] (A) at (-3,-1.5) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
+			\end{singlespace}}};
+			\node (B) at (-3,-4.5) {S1 ='\#ifdef A$\backslash$n foo()$\backslash$n\#endif'};
+			\draw[->] (A) -- (B)  node[midway,sloped,above] {$toString$} ;
+			\node[align=left] (C) at (3,-1.5) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
+			\end{singlespace}}};
+			\node (D) at (3,-4.5) {S2 ='\#ifdef A\textbackslash n foo()\textbackslash n\#endif'};
+			\draw[->] (C) -- (D)  node[midway,sloped,above] {$toString$} ;
+			\node (E) at (0,-5.5){S1==S2 => True};
+			\draw[->] (B) -- (E);
+			\draw[->] (D) -- (E);
+			
+			\draw[align=center] (0,-7) node {Syntaktische Gleichheit\\ ohne Whitespace};
+			\node[align=left] (F) at (-3,-8.5) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\ \\ \hspace*{2mm} foo() \\ \#endif
+			\end{singlespace}}};
+			\node (G) at (-3,-12) {S1 ='\#ifdefAfoo()\#endif'};
+			\draw[->] (F) -- (G)  node[midway,sloped,above] {$toStringOW$} ;
+			\node[align=left] (H) at (3,-8.5) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\  \hspace*{2mm} foo() \\ \#endif
+			\end{singlespace}}};
+			\node (I) at (3,-12) {S2 ='\#ifdefAfoo()\#endif'};
+			\draw[->] (H) -- (I)  node[midway,sloped,above] {$toStringOW$} ;
+			\node (J) at (0,-13){S1==S2 => True};
+			\draw[->] (G) -- (J);
+			\draw[->] (I) -- (J);
+			
+			\draw (0,-14.5) node {Semantische Gleichheit};
+			\node[align=left] (U) at (-5,-18) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\ \hspace*{2mm} +boo() \\ \hspace*{2mm} -foo() \\ \#endif
+			\end{singlespace}}};
+			\node[align=left] (V) at (5,-18) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\ \hspace*{2mm} -foo() \\ \hspace*{2mm} +boo() \\ \#endif
+			\end{singlespace}}};
+			\node[align=left] (Z) at (0,-16) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\ \hspace*{2mm} foo() \\ \#endif
+			\end{singlespace}}};
+			\node[align=left] (X) at (0,-20) {\parbox{2cm}{\begin{singlespace}
+						\#ifdef A \\ \hspace*{2mm} boo() \\ \#endif
+			\end{singlespace}}};
+			\draw[->] (U) -- (Z) node[midway,sloped,above] {$projectBefore$};
+			\draw[->] (U) -- (X) node[midway,sloped,above] {$projectAafter$};
+			\draw[->] (V) -- (Z) node[midway,sloped,above] {$projectBefore$};
+			\draw[->] (V) -- (X) node[midway,sloped,above] {$projectAfter$};
+			
+		\end{tikzpicture}
+		%	}
+	\caption{Beispiel für Metrik}
+	\label{fig:3}
 \end{figure}
 

@@ -1,10 +1,69 @@
 \chapter{Implementierung}
-\section{Code}
 
-\subsection{Parser von Variation-Trees mit Heuristik}
+In diesem Kapitel stellen wir eine mögliche Implementierung unseren Algorithmus vor. Unser Algorithmus wird in das Tool DiffDetective eingebaut und erweitert damit seine Möglichkeiten, da DiffDetective keinen Unparser für Variation-Trees oder Variation-Diffs hat. DiffDetective ist in Java programmiert, deshalb nutzen wir die gleiche Programmiersprache für unseren Unparser. Wir werden unseren Algorithmus in je einer Methode für VariationTree<T> und VariationDiff<T> implementieren. \\
 
-\subsection{Parser von Variation-Trees mit Speicherung}
+Die konkrete Implementierung von Variation-Trees und Variation-Diffs in DiffDetective weicht von deren theoretischen Ausarbeitung ab. Für uns wichtig ist, dass der Knotentyp $\tau$ nicht eine Funktion ist welche auf Knoten angewandt wird, sondern ein Attribut eines Knotens ist. Dazu werden mehr Fälle als bei dem Knotentyp $\tau$ unterscheiden. Jeder Knoten speichert die Kinderknoten in einer Liste und gibt damit auch ihre Reihenfolge an. Variation-Trees und Variation-Diffs in DiffDetective sind generische Datenstrukturen. Der generische Teil ist für das Label zuständig. Die für das Label gewählte Klasse muss das Interface Label implementieren.\\
 
-\subsection{Parser von Variation-Diffs}
+Das Wissen das jedes Label welcher von VariationTree und VariationDiff werdet wird, das Interface Label implementieren muss, können wir uns zunutze machen. Eine Klasse, welche das Interface Label implementiert, muss die Zeilen als Liste von Strings darstellen können. In der Umsetzung unseres Algorithmus nutzen wir diese Funktion des Interfaces. Das Label speichert die Zeilen. Deshalb müssen wir des M nicht in vollen Umfang realisieren, sondern nur das Speichern der Zeile mit endif.\\
 
-\section{Test}
+
+An einigen Stellen muss der Code von DiffDetective geändert werden, damit wir alle für das Unparsen relevante Informationen gespeichert werden. Wir müssen die Klassen DiffNode und VariationTreeNode um das Attribut endIf erweitern, welcher die Zeile mit dem endif speichert. Der Parser muss so geändert werden, dass er die Zeile mit dem endif im richtigen Attribut speichert. Die Projektion muss dieses Attribut ebenfalls behandeln, da bei der Projektion die Knoten ihre Klasse wechseln.\\
+
+\begin{figure}[h]
+	\centering
+\begin{lstlisting}[language=java]
+public static <T extends Label>  String variationTreeUnparser(VariationTree<T> tree, Function<List<String>,T> linesToLabel){
+	if(!tree.root().getChildren().isEmpty()) {
+		StringBuilder result = new StringBuilder();
+		Stack<VariationTreeNode<T>> stack = new Stack<>();
+		for (int i = tree.root().getChildren().size() - 1; i >= 0; i--) {
+			stack.push(tree.root().getChildren().get(i));
+		}
+		while (!stack.empty()) {
+			VariationTreeNode<T> node = stack.pop();
+			if (node.isIf()) {
+				stack.push(new VariationTreeNode<>(NodeType.ARTIFACT, null, null,
+				linesToLabel.apply(node.getEndIf())));
+			}
+			for (String line : node.getLabel().getLines()) {
+				result.append(line);
+				result.append("\n");
+			}
+			for (int i = node.getChildren().size() - 1; i >= 0; i--) {
+				stack.push(node.getChildren().get(i));
+			}
+		}
+		return result.substring(0, result.length() - 1);
+	}else{
+		return "";
+	}
+}		
+\end{lstlisting}	
+	\caption{Unparser für VariationTree<T>}
+\end{figure}
+
+In Abbildung 4.1 sehen wir, wie wir unseren Algorithmus umgesetzt haben. Die Funktion variationTreeUnparser und variationDiffUnparser sind generisch. Der generische Typ T muss das Interface Label implementieren. Der Input der Funktion variationTreeUnparser ist ein VariationTree mit Typ T und ein Objekt der Klasse Function auch mit dem Typ T übergeben. Wir haben unsere Funktion generisch gemacht, damit sie für alle Variation-Trees funktioniert. Von dem VariationTree werden die Kindknoten des Wurzelknotens bekommen und damit auch alle anderen Knoten bekommen und auch für in einer für uns nutzbaren Reihenfolge. Der zweite Parameter, der Objekt der Klasse Funktion, wird für die Erstellung des Dummyknotens verwendet. Die Funktion linesToLabel erhält die Zeilen mit \#endif als List<String> und gibt eine List<String> mit den \#endif Zeilen zurücj und hat dabei die generische Klasse T. Der Output unserer Funktion varaitionTreeUnparser ist ein String. Dieser String enthält mit C-Präprozessor-Annotierten Code, welcher aus dem gegebenen VariationTree erstellt wurde. Am Anfang wird geprüft, ob der Wurzelknoten Kinderknoten hat. Wenn nicht, wird ein leerer String ausgegeben. Sonst wird der Algorithmus ausgeführt. Die Umsetzung ähnelt dem Algorithmus, abgesehen von den Java- und Implementierung-Spezifischen Ausdrucksweise. In der Funktion werden zuerst StringBuilder zur Speicherung des Ergebnisses und der Stack initialisiert. Danach werden die Kinderknoten des Wurzelknotens in umgekehrter Reihenfolge auf den Stack gelegt. Als Nächstes beginnt die Schleife, welche so lange durchlaufen wird, bis der Stack leer ist. In der Schleife wird ein Knoten vom Stack genommen. Als Nächstes wird geprüft, ob der Knoten ein If-Knoten ist, in unserem Algorithmus wurde geschaut, ob der $\tau$ des Knotens gleich mapping ist. Wenn ja, wird ein Dummyknoten erstellt und dem Stack hinzugefügt. Wenn nein, wird nichts gemacht. Danach so wie in dem Algorithmus 3 werden die Zeilen dieses Knotens dem Ergebnis hinzugefügt. Am Ende des Schleifendurchlaufs werden die Kinderknoten des Knotens in umgekehrter Reihenfolge dem Stack hinzugefügt. Nach der Schliefe wird das Ergebnis als String zurückgegeben. \\
+
+
+\begin{figure}[h]
+	\centering
+\begin{lstlisting}[language=java]
+public static <T extends Label> String variationDiffUnparser(VariationDiff<T> diff,Function<List<String>,T> linesToLabel) throws IOException {
+	String tree1 = variationTreeUnparser(diff.project(Time.BEFORE),linesToLabel);
+	String tree2 = variationTreeUnparser(diff.project(Time.AFTER),linesToLabel);
+	return JGitDiff.textDiff(tree1,tree2, SupportedAlgorithm.MYERS);
+}
+\end{lstlisting}
+	\caption{Unparser für VariationDiff<T>}
+\end{figure}
+
+In der Abbildung 4.2 ist zu sehen, wie wir das Unparsen von Variation-Diffs umgesetzt haben. Dabei sind wir wie in dem Kapitel 3 gesagt worden vorgegangen. Wir haben das Problem von Unparsen eines Variation-Diffs auf das Unparsen von Variatio-Trees reduziert. So machen wir die Implementierung des Unparsers für Variation-Diff: Wir projizieren das übergebene VariationDiff auf den Zustand-Davor und unparsen dann das erhaltene VariationTree mit der vorher gezeigten Funktion. Das Gleiche machen wir auch für den Zustand-Danach. Zuletzt bilden wir, mit einer von DiffDetectiv zur Verfügung gestellten Funktion, einen textbasierten Diff und geben ihn als String zurück. \\
+
+Wir haben eine mögliche Implementierung für unseren Algorithmus in DiffDetective vorgestellt. So haben wir DiffDetective verbessert und den Benutzern mehr Funktionen zur Verfügung gestellt. Wir müssen noch festlegen, wie wir die Korrektheit unseres Algorithmus überprüfen und eine Auswertung für unsere Funktionen machen.
+
+
+
+
+
+
+

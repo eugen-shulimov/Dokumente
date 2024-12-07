@@ -14,3 +14,46 @@
   url    = {https://ctan.org},
   note   = {{Checked} 2017-12-18.},
 }
+
+@inproceedings{Cifuentes1993AMF,
+	title={A Methodology for Decompilation},
+	author={Cristina Garcia Cifuentes and Kevin John Gough},
+	year={1993},
+	url={https://api.semanticscholar.org/CorpusID:11292649}
+}
+
+@inproceedings{10.1145/3650212.3652144,
+	author = {Cao, Ying and Zhang, Runze and Liang, Ruigang and Chen, Kai},
+	title = {Evaluating the Effectiveness of Decompilers},
+	year = {2024},
+	isbn = {9798400706127},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3650212.3652144},
+	doi = {10.1145/3650212.3652144},
+	abstract = {In software security tasks like malware analysis and vulnerability mining, reverse engineering is pivotal, with C decompilers playing a crucial role in understanding program semantics. However, reverse engineers still predominantly rely on assembly code rather than decompiled code when analyzing complex binaries. This practice underlines the limitations of current decompiled code, which hinders its effectiveness in reverse engineering. Identifying and analyzing the problems of existing decompilers and making targeted improvements can effectively enhance the efficiency of software analysis. In this study, we systematically evaluate current mainstream decompilers’ semantic consistency and readability. Semantic evaluation results show that the state-of-the-art decompiler Hex-Rays has about 55\% accuracy at almost all optimization, which contradicts the common belief among many reverse engineers that decompilers are usually accurate. Readability evaluation indicates that despite years of efforts to improve the readability of the decompiled code, decompilers’ template-based approach still predominantly yields code akin to binary structures rather than human coding patterns. Additionally, our human study indicates that to enhance decompilers’ accuracy and readability, introducing human or compiler-aware strategies like a speculate-verify-correct approach to obtain recompilable decompiled code and iteratively refine it to more closely resemble the original binary, potentially offers a more effective optimization method than relying on static analysis and rule expansion.},
+	booktitle = {Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis},
+	pages = {491–502},
+	numpages = {12},
+	keywords = {Decompiler, Reverse Engineering, Software Testing},
+	location = {Vienna, Austria},
+	series = {ISSTA 2024}
+}
+
+@inproceedings{10.1145/3395363.3397370,
+	author = {Liu, Zhibo and Wang, Shuai},
+	title = {How far we have come: testing decompilation correctness of C decompilers},
+	year = {2020},
+	isbn = {9781450380089},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3395363.3397370},
+	doi = {10.1145/3395363.3397370},
+	abstract = {A C decompiler converts an executable (the output from a C compiler) into source code. The recovered C source code, once recompiled, will produce an executable with the same functionality as the original executable. With over twenty years of development, C decompilers have been widely used in production to support reverse engineering applications, including legacy software migration, security retrofitting, software comprehension, and to act as the first step in launching adversarial software exploitations. As the paramount component and the trust base in numerous cybersecurity tasks, C decompilers have enabled the analysis of malware, ransomware, and promoted cybersecurity professionals’ understanding of vulnerabilities in real-world systems. In contrast to this flourishing market, our observation is that in academia, outputs of C decompilers (i.e., recovered C source code) are still not extensively used. Instead, the intermediate representations are often more desired for usage when developing applications such as binary security retrofitting. We acknowledge that such conservative approaches in academia are a result of widespread and pessimistic views on the decompilation correctness. However, in conventional software engineering and security research, how much of a problem is, for instance, reusing a piece of simple legacy code by taking the output of modern C decompilers? In this work, we test decompilation correctness to present an up-to-date understanding regarding modern C decompilers. We detected a total of 1,423 inputs that can trigger decompilation errors from four popular decompilers, and with extensive manual effort, we identified 13 bugs in two open-source decompilers. Our findings show that the overly pessimistic view of decompilation correctness leads researchers to underestimate the potential of modern decompilers; the state-of-the-art decompilers certainly care about the functional correctness, and they are making promising progress. However, some tasks that have been studied for years in academia, such as type inference and optimization, still impede C decompilers from generating quality outputs more than is reflected in the literature. These issues rarely receive enough attention and can lead to great confusion that misleads users.},
+	booktitle = {Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+	pages = {475–487},
+	numpages = {13},
+	keywords = {Decompiler, Reverse Engineering, Software Testing},
+	location = {Virtual Event, USA},
+	series = {ISSTA 2020}
+}

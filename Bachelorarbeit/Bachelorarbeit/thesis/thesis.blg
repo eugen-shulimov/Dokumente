@@ -16,46 +16,48 @@ I was expecting a `,' or a `}'---line 393 of file C:/Users/eshul/Desktop/Dokumen
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #4: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/Arbeitsplan/myrefs.bib
+Warning--I didn't find a database entry for "BSM+:FSE24Companion"
+Warning--empty booktitle in Cifuentes1993AMF
 Warning--can't use both author and editor fields in Fischer1972
-You've used 23 entries,
+You've used 30 entries,
             2773 wiz_defined-function locations,
-            1901 strings with 39468 characters,
-and the built_in function-call counts, 14413 in all, are:
-= -- 1368
-> -- 981
-< -- 17
-+ -- 329
-- -- 306
-* -- 1239
-:= -- 2227
-add.period$ -- 124
-call.type$ -- 23
-change.case$ -- 171
-chr.to.int$ -- 23
-cite$ -- 47
-duplicate$ -- 604
-empty$ -- 971
-format.name$ -- 335
-if$ -- 3074
+            1955 strings with 41121 characters,
+and the built_in function-call counts, 18886 in all, are:
+= -- 1837
+> -- 1200
+< -- 27
++ -- 402
+- -- 372
+* -- 1553
+:= -- 2857
+add.period$ -- 166
+call.type$ -- 30
+change.case$ -- 214
+chr.to.int$ -- 30
+cite$ -- 62
+duplicate$ -- 837
+empty$ -- 1306
+format.name$ -- 416
+if$ -- 4101
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 23
-newline$ -- 164
-num.names$ -- 92
-pop$ -- 325
+missing$ -- 30
+newline$ -- 214
+num.names$ -- 120
+pop$ -- 411
 preamble$ -- 1
-purify$ -- 148
+purify$ -- 184
 quote$ -- 0
-skip$ -- 473
+skip$ -- 677
 stack$ -- 0
-substring$ -- 437
-swap$ -- 130
-text.length$ -- 11
+substring$ -- 599
+swap$ -- 207
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 243
-warning$ -- 1
-while$ -- 108
+type$ -- 320
+warning$ -- 2
+while$ -- 143
 width$ -- 0
-write$ -- 416
+write$ -- 549
 (There was 1 error message)
