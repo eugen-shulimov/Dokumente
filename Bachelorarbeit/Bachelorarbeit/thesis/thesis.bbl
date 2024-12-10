@@ -10,17 +10,12 @@
 M.~Al-Hajjaji, F.~Benduhn, T.~Th{\"u}m, T.~Leich, and G.~Saake.
 \newblock {Mutation Operators for Preprocessor-Based Variability}.
 \newblock In \emph{Proc.\ Int'l Workshop on Variability Modelling of
-  Software-Intensive Systems (VaMoS)}, pages 81--88, New York, NY, USA, Jan.
-  2016. ACM.
-\newblock ISBN 978-1-4503-4019-9.
-\newblock \doi{10.1145/2866614.2866626}.
+  Software-Intensive Systems (VaMoS)}, pages 81--88. ACM, 2016.
 
 \bibitem[Apel et~al.(2013)Apel, Batory, K\"astner, and Saake]{ABKS13}
 S.~Apel, D.~Batory, C.~K\"astner, and G.~Saake.
 \newblock \emph{{Feature-Oriented Software Product Lines}}.
-\newblock Springer, Berlin, Heidelberg, 2013.
-\newblock ISBN 978-3-642-37520-0.
-\newblock \doi{10.1007/978-3-642-37521-7}.
+\newblock Springer, 2013.
 
 \bibitem[Bittner et~al.(2022)Bittner, Tinnes, Schulthei\ss{}, Viegener, Kehrer,
   and Th{\"{u}}m]{BTS+:ESECFSE22}
@@ -28,10 +23,7 @@ P.~M. Bittner, C.~Tinnes, A.~Schulthei\ss{}, S.~Viegener, T.~Kehrer, and
   T.~Th{\"{u}}m.
 \newblock {Classifying Edits to Variability in Source Code}.
 \newblock In \emph{Proc.\ Europ.\ Software Engineering Conf./Foundations of
-  Software Engineering (ESEC/FSE)}, pages 196--208, New York, NY, USA, Nov.
-  2022. ACM.
-\newblock ISBN 9781450394130.
-\newblock \doi{10.1145/3540250.3549108}.
+  Software Engineering (ESEC/FSE)}, pages 196--208. ACM, 2022.
 
 \bibitem[Bittner et~al.(2023)Bittner, Schulthei\ss{}, Greiner, Moosherr,
   Krieter, Tinnes, Kehrer, and Th\"{u}m]{BSG+:SPLC23}
@@ -39,33 +31,14 @@ P.~M. Bittner, A.~Schulthei\ss{}, S.~Greiner, B.~Moosherr, S.~Krieter,
   C.~Tinnes, T.~Kehrer, and T.~Th\"{u}m.
 \newblock {Views on Edits to Variational Software}.
 \newblock In \emph{Proc.\ Int'l Systems and Software Product Line Conf.\
-  (SPLC)}, pages 141--152, New York, NY, USA, Aug. 2023. ACM.
-\newblock ISBN 9798400700910.
-\newblock \doi{10.1145/3579027.3608985}.
+  (SPLC)}, pages 141--152. ACM, 2023.
 
 \bibitem[Bittner et~al.(2024)Bittner, Schulthei\ss{}, Moosherr, Kehrer, and
-  Th{\"{u}}m]{BSM+:FSE24}
+  Th{\"{u}}m]{BSM+:FSE24Companion}
 P.~M. Bittner, A.~Schulthei\ss{}, B.~Moosherr, T.~Kehrer, and T.~Th{\"{u}}m.
 \newblock {Variability-Aware Differencing with DiffDetective}.
-\newblock In \emph{Proc.\ Int'l Conference on the Foundations of Software
-  Engineering (FSE)}, New York, NY, USA, July 2024. ACM.
-\newblock To appear.
-
-\bibitem[Cao et~al.(2024)Cao, Zhang, Liang, and Chen]{10.1145/3650212.3652144}
-Y.~Cao, R.~Zhang, R.~Liang, and K.~Chen.
-\newblock Evaluating the effectiveness of decompilers.
-\newblock In \emph{Proceedings of the 33rd ACM SIGSOFT International Symposium
-  on Software Testing and Analysis}, ISSTA 2024, page 491–502, New York, NY,
-  USA, 2024. Association for Computing Machinery.
-\newblock ISBN 9798400706127.
-\newblock \doi{10.1145/3650212.3652144}.
-\newblock URL \url{https://doi.org/10.1145/3650212.3652144}.
-
-\bibitem[Cifuentes and Gough(1993)]{Cifuentes1993AMF}
-C.~G. Cifuentes and K.~J. Gough.
-\newblock A methodology for decompilation.
-\newblock 1993.
-\newblock URL \url{https://api.semanticscholar.org/CorpusID:11292649}.
+\newblock In \emph{Companion Proc.\ Int'l Conference on the Foundations of
+  Software Engineering (FSE Companion)}, pages 632--636. ACM, 2024.
 
 \bibitem[Fischer(1972)]{Fischer1972}
 M.~J. Fischer.
@@ -79,9 +52,19 @@ M.~J. Fischer.
 P.~Gazzillo and R.~Grimm.
 \newblock {SuperC: Parsing All of C by Taming the Preprocessor}.
 \newblock In \emph{Proc.\ ACM SIGPLAN Conf.\ on Programming Language Design and
-  Implementation (PLDI)}, pages 323--334, New York, NY, USA, 2012. ACM.
-\newblock ISBN 978-1-4503-1205-9.
-\newblock \doi{10.1145/2254064.2254103}.
+  Implementation (PLDI)}, pages 323--334. ACM, 2012.
+
+\bibitem[K\"{a}stner and Apel(2008)]{KA:ASE08}
+C.~K\"{a}stner and S.~Apel.
+\newblock {Type-Checking Software Product Lines---A Formal Approach}.
+\newblock In \emph{Proc.\ Int'l Conf.\ on Automated Software Engineering
+  (ASE)}, pages 258--267. IEEE, 2008.
+
+\bibitem[K\"{a}stner et~al.(2008)K\"{a}stner, Apel, and Kuhlemann]{KAK:ICSE08}
+C.~K\"{a}stner, S.~Apel, and M.~Kuhlemann.
+\newblock {Granularity in Software Product Lines}.
+\newblock In \emph{Proc.\ Int'l Conf.\ on Software Engineering (ICSE)}, pages
+  311--320. ACM, 2008.
 
 \bibitem[K\"{a}stner et~al.(2011)K\"{a}stner, Giarrusso, Rendel, Erdweg,
   Ostermann, and Berger]{KGR+:OOPSLA11}
@@ -90,47 +73,35 @@ C.~K\"{a}stner, P.~G. Giarrusso, T.~Rendel, S.~Erdweg, K.~Ostermann, and
 \newblock {Variability-Aware Parsing in the Presence of Lexical Macros and
   Conditional Compilation}.
 \newblock In \emph{Proc.\ Conf.\ on Object-Oriented Programming, Systems,
-  Languages and Applications (OOPSLA)}, pages 805--824, New York, NY, USA,
-  2011. ACM.
-\newblock ISBN 978-1-4503-0940-0.
-\newblock \doi{10.1145/2048066.2048128}.
+  Languages and Applications (OOPSLA)}, pages 805--824. ACM, 2011.
 
 \bibitem[K\"{a}stner et~al.(2012)K\"{a}stner, Apel, Th\"{u}m, and
   Saake]{KATS:TOSEM12}
 C.~K\"{a}stner, S.~Apel, T.~Th\"{u}m, and G.~Saake.
 \newblock {Type Checking Annotation-Based Product Lines}.
 \newblock \emph{Trans.\ on Software Engineering and Methodology (TOSEM)},
-  21\penalty0 (3):\penalty0 14:1--14:39, July 2012.
-\newblock ISSN 1049-331X.
-\newblock \doi{10.1145/2211616.2211617}.
+  21\penalty0 (3):\penalty0 14:1--14:39, 2012.
 
 \bibitem[Kehrer et~al.(2021)Kehrer, Th{\"{u}}m, Schulthei\ss{}, and
   Bittner]{KTSB:ICSE21}
 T.~Kehrer, T.~Th{\"{u}}m, A.~Schulthei\ss{}, and P.~M. Bittner.
 \newblock {Bridging the Gap Between Clone-and-Own and Software Product Lines}.
 \newblock In \emph{Proc.\ Int'l Conf.\ on Software Engineering (ICSE)}, pages
-  21--25, Piscataway, NJ, USA, May 2021. IEEE.
-\newblock ISBN 978-1-6654-0140-1.
-\newblock \doi{10.1109/ICSE-NIER52604.2021.00013}.
+  21--25. IEEE, 2021.
 
 \bibitem[Kr{\"u}ger and Berger(2020)]{KB:ESECFSE20}
 J.~Kr{\"u}ger and T.~Berger.
 \newblock {An Empirical Analysis of the Costs of Clone- and Platform-Oriented
   Software Reuse}.
 \newblock In \emph{Proc.\ Europ.\ Software Engineering Conf./Foundations of
-  Software Engineering (ESEC/FSE)}, pages 432--444, New York, NY, USA, 2020.
-  ACM.
-\newblock ISBN 9781450370431.
-\newblock \doi{10.1145/3368089.3409684}.
+  Software Engineering (ESEC/FSE)}, pages 432--444. ACM, 2020.
 
 \bibitem[Kr\"{u}ger and Berger(2020)]{KB:VaMoS20}
 J.~Kr\"{u}ger and T.~Berger.
 \newblock {Activities and Costs of Re-Engineering Cloned Variants Into an
   Integrated Platform}.
 \newblock In \emph{Proc.\ Int'l Working Conf.\ on Variability Modelling of
-  Software-Intensive Systems (VaMoS)}, New York, NY, USA, 2020. ACM.
-\newblock ISBN 9781450375016.
-\newblock \doi{10.1145/3377024.3377044}.
+  Software-Intensive Systems (VaMoS)}. ACM, 2020.
 
 \bibitem[Kuiter et~al.(2018)Kuiter, Kr\"{u}ger, Krieter, Leich, and
   Saake]{KKK+:SPLC18}
@@ -138,62 +109,39 @@ E.~Kuiter, J.~Kr\"{u}ger, S.~Krieter, T.~Leich, and G.~Saake.
 \newblock {Getting Rid of Clone-and-Own: Moving to a Software Product Line for
   Temperature Monitoring}.
 \newblock In \emph{Proc.\ Int'l Systems and Software Product Line Conf.\
-  (SPLC)}, pages 179--189, New York, NY, USA, Sept. 2018. ACM.
-\newblock ISBN 9781450364645.
-\newblock \doi{10.1145/3233027.3233050}.
+  (SPLC)}, pages 179--189. ACM, 2018.
 
 \bibitem[Lackner and Schmidt(2014)]{LS:SPLat14}
 H.~Lackner and M.~Schmidt.
 \newblock {Towards the Assessment of Software Product Line Tests: A Mutation
   System for Variable Systems}.
 \newblock In \emph{Proc.\ Workshop on Software Product Line Analysis Tools
-  (SPLat)}, pages 62--69, New York, NY, USA, 2014. ACM.
-\newblock ISBN 978-1-4503-2739-8.
-\newblock \doi{10.1145/2647908.2655968}.
-
-\bibitem[Liu and Wang(2020)]{10.1145/3395363.3397370}
-Z.~Liu and S.~Wang.
-\newblock How far we have come: testing decompilation correctness of c
-  decompilers.
-\newblock In \emph{Proceedings of the 29th ACM SIGSOFT International Symposium
-  on Software Testing and Analysis}, ISSTA 2020, page 475–487, New York, NY,
-  USA, 2020. Association for Computing Machinery.
-\newblock ISBN 9781450380089.
-\newblock \doi{10.1145/3395363.3397370}.
-\newblock URL \url{https://doi.org/10.1145/3395363.3397370}.
+  (SPLat)}, pages 62--69. ACM, 2014.
 
 \bibitem[Moosherr(2023)]{Moosherr23}
 B.~Moosherr.
 \newblock {Constructing Variation Diffs Using Tree Diffing Algorithms}.
-\newblock Bachelor's thesis, University of Ulm, Germany, Apr. 2023.
-\newblock URL
-  \url{https://oparu.uni-ulm.de/xmlui/bitstream/handle/123456789/50184/BA_Moosherr.pdf}.
+\newblock Bachelor's thesis, University of Ulm, 2023.
 
 \bibitem[Neves et~al.(2015)Neves, Borba, Alves, Turnes, Teixeira, Sena, and
   Kulesza]{NBA+:JSS15}
 L.~Neves, P.~Borba, V.~Alves, L.~Turnes, L.~Teixeira, D.~Sena, and U.~Kulesza.
 \newblock {Safe Evolution Templates for Software Product Lines}.
 \newblock \emph{J.\ Systems and Software (JSS)}, 106:\penalty0 42--58, 2015.
-\newblock \doi{10.1016/j.jss.2015.04.024}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0164121215000801}.
 
 \bibitem[Nieke et~al.(2022)Nieke, Sampaio, Th{\"u}m, Seidl, Teixeira, and
   Schaefer]{NST+:SoSyM22}
 M.~Nieke, G.~Sampaio, T.~Th{\"u}m, C.~Seidl, L.~Teixeira, and I.~Schaefer.
 \newblock {Guiding the Evolution of Product-Line Configurations}.
 \newblock \emph{Software and Systems Modeling (SoSyM)}, 21:\penalty0 225--247,
-  Feb. 2022.
-\newblock \doi{10.1007/s10270-021-00906-w}.
+  2022.
 
 \bibitem[Passos et~al.(2013)Passos, Czarnecki, Apel, W\k{a}sowski, K\"{a}stner,
   and Guo]{PCA+:VAMOS13}
 L.~Passos, K.~Czarnecki, S.~Apel, A.~W\k{a}sowski, C.~K\"{a}stner, and J.~Guo.
 \newblock {Feature-Oriented Software Evolution}.
 \newblock In \emph{Proc.\ Int'l Workshop on Variability Modelling of
-  Software-Intensive Systems (VaMoS)}, pages 1--8, New York, NY, USA, 2013.
-  ACM.
-\newblock \doi{10.1145/2430502.2430526}.
+  Software-Intensive Systems (VaMoS)}, pages 1--8. ACM, 2013.
 
 \bibitem[Passos et~al.(2016)Passos, Teixeira, Dintzner, Apel, W{\k{a}}sowski,
   Czarnecki, Borba, and Guo]{PTD+:EMSE16}
@@ -201,22 +149,18 @@ L.~Passos, L.~Teixeira, N.~Dintzner, S.~Apel, A.~W{\k{a}}sowski, K.~Czarnecki,
   P.~Borba, and J.~Guo.
 \newblock {Coevolution of Variability Models and Related Software Artifacts}.
 \newblock \emph{Empirical Software Engineering (EMSE)}, 21\penalty0 (4), 2016.
-\newblock \doi{10.1007/s10664-015-9364-x}.
 
 \bibitem[Sampaio et~al.(2019)Sampaio, Borba, and Teixeira]{SBT:JSS19}
 G.~Sampaio, P.~Borba, and L.~Teixeira.
 \newblock {Partially Safe Evolution of Software Product Lines}.
 \newblock \emph{J.\ Systems and Software (JSS)}, 155:\penalty0 17--42, 2019.
-\newblock ISSN 0164-1212.
-\newblock \doi{10.1016/j.jss.2019.04.051}.
 
 \bibitem[Seidl et~al.(2012)Seidl, Heidenreich, and A{\ss}mann]{SHA:SPLC12}
 C.~Seidl, F.~Heidenreich, and U.~A{\ss}mann.
 \newblock {Co-Evolution of Models and Feature Mapping in Software Product
   Lines}.
 \newblock In \emph{Proc.\ Int'l Systems and Software Product Line Conf.\
-  (SPLC)}, pages 76--85, New York, NY, USA, 2012. ACM.
-\newblock \doi{10.1145/2362536.2362550}.
+  (SPLC)}, pages 76--85. ACM, 2012.
 
 \bibitem[Sincero et~al.(2010)Sincero, Tartler, Lohmann, and
   Schr\"{o}der-Preikschat]{STLS:GPCE10}
@@ -224,9 +168,7 @@ J.~Sincero, R.~Tartler, D.~Lohmann, and W.~Schr\"{o}der-Preikschat.
 \newblock {Efficient Extraction and Analysis of Preprocessor-Based
   Variability}.
 \newblock In \emph{Proc.\ Int'l Conf.\ on Generative Programming and Component
-  Engineering (GPCE)}, pages 33--42, New York, NY, USA, 2010. ACM.
-\newblock ISBN 978-1-4503-0154-1.
-\newblock \doi{10.1145/1868294.1868300}.
+  Engineering (GPCE)}, pages 33--42. ACM, 2010.
 
 \bibitem[Sprey et~al.(2020)Sprey, Sundermann, Krieter, Nieke, Mauro, Th\"{u}m,
   and Schaefer]{SSK+:VaMoS20}
@@ -234,9 +176,7 @@ J.~Sprey, C.~Sundermann, S.~Krieter, M.~Nieke, J.~Mauro, T.~Th\"{u}m, and
   I.~Schaefer.
 \newblock {SMT-Based Variability Analyses in FeatureIDE}.
 \newblock In \emph{Proc.\ Int'l Working Conf.\ on Variability Modelling of
-  Software-Intensive Systems (VaMoS)}, New York, NY, USA, Feb. 2020. ACM.
-\newblock ISBN 9781450375016.
-\newblock \doi{10.1145/3377024.3377036}.
+  Software-Intensive Systems (VaMoS)}. ACM, 2020.
 
 \bibitem[Sundermann et~al.(2021)Sundermann, Nieke, Bittner, He{\ss}, Th\"{u}m,
   and Schaefer]{SNB+:VaMoS21}
@@ -244,17 +184,20 @@ C.~Sundermann, M.~Nieke, P.~M. Bittner, T.~He{\ss}, T.~Th\"{u}m, and
   I.~Schaefer.
 \newblock {Applications of \#SAT Solvers on Feature Models}.
 \newblock In \emph{Proc.\ Int'l Working Conf.\ on Variability Modelling of
-  Software-Intensive Systems (VaMoS)}, New York, NY, USA, Feb. 2021. ACM.
-\newblock ISBN 9781450388245.
-\newblock \doi{10.1145/3442391.3442404}.
+  Software-Intensive Systems (VaMoS)}. ACM, 2021.
+
+\bibitem[Tartler et~al.(2009)Tartler, Sincero, Schr{\"o}der-Preikschat, and
+  Lohmann]{TSS+:FOSD09}
+R.~Tartler, J.~Sincero, W.~Schr{\"o}der-Preikschat, and D.~Lohmann.
+\newblock {Dead or Alive: Finding Zombie Features in the Linux Kernel}.
+\newblock In \emph{Proc.\ Int'l Workshop on Feature-Oriented Software
+  Development (FOSD)}, pages 81--86. ACM, 2009.
 
 \bibitem[Viegener(2021)]{Viegener21}
 S.~Viegener.
 \newblock {Empirical Evaluation of Feature Trace Recording on the Edit History
   of Marlin}.
-\newblock Bachelor's thesis, University of Ulm, Germany, Apr. 2021.
-\newblock URL
-  \url{https://oparu.uni-ulm.de/xmlui/bitstream/handle/123456789/38679/BA_Viegener.pdf}.
+\newblock Bachelor's thesis, University of Ulm, 2021.
 
 \bibitem[Zhang and Becker(2014)]{10.1145/2660190.2662113}
 B.~Zhang and M.~Becker.
@@ -272,8 +215,6 @@ S.~Zhou, {\c{S}}.~St{\u{a}}nciulescu, O.~Le{\ss}enich, Y.~Xiong,
   A.~W{\k{a}}sowski, and C.~K{\"a}stner.
 \newblock {Identifying Features in Forks}.
 \newblock In \emph{Proc.\ Int'l Conf.\ on Software Engineering (ICSE)}, pages
-  105--116, New York, NY, USA, May 2018. ACM.
-\newblock \doi{10.1145/3180155.3180205}.
-\newblock URL \url{https://dl.acm.org/citation.cfm?id=3180205}.
+  105--116. ACM, 2018.
 
 \end{thebibliography}

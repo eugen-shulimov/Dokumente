@@ -219,25 +219,25 @@ Der Zusammenhang zwischen Syntaktischer Gleichheit und Syntaktischen Gleichheit 
 
 \section{Auswertung}
 
-Im folgenden Abschnitt wollen wir eine Auswertung unserer Implementierung anhand der vorher eingeführten Korrektheitskriterien durchführen. Bei dieser Auswertung wollen wir herausfinden welche Korrektheitskriterien wie oft eingehalten werden und wird mindestens eine der Kriterien eingehalten oder gibt es Fälle, welcher unser Unparser nicht nach unserer Definition korrekt Unparsen kann. Dazu hat DiffDetective für das Parsen zwei unabhängige Optionen, dass sind Collabse-Multiple-Code-Lines und Ignore-Empty-Lines. Bei Collabse-Multiple-Code-Lines werden mehrere hintereinander Laufende Zeilen von Code und nicht von C-Präprozessor-Annotationen in einem Knoten zusammengefasst. Bei Ignore-Empty-Lines werden die leeren Zeilen nicht von Parser in das Ergebniss aufgenommen und gehen verloren. Es gibt vier Möglichkeiten, wie die Optionen für den Parser gesetzt werden können. Für alle diese Möglichkeiten wollen wir betrachten, wie die Korrektheitskriterien eingehalten werden.\\
+Im folgenden Abschnitt wollen wir eine Auswertung unserer Implementierung anhand der vorher eingeführten Korrektheitskriterien durchführen. Bei dieser Auswertung wollen wir herausfinden welche Korrektheitskriterien wie oft eingehalten werden und wird mindestens eine der Kriterien eingehalten oder gibt es Fälle, welcher unser Unparser nicht nach unserer Definition korrekt Unparsen kann. Dazu hat DiffDetective für das Parsen zwei unabhängige Optionen, das sind Collabse-Multiple-Code-Lines und Ignore-Empty-Lines. Bei Collabse-Multiple-Code-Lines werden mehrere hintereinander laufende Zeilen von Code und nicht von C-Präprozessor-Annotationen in einem Knoten zusammengefasst. Bei Ignore-Empty-Lines werden die leeren Zeilen nicht von Parser in das Ergebnis aufgenommen und gehen verloren. Es gibt vier Möglichkeiten, wie die Optionen für den Parser gesetzt werden können. Für alle diese Möglichkeiten wollen wir betrachten, wie die Korrektheitskriterien eingehalten werden.\\
 
 Zuerst im Abschnitt 5.2.1 wird der Aufbau des Experiments vorgestellt. Danach sind die Ergebnisse der Auswertung in Abschnitt 5.2.2 zu sehen. Zum Schluss im Abschnitt 5.2.3 werden die Ergebnisse der Auswertung interpretiert und diskutiert.
 
 %Vorschungs Frage : ist Implementierung Korrekt, welche Korrektheitskriterien werden erfüllt
 
 \subsection{Aufbau des Experiments}
-Bei der Auswertung wird DiffDetective uns seine Möglichkeiten zur Analyse von Software-Produkt-Linien verwendet. Der Aufbau unserer Auswertung ist in der Abbildung 5.4 skizziert und ist folgend aufgebaut. Es wird automatisch die Patches aus dem Git Repositorie extrahiert. Wir arbeiten nur mit Patches, welche geparst werden können, die Patches bei denen es nicht gilt ignorieren wir, da diese für unsere Fragestellung unbedeutend sind. Wir wollen die Korrektheit des Unparser prüfen, also die Fällen wo wir keinen Variation-Tree oder Variation-Diff bekommen können, müssen wir nicht betrachten. Wenn wir dann so ein Patch/textbasierten Diff haben, wird dieser auf den Davor-Zustand und Danach-Zustand projiziert. Damit erhalten wir dann zwei C-Präprozessor-Annotierte Codes. Dadurch wird bei der Auswertung doppelt so viele C-Präprozessor-Annotierte Codes untersucht als textbasierte Diffs. Als nächstes wird sowohl für der textbasierter Diff als auch C-Präprozessor-Annotierte Code geparst. Dabei werden für ein textbasierten Diff und ein C-Präprozessor-Annotierten Code vier Variation-Diffs bzw. Variation-Trees erstellt. Aus einem Patch bekommen wir aber zwei C-Präprozessor-Annotierte Codes und diese werden zusammen mit den textbasierten Diff untersucht, dadurch bekommen wir acht Variation-Trees. Diese vier Variation-Diffs und acht Variation-Trees werden unter Verwendung verschiedener Optionen erstellt. Es gibt zwei unabhängige Optionen für den Parser, diese erzeugen dann die vier möglichen Kombinationen. Danach werden diese vier Variation-Diffs und acht Variation-Trees ungepasrt und wir erhalten danach vier textbasierte Diffs und auch C-Präprozessor-Annotierte Codes. Diese textbasierten Diffs und C-Präprozessor-Annotierte Codes werden dann auf die Gleichheit mit den ausgangs textbasierten Diff und C-Präprozessor-Annotierte Codes, welche für das Parsen verwendet wurden, anhand der von uns definierten Korrektheitskriterien geprüft. Die Ergebnisse nach der Untersuchung aller für uns geltender Patches werden zusammen getragen und wir können dann diese betrachten.\\
+Bei der Auswertung wird DiffDetective uns seine Möglichkeiten zur Analyse von Software-Produkt-Linien verwendet. Der Aufbau unserer Auswertung ist in der Abbildung 5.4 skizziert und ist folgend aufgebaut. Es wird automatisch die Patches aus dem Git Repositorie extrahiert. Wir arbeiten nur mit Patches, welche geparst werden können, die Patches bei denen es nicht gilt ignorieren wir, da diese für unsere Fragestellung unbedeutend sind. Wir wollen die Korrektheit des Unparser prüfen, also die Fälle wo wir keinen Variation-Tree oder Variation-Diff bekommen können, müssen wir nicht betrachten. Wenn wir dann so ein Patch/textbasierten Diff haben, wird dieser auf den Davor-Zustand und Danach-Zustand projiziert. Damit erhalten wir dann zwei C-Präprozessor-Annotierte Codes. Dadurch wird bei der Auswertung doppelt so viele C-Präprozessor-Annotierte Codes untersucht als textbasierte Diffs. Als Nächstes wird sowohl der textbasierte Diff als auch C-Präprozessor-Annotierte Code geparst. Dabei werden für ein textbasierten Diff und ein C-Präprozessor-Annotierten Code vier Variation-Diffs bzw. Variation-Trees erstellt. Aus einem Patch bekommen wir aber zwei C-Präprozessor-Annotierte Codes und diese werden zusammen mit den textbasierten Diff untersucht, dadurch bekommen wir acht Variation-Trees. Diese vier Variation-Diffs und acht Variation-Trees werden unter Verwendung verschiedener Optionen erstellt. Es gibt zwei unabhängige Optionen für den Parser, diese erzeugen dann die vier möglichen Kombinationen. Danach werden diese vier Variation-Diffs und acht Variation-Trees ungepasrt und wir erhalten danach vier textbasierte Diffs und auch C-Präprozessor-Annotierte Codes. Diese textbasierten Diffs und C-Präprozessor-Annotierte Codes werden dann auf die Gleichheit mit den ausgangs textbasierten Diff und C-Präprozessor-Annotierte Codes, welche für das Parsen verwendet wurden, anhand der von uns definierten Korrektheitskriterien geprüft. Die Ergebnisse nach der Untersuchung aller für uns geltender Patches werden zusammen getragen und wir können dann diese betrachten.\\
 
-Als Datenquelle werden von uns Git-History folgende vier Software-Produkt-Linie Projekte benutzt. Die verwendeten Open-Source Projekte sind Vim, sylpheed, gcc und berkeley-db-libdb. Vim ist ein konfigurierbarer Texteditor, welcher auch in den meisten UNIX-Systemen und in Apple OS X enthalten ist. sylpheed ist ein leichtgewichtiger E-Mail-Client, welcher auf vielen Systemen wie Windows, Linux, BSD, Mac OS X und anderen Unix-ähnlichen Systemen läuft. gcc steht für GNU Compiler Collection, welcher eine Sammlung von Compilern ist für die Programmiersprachen C, C++, Objective-C, D, Fortran, Ada und Go. berkeley-db-libdb ist eine eingebetteten Key-Value-Datenbankbibliothek. Aus diesen Projekten haben wir nur Dateien mit C-Code untersucht. Diese Dateien sind an den Endungen .c und .cpp zu erkennen. 
+Als Datenquelle werden von uns Git-History folgende vier Software-Produkt-Linie-Projekte benutzt. Die verwendeten Open-Source-Projekte sind Vim, sylpheed, gcc und berkeley-db-libdb. Vim ist ein konfigurierbarer Texteditor, welcher auch in den meisten UNIX-Systemen und in Apple OS X enthalten ist. \texttt{sylpheed} ist ein leichtgewichtiger E-Mail-Client, welcher auf vielen Systemen wie Windows, Linux, BSD, Mac OS X und anderen Unix-ähnlichen Systemen läuft. gcc steht für GNU Compiler Collection, welcher eine Sammlung von Compilern ist für die Programmiersprachen C, C++, Objective-C, D, Fortran, Ada und Go. berkeley-db-libdb ist eine eingebettete Key-Value-Datenbankbibliothek. Aus diesen Projekten haben wir nur Dateien mit C-Code untersucht. Diese Dateien sind an den Endungen .c und .cpp zu erkennen. 
 
 %-Nutzen DiffDetective
 \begin{figure}[h]
 	\centering
 \begin{tikzpicture}
-	\node[draw,align=center] (A) at (0,0) {Repositories};
-	\node[draw,align=center] (B) at (4,0) {extrahiere Patches};
-	\node[draw,align=center] (C) at (9,0) {Patch/textbasierter Diff};
-	\node[draw,align=center] (B) at (4,-1) {bekomme Annotierten Code};
+	\node[draw,align=center] (A) at (-1,0) {Repositories};
+	\node[draw,align=center] (B) at (3,0) {extrahiere Patches};
+	\node[draw,align=center] (C) at (8,0) {Patch/textbasierter Diff};
+	\node[draw,align=center] (D) at (4,-1) {bekomme Annotierten Code};
 	\node[draw,align=center] (E) at (0,-2) {C-Präprozessor-Annotierter\\ Code};
 	\node[draw,align=center] (F) at (8,-2) {Parse alle Kombinationen \\von Optionen};
 	\node[draw,align=center] (G) at (8,-3.5) {Unparse  Variation-Diffs};
@@ -246,6 +246,19 @@ Als Datenquelle werden von uns Git-History folgende vier Software-Produkt-Linie 
 	\node[draw,align=center] (J) at (0,-5) {Unparse  Variation-Trees};
 	\node[draw,align=center] (K) at (0,-6.3) {Prüfe auf alle\\Korrektheitskriterien};
 	\node[draw,align=center] (L) at (4,-5) {Ergebnisse};
+	
+	\draw[thick,->] (A) -- (B);
+	\draw[thick,->] (B) -- (C);
+	\draw[thick,->] (C) |- (D);
+	\draw[thick,->] (C) -- (F);
+	\draw[thick,->] (D) -| (E);
+	\draw[thick,->] (F) -- (G);
+	\draw[thick,->] (G) -- (H);
+	\draw[thick,->] (H) -- (L);
+	\draw[thick,->] (E) -- (I);
+	\draw[thick,->] (I) -- (J);
+	\draw[thick,->] (J) -- (K);
+	\draw[thick,->] (K) -| (L);
 \end{tikzpicture}
 \caption{Aufbau der Auswertung}
 \end{figure}

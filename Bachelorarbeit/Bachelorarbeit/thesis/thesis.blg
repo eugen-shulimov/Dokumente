@@ -4,60 +4,55 @@ The top-level auxiliary file: thesis.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: abbrvnat.bst
 Reallocating 'name_of_file' (item size: 1) to 67 items.
-Reallocating 'name_of_file' (item size: 1) to 15 items.
-Reallocating 'name_of_file' (item size: 1) to 71 items.
+Reallocating 'name_of_file' (item size: 1) to 23 items.
 Reallocating 'name_of_file' (item size: 1) to 71 items.
 Database file #1: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/BibTags/MYabrv.bib
-Database file #2: literature.bib
-Database file #3: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/BibTags/literature.bib
-I was expecting a `,' or a `}'---line 393 of file C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/BibTags/literature.bib
- :  
- :  typo3Tags = {VariantSyncPub}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Database file #4: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/Arbeitsplan/myrefs.bib
-Warning--I didn't find a database entry for "BSM+:FSE24Companion"
-Warning--empty booktitle in Cifuentes1993AMF
+Database file #2: literature-cleaned.bib
+Database file #3: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/Arbeitsplan/myrefs.bib
+Warning--I didn't find a database entry for "BSM+:FSE24"
+Warning--I didn't find a database entry for "10.1145/3650212.3652144"
+Warning--I didn't find a database entry for "Cifuentes1993AMF"
+Warning--I didn't find a database entry for "10.1145/3395363.3397370"
 Warning--can't use both author and editor fields in Fischer1972
 You've used 30 entries,
             2773 wiz_defined-function locations,
-            1955 strings with 41121 characters,
-and the built_in function-call counts, 18886 in all, are:
-= -- 1837
-> -- 1200
-< -- 27
-+ -- 402
-- -- 372
-* -- 1553
-:= -- 2857
-add.period$ -- 166
+            1964 strings with 41161 characters,
+and the built_in function-call counts, 18532 in all, are:
+= -- 1707
+> -- 1209
+< -- 28
++ -- 405
+- -- 375
+* -- 1472
+:= -- 2734
+add.period$ -- 117
 call.type$ -- 30
-change.case$ -- 214
+change.case$ -- 215
 chr.to.int$ -- 30
-cite$ -- 62
-duplicate$ -- 837
-empty$ -- 1306
-format.name$ -- 416
-if$ -- 4101
+cite$ -- 61
+duplicate$ -- 835
+empty$ -- 1376
+format.name$ -- 417
+if$ -- 4040
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 30
-newline$ -- 214
+newline$ -- 164
 num.names$ -- 120
-pop$ -- 411
+pop$ -- 464
 preamble$ -- 1
-purify$ -- 184
+purify$ -- 185
 quote$ -- 0
-skip$ -- 677
+skip$ -- 700
 stack$ -- 0
-substring$ -- 599
-swap$ -- 207
-text.length$ -- 17
+substring$ -- 683
+swap$ -- 210
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 320
-warning$ -- 2
-while$ -- 143
+warning$ -- 1
+while$ -- 153
 width$ -- 0
-write$ -- 549
-(There was 1 error message)
+write$ -- 429
+(There were 5 warnings)

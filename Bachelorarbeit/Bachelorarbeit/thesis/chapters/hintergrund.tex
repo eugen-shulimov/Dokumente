@@ -7,7 +7,9 @@ In diesem Kapitel stellen wir Hintergrundwissen zur Verfügung, dieses Wissen is
 
 
 \section{C-Präprozessor}
-Der C-Präprozessor ist ein Tool, das Quellcode vor dem Kompilieren manipuliert~\cite{ABKS13}. Dieses Tool bietet Möglichkeiten zur bedingte Kompilierung, zur  Dateieinbindung und zur Erstellung lexikalischer Makros~\cite{ABKS13}. Eine C-Präprozessor-Direktive beginnt mit \# und geht bis zum ersten Whitespace-Zeichen weiter, optional kann nach der Direktive ein Argument im Rest der Zeile stehen. Der C-Präprozessor hat solche Anweisungen wie, \#include zum Einbinden von Dateien, um zum Beispiel Header-Dateien wiederzuverwenden. Wie das Aussehen kann, ist in der Abbildung 2.1, Zeile 1 zu sehen. Mit den Anweisungen \#if (Zeile 6), \#else (Zeile 10), \#elif (Zeile 8), \#ifdef (Zeile 18), \#ifndef (Zeile 3), und \#endif (Zeile 5) wird die bedingte Kompilierung erzeugt. Dabei funktionieren \#if, \#else, \#elif, und \#endif vergleichbar mit dem, was man aus Programmiersprachen und Pseudocode gewohnt ist. \#ifdef ist ähnlich zu \#if, wird aber nur dann wahr, wenn das darauf folgende Makro definiert ist. \#ifndef ist die Negation von \#ifdef. Makros werden durch die Anweisung \#define (Zeile 4) erstellt. Der Präprozessor ersetzt dann während seiner Arbeit, den Makronamen durch seine Definition. Während dieser Arbeit kann ein Makro definiert, umdefiniert und undefiniert, mit \#undef (Zeile 2), werden. Der C-Präprozessor hat noch weitere Anweisungen, auf die wir nicht weiter eingehen. Auf weitere Anweisungen wird nicht eingegangen, da diese bezüglich unserer Arbeit nicht relevant sind. Der C-Präprozessor kann in anderen Programmiersprachen verwendet werden. Beispiel für solchen Sprachen sind C++, Assemblersprachen, Fortran und Java. Der Grund dafür ist, dass der C-Präprozessor unabhängig von der zugrundeliegenden Programmiersprache ist.
+Der C-Präprozessor ist ein Tool, das Quellcode vor dem Kompilieren manipuliert~\cite{ABKS13}. Dieses Tool bietet Möglichkeiten zur bedingte Kompilierung, zur  Dateieinbindung und zur Erstellung lexikalischer Makros~\cite{ABKS13}. Eine C-Präprozessor-Direktive beginnt mit \# und geht bis zum ersten Whitespace-Zeichen weiter, optional kann nach der Direktive ein Argument im Rest der Zeile stehen. Der C-Präprozessor hat solche Anweisungen wie, \#include zum Einbinden von Dateien, um zum Beispiel Header-Dateien wiederzuverwenden. Wie das Aussehen kann, ist in der Abbildung 2.1, Zeile 1 zu sehen. Mit den Anweisungen \#if (Zeile 6), \#else (Zeile 10), \#elif (Zeile 8), \#ifdef (Zeile 18), \#ifndef (Zeile 3), und \#endif (Zeile 5) wird die bedingte Kompilierung erzeugt. Dabei funktionieren \#if, \#else, \#elif, und \#endif vergleichbar mit dem, was man aus Programmiersprachen und Pseudocode gewohnt ist. \#ifdef ist ähnlich zu \#if, wird aber nur dann wahr, wenn das darauf folgende Makro definiert ist. \#ifndef ist die Negation von \#ifdef. Makros werden durch die Anweisung \#define (Zeile 4) erstellt. Der Präprozessor ersetzt dann während seiner Arbeit, den Makronamen durch seine Definition. Während dieser Arbeit kann ein Makro definiert, umdefiniert und undefiniert, mit \#undef (Zeile 2), werden. Der C-Präprozessor hat noch weitere Anweisungen, auf die wir nicht weiter eingehen. Auf weitere Anweisungen wird nicht eingegangen, da diese bezüglich unserer Arbeit nicht relevant sind. Der C-Präprozessor kann in anderen Programmiersprachen verwendet werden. Beispiel für solchen Sprachen sind C++, Assemblersprachen, Fortran und Java. Der Grund dafür ist, dass der C-Präprozessor unabhängig von der zugrundeliegenden Programmiersprache ist. \\
+
+Der C-Präprozessor-Annotierter Code in der Abbildung 2.1 arbeitet wie folgt. Zuerst in Zeile 1 wird der studio-Header eingebunden um mit dem Input und Output zu arbeiten. Danach in Zeile 2 wird der Makro N undefiniert. In Zeile 2 wird geprüft ob der Makro N existiert, wenn nicht, wird der mit dem Wert 10 definiert. Als Nächstes in Zeilen 6 bis 12 wird der Makro A abhängig von dem Wert von N definiert. Bei N größer 10 enthält A die Zeichenkette \textbf{O.O}  bei N gleich 10 wird A auf \textbf{;)}  gesetzt in restlichen Fällen ist A  \textbf{:(}  . In Zeile 14 beginnt die main-Funktion. In Zeile 15 gibt es die Funktion printf, welche Hello world! auf der Konsole ausgibt. Danach in Zeile 17 wird geprüft, ob N definiert wurde, wenn ja, dann bekommt die main-Funktion eine for-Schleife. Diese for-Schleife wird N Mal durchlaufen und gibt bei jedem Schleifendurchlauf auf der Konsole den Makro A aus. In der Zeile 25 gibt es den standardmäßigen return 0. 
 
 
 \lstdefinestyle{customc}{
@@ -37,7 +39,7 @@ Der C-Präprozessor ist ein Tool, das Quellcode vor dem Kompilieren manipuliert~
 #define N 10
 #endif	
 #if N > 10
-#define A "^-^"
+#define A "O.O"
 #elif N == 10
 #define A ";)"
 #else
@@ -46,12 +48,12 @@ Der C-Präprozessor ist ein Tool, das Quellcode vor dem Kompilieren manipuliert~
 	
 	int main()
 	{
-		puts("Hello world!");
+		printf("Hello world!");
 #ifdef N
 		int i;
 		for (i = 0; i < N; i++)
 		{
-			puts(A);
+			printf(A);
 		}
 #endif
 		
