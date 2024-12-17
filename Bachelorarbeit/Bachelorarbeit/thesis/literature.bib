@@ -15,6 +15,39 @@
   note   = {{Checked} 2017-12-18.},
 }
 
+@inproceedings{10.1145/2660190.2662113,
+	author = {Zhang, Bo and Becker, Martin},
+	title = {Variability code analysis using the VITAL tool},
+	year = {2014},
+	isbn = {9781450329804},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	doi = {10.1145/2660190.2662113},
+	abstract = {As a product line evolves over time, variability realizations become overly complex and difficult to understand. This causes practical challenges in product line maintenance. To solve this issue, the VITAL tool is developed to automatically extract a variability reflexion model from variability code and conduct further analyses. In this paper, variability code analysis process using the VITAL tool is introduced, and each step of the analysis is demonstrated with an example product line.},
+	booktitle = {Proceedings of the 6th International Workshop on Feature-Oriented Software Development},
+	pages = {17–22},
+	numpages = {6},
+	keywords = {variability code analysis, reverse engineering variability, product line evolution, conditional compilation},
+	location = {V\"{a}ster\r{a}s, Sweden},
+	series = {FOSD '14}
+}
+
+@Inbook{Fischer1972,
+	author="Fischer, Michael J.",
+	editor="Miller, Raymond E.
+	and Thatcher, James W.
+	and Bohlinger, Jean D.",
+	title="Efficiency of Equivalence Algorithms",
+	bookTitle="Complexity of Computer Computations: Proceedings of a symposium on the Complexity of Computer Computations, held March 20--22, 1972, at the IBM Thomas J. Watson Research Center, Yorktown Heights, New York, and sponsored by the Office of Naval Research, Mathematics Program, IBM World Trade Corporation, and the IBM Research Mathematical Sciences Department",
+	year="1972",
+	publisher="Springer US",
+	address="Boston, MA",
+	pages="153--167",
+	abstract="The equivalence problem is to determine the finest partition on a set that is consistent with a sequence of assertions of the form ``x ≡ y''. A strategy for doing this on a computer processes the assertions serially, maintaining always in storage a representation of the partition defined by the assertions so far encountered. To process the command ``x ≡ y'', the equivalence classes of x and y are determined. If they are the same, nothing further is done; otherwise the two classes are merged together.",
+	isbn="978-1-4684-2001-2",
+	doi="10.1007/978-1-4684-2001-2_14"
+}
+
 @inproceedings{Cifuentes1993AMF,
 	title={A Methodology for Decompilation},
 	author={Cristina Garcia Cifuentes and Kevin John Gough},
@@ -29,7 +62,6 @@
 	isbn = {9798400706127},
 	publisher = {Association for Computing Machinery},
 	address = {New York, NY, USA},
-	url = {https://doi.org/10.1145/3650212.3652144},
 	doi = {10.1145/3650212.3652144},
 	abstract = {In software security tasks like malware analysis and vulnerability mining, reverse engineering is pivotal, with C decompilers playing a crucial role in understanding program semantics. However, reverse engineers still predominantly rely on assembly code rather than decompiled code when analyzing complex binaries. This practice underlines the limitations of current decompiled code, which hinders its effectiveness in reverse engineering. Identifying and analyzing the problems of existing decompilers and making targeted improvements can effectively enhance the efficiency of software analysis. In this study, we systematically evaluate current mainstream decompilers’ semantic consistency and readability. Semantic evaluation results show that the state-of-the-art decompiler Hex-Rays has about 55\% accuracy at almost all optimization, which contradicts the common belief among many reverse engineers that decompilers are usually accurate. Readability evaluation indicates that despite years of efforts to improve the readability of the decompiled code, decompilers’ template-based approach still predominantly yields code akin to binary structures rather than human coding patterns. Additionally, our human study indicates that to enhance decompilers’ accuracy and readability, introducing human or compiler-aware strategies like a speculate-verify-correct approach to obtain recompilable decompiled code and iteratively refine it to more closely resemble the original binary, potentially offers a more effective optimization method than relying on static analysis and rule expansion.},
 	booktitle = {Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis},
@@ -47,7 +79,6 @@
 	isbn = {9781450380089},
 	publisher = {Association for Computing Machinery},
 	address = {New York, NY, USA},
-	url = {https://doi.org/10.1145/3395363.3397370},
 	doi = {10.1145/3395363.3397370},
 	abstract = {A C decompiler converts an executable (the output from a C compiler) into source code. The recovered C source code, once recompiled, will produce an executable with the same functionality as the original executable. With over twenty years of development, C decompilers have been widely used in production to support reverse engineering applications, including legacy software migration, security retrofitting, software comprehension, and to act as the first step in launching adversarial software exploitations. As the paramount component and the trust base in numerous cybersecurity tasks, C decompilers have enabled the analysis of malware, ransomware, and promoted cybersecurity professionals’ understanding of vulnerabilities in real-world systems. In contrast to this flourishing market, our observation is that in academia, outputs of C decompilers (i.e., recovered C source code) are still not extensively used. Instead, the intermediate representations are often more desired for usage when developing applications such as binary security retrofitting. We acknowledge that such conservative approaches in academia are a result of widespread and pessimistic views on the decompilation correctness. However, in conventional software engineering and security research, how much of a problem is, for instance, reusing a piece of simple legacy code by taking the output of modern C decompilers? In this work, we test decompilation correctness to present an up-to-date understanding regarding modern C decompilers. We detected a total of 1,423 inputs that can trigger decompilation errors from four popular decompilers, and with extensive manual effort, we identified 13 bugs in two open-source decompilers. Our findings show that the overly pessimistic view of decompilation correctness leads researchers to underestimate the potential of modern decompilers; the state-of-the-art decompilers certainly care about the functional correctness, and they are making promising progress. However, some tasks that have been studied for years in academia, such as type inference and optimization, still impede C decompilers from generating quality outputs more than is reflected in the literature. These issues rarely receive enough attention and can lead to great confusion that misleads users.},
 	booktitle = {Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis},

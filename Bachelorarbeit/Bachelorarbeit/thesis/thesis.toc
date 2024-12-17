@@ -9,17 +9,18 @@
 \contentsline {section}{\numberline {3.3}Verlorengehende Informationen und deren Wiederherstellung}{16}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Unparsing}{21}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Komplexitätsanalyse der Laufzeit}{26}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Implementierung}{29}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Korrektheit}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Korrektheitskritierum}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Auswertung}{38}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Aufbau des Experiments}{38}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Ergebnisse}{39}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Diskussion}{39}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Zusammenfassung}{39}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Verwandte Arbeiten}{41}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Parsen von C-Präprozessor-Annotationen für Variabilitätsanalysen}{41}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Dekompilierung von C}{42}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Variabilitätsanalysen}{42}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Fazit und Zukünftige Arbeiten}{45}{chapter.7}%
-\contentsline {chapter}{Bibliography}{46}{chapter.7}%
+\contentsline {section}{\numberline {3.6}Zusammenfassung}{28}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Implementierung}{31}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Korrektheit}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Korrektheitskriterium}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Auswertung}{41}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Aufbau des Experiments}{41}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Ergebnisse}{42}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Diskussion}{44}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Zusammenfassung}{45}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Verwandte Arbeiten}{47}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Parsen von C-Präprozessor-Annotationen für Variabilitätsanalysen}{47}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Dekompilierung von C}{48}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Variabilitätsanalysen}{48}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Fazit und Zukünftige Arbeiten}{51}{chapter.7}%
+\contentsline {chapter}{Bibliography}{53}{chapter.7}%

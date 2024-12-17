@@ -5,54 +5,52 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: abbrvnat.bst
 Reallocating 'name_of_file' (item size: 1) to 67 items.
 Reallocating 'name_of_file' (item size: 1) to 23 items.
-Reallocating 'name_of_file' (item size: 1) to 71 items.
+Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/BibTags/MYabrv.bib
 Database file #2: literature-cleaned.bib
-Database file #3: C:/Users/eshul/Desktop/Dokumente/Bachelorarbeit/Arbeitsplan/myrefs.bib
+Database file #3: literature.bib
 Warning--I didn't find a database entry for "BSM+:FSE24"
-Warning--I didn't find a database entry for "10.1145/3650212.3652144"
-Warning--I didn't find a database entry for "Cifuentes1993AMF"
-Warning--I didn't find a database entry for "10.1145/3395363.3397370"
+Warning--empty booktitle in Cifuentes1993AMF
 Warning--can't use both author and editor fields in Fischer1972
-You've used 30 entries,
+You've used 33 entries,
             2773 wiz_defined-function locations,
-            1964 strings with 41161 characters,
-and the built_in function-call counts, 18532 in all, are:
-= -- 1707
-> -- 1209
-< -- 28
-+ -- 405
-- -- 375
-* -- 1472
-:= -- 2734
-add.period$ -- 117
-call.type$ -- 30
-change.case$ -- 215
-chr.to.int$ -- 30
-cite$ -- 61
-duplicate$ -- 835
-empty$ -- 1376
-format.name$ -- 417
-if$ -- 4040
+            1978 strings with 41600 characters,
+and the built_in function-call counts, 20277 in all, are:
+= -- 1886
+> -- 1290
+< -- 32
++ -- 432
+- -- 399
+* -- 1576
+:= -- 2968
+add.period$ -- 131
+call.type$ -- 33
+change.case$ -- 232
+chr.to.int$ -- 33
+cite$ -- 68
+duplicate$ -- 942
+empty$ -- 1511
+format.name$ -- 448
+if$ -- 4451
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 30
-newline$ -- 164
-num.names$ -- 120
-pop$ -- 464
+missing$ -- 33
+newline$ -- 182
+num.names$ -- 132
+pop$ -- 502
 preamble$ -- 1
-purify$ -- 185
+purify$ -- 199
 quote$ -- 0
-skip$ -- 700
+skip$ -- 800
 stack$ -- 0
-substring$ -- 683
-swap$ -- 210
-text.length$ -- 19
+substring$ -- 725
+swap$ -- 251
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 320
-warning$ -- 1
-while$ -- 153
+type$ -- 353
+warning$ -- 2
+while$ -- 164
 width$ -- 0
-write$ -- 429
-(There were 5 warnings)
+write$ -- 478
+(There were 3 warnings)
